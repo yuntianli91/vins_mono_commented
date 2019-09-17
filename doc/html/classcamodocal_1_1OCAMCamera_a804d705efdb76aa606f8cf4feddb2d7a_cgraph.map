@@ -1,0 +1,5 @@
+<map id="camodocal::OCAMCamera::undistToPlane" name="camodocal::OCAMCamera::undistToPlane">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera_1_1Parameters.html#a2dcff4a5472ebc79d5d72762681220a3" title="return image height of current camera object " alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1Camera_1_1Parameters.html#a92c11d296cb64c91a0c15528a8a7b813" title="return image width of current camera object " alt="" coords="238,71,405,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1OCAMCamera.html#a06125c8a4cdf39e0a9353b291802b0ed" title="Project a 3D point (x,y,z) to the image plane in (u,v) " alt="" coords="232,136,411,177"/>
+</map>

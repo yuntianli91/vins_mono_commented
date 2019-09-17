@@ -1,0 +1,10 @@
+<map id="DBoW2::TemplatedVocabulary::Node::isLeaf" name="DBoW2::TemplatedVocabulary::Node::isLeaf">
+<area shape="rect" id="node2" href="$classDBoW2_1_1TemplatedVocabulary.html#a3244d5a3d0f75ba9c9ae905c5365335d" title="DBoW2::TemplatedVocabulary\l::createScoringObject" alt="" coords="256,5,459,47"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1TemplatedVocabulary.html#a9b74d107b7dc6142cbed4e6ef44a8519" title="DBoW2::TemplatedVocabulary\l::createWords" alt="" coords="256,71,459,112"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1TemplatedVocabulary.html#ae2f4fabe99ff93a9d72b4416722f1a78" title="DBoW2::TemplatedVocabulary\l::getFeatures" alt="" coords="256,136,459,177"/>
+<area shape="rect" id="node5" href="$classDBoW2_1_1TemplatedVocabulary.html#abcbbda75df001522490774746bdb570c" title="DBoW2::TemplatedVocabulary\l::HKmeansStep" alt="" coords="256,201,459,243"/>
+<area shape="rect" id="node6" href="$classDBoW2_1_1TemplatedVocabulary.html#a052c169ea13af2e7de1baa5597f60fb7" title="DBoW2::TemplatedVocabulary\l::initiateClusters" alt="" coords="256,267,459,308"/>
+<area shape="rect" id="node7" href="$classDBoW2_1_1TemplatedVocabulary.html#ab22e6bcfb6a1e8330a90edd732617875" title="DBoW2::TemplatedVocabulary\l::initiateClustersKMpp" alt="" coords="256,332,459,373"/>
+<area shape="rect" id="node8" href="$classDBoW2_1_1TemplatedVocabulary.html#a1a0a9cf4052090c041ff9442be7b22f6" title="DBoW2::TemplatedVocabulary\l::setNodeWeights" alt="" coords="256,397,459,439"/>
+<area shape="rect" id="node9" href="$classDBoW2_1_1TemplatedVocabulary.html#a01de3bebec37624439c7d3baf6651ff0" title="DBoW2::TemplatedVocabulary\l::transform" alt="" coords="256,463,459,504"/>
+</map>

@@ -1,0 +1,323 @@
+\hypertarget{classDVision_1_1BRIEF}{}\section{D\+Vision\+:\+:B\+R\+I\+EF Class Reference}
+\label{classDVision_1_1BRIEF}\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+
+
+\hyperlink{classDVision_1_1BRIEF}{B\+R\+I\+EF} descriptor.  
+
+
+
+
+{\ttfamily \#include $<$B\+R\+I\+E\+F.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}\label{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}} 
+enum \hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type} \{ {\bfseries R\+A\+N\+D\+OM}, 
+{\bfseries R\+A\+N\+D\+O\+M\+\_\+\+C\+L\+O\+SE}
+ \}\begin{DoxyCompactList}\small\item\em Type of pairs. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}\label{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}} 
+typedef boost\+::dynamic\+\_\+bitset \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset}
+\begin{DoxyCompactList}\small\item\em Bitset type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDVision_1_1BRIEF_a4dd74c26a2e1f4cb938f75fdad3e88cf}{B\+R\+I\+EF} (int nbits=256, int patch\+\_\+size=48, \hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type} type=R\+A\+N\+D\+O\+M\+\_\+\+C\+L\+O\+SE)
+\item 
+int \hyperlink{classDVision_1_1BRIEF_aa7679cb7d06344d75e4375baf779b84c}{get\+Descriptor\+Length\+In\+Bits} () const
+\item 
+\hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type} \hyperlink{classDVision_1_1BRIEF_ad2b1b7422d05905597e31939528cbd2a}{get\+Type} () const
+\item 
+int \hyperlink{classDVision_1_1BRIEF_aabaa4937582b567fa1f53ec6004cfc00}{get\+Patch\+Size} () const
+\item 
+void \hyperlink{classDVision_1_1BRIEF_a290ee93994c09ed3b2164c5d3df182a9}{operator()} (const cv\+::\+Mat \&image, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&points, std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} $>$ \&descriptors, bool treat\+\_\+image=true) const
+\item 
+void \hyperlink{classDVision_1_1BRIEF_afda5792d22d954fabbadeed3388ca6c7}{compute} (const cv\+::\+Mat \&image, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&points, std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} $>$ \&descriptors, bool treat\+\_\+image=true) const
+\item 
+void \hyperlink{classDVision_1_1BRIEF_a8000a709f6336e47359c6e9ee4a5efd5}{export\+Pairs} (std\+::vector$<$ int $>$ \&x1, std\+::vector$<$ int $>$ \&y1, std\+::vector$<$ int $>$ \&x2, std\+::vector$<$ int $>$ \&y2) const
+\item 
+void \hyperlink{classDVision_1_1BRIEF_a019cd2ef2f6757da94fdb1f74d20b581}{import\+Pairs} (const std\+::vector$<$ int $>$ \&x1, const std\+::vector$<$ int $>$ \&y1, const std\+::vector$<$ int $>$ \&x2, const std\+::vector$<$ int $>$ \&y2)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classDVision_1_1BRIEF_a78718071fcf2700e3a0cc304dd4e1dcc}{distance} (const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} \&a, const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} \&b)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDVision_1_1BRIEF_a6daf52c01b9cbd845151077837870283}{generate\+Test\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_ae49b641f3fd2f58928e1256627b4bb21}\label{classDVision_1_1BRIEF_ae49b641f3fd2f58928e1256627b4bb21}} 
+int \hyperlink{classDVision_1_1BRIEF_ae49b641f3fd2f58928e1256627b4bb21}{m\+\_\+bit\+\_\+length}
+\begin{DoxyCompactList}\small\item\em Descriptor length in bits. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a73fca9548bbf58380cacedc73e4b5c0b}\label{classDVision_1_1BRIEF_a73fca9548bbf58380cacedc73e4b5c0b}} 
+int \hyperlink{classDVision_1_1BRIEF_a73fca9548bbf58380cacedc73e4b5c0b}{m\+\_\+patch\+\_\+size}
+\begin{DoxyCompactList}\small\item\em Patch size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_aaf2f0e2289b6924b32ecafb7b94bd9ff}\label{classDVision_1_1BRIEF_aaf2f0e2289b6924b32ecafb7b94bd9ff}} 
+\hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type} \hyperlink{classDVision_1_1BRIEF_aaf2f0e2289b6924b32ecafb7b94bd9ff}{m\+\_\+type}
+\begin{DoxyCompactList}\small\item\em Type of pairs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a406548dc5cddec3b105d6ab35beadb40}\label{classDVision_1_1BRIEF_a406548dc5cddec3b105d6ab35beadb40}} 
+std\+::vector$<$ int $>$ \hyperlink{classDVision_1_1BRIEF_a406548dc5cddec3b105d6ab35beadb40}{m\+\_\+x1}
+\begin{DoxyCompactList}\small\item\em Coordinates of test points relative to the center of the patch. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a8b2c44f32eb3d0f388d5daf80113426a}\label{classDVision_1_1BRIEF_a8b2c44f32eb3d0f388d5daf80113426a}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+x2}
+\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a608e4ed7c763351804f22f3a0fc55bb0}\label{classDVision_1_1BRIEF_a608e4ed7c763351804f22f3a0fc55bb0}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+y1}
+\item 
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a4c5fdb95b1880316f8a7527912319ad0}\label{classDVision_1_1BRIEF_a4c5fdb95b1880316f8a7527912319ad0}} 
+std\+::vector$<$ int $>$ {\bfseries m\+\_\+y2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classDVision_1_1BRIEF}{B\+R\+I\+EF} descriptor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a4dd74c26a2e1f4cb938f75fdad3e88cf}\label{classDVision_1_1BRIEF_a4dd74c26a2e1f4cb938f75fdad3e88cf}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!B\+R\+I\+EF@{B\+R\+I\+EF}}
+\index{B\+R\+I\+EF@{B\+R\+I\+EF}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{B\+R\+I\+E\+F()}{BRIEF()}}
+{\footnotesize\ttfamily B\+R\+I\+E\+F\+::\+B\+R\+I\+EF (\begin{DoxyParamCaption}\item[{int}]{nbits = {\ttfamily 256},  }\item[{int}]{patch\+\_\+size = {\ttfamily 48},  }\item[{\hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type}}]{type = {\ttfamily RANDOM\+\_\+CLOSE} }\end{DoxyParamCaption})}
+
+Creates the \hyperlink{classDVision_1_1BRIEF}{B\+R\+I\+EF} a priori data for descriptors of nbits length 
+\begin{DoxyParams}{Parameters}
+{\em nbits} & descriptor length in bits \\
+\hline
+{\em patch\+\_\+size} & \\
+\hline
+{\em type} & type of pairs to generate \\
+\hline
+\end{DoxyParams}
+
+
+References generate\+Test\+Points().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a4dd74c26a2e1f4cb938f75fdad3e88cf_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDVision_1_1BRIEF_afda5792d22d954fabbadeed3388ca6c7}\label{classDVision_1_1BRIEF_afda5792d22d954fabbadeed3388ca6c7}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!compute@{compute}}
+\index{compute@{compute}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily void B\+R\+I\+E\+F\+::compute (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{image,  }\item[{const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&}]{points,  }\item[{std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} $>$ \&}]{descriptors,  }\item[{bool}]{treat\+\_\+image = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+Returns the \hyperlink{classDVision_1_1BRIEF}{B\+R\+I\+EF} descriptors of the given keypoints in the given image 
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em points} & \\
+\hline
+{\em descriptors} & \\
+\hline
+{\em treat\+\_\+image} & (default\+: true) if true, the image is converted to grayscale if needed and smoothed. If not, it is assumed the image has been treated by the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this function is similar to B\+R\+I\+E\+F\+::operator() 
+\end{DoxyNote}
+
+
+References m\+\_\+bit\+\_\+length, and m\+\_\+x1.
+
+
+
+Referenced by operator()().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_afda5792d22d954fabbadeed3388ca6c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a78718071fcf2700e3a0cc304dd4e1dcc}\label{classDVision_1_1BRIEF_a78718071fcf2700e3a0cc304dd4e1dcc}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!distance@{distance}}
+\index{distance@{distance}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily static int D\+Vision\+::\+B\+R\+I\+E\+F\+::distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} \&}]{a,  }\item[{const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the Hamming distance between two descriptors 
+\begin{DoxyParams}{Parameters}
+{\em a} & first descriptor vector \\
+\hline
+{\em b} & second descriptor vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+hamming distance 
+\end{DoxyReturn}
+
+
+References generate\+Test\+Points().
+
+
+
+Referenced by D\+Bo\+W2\+::\+F\+Brief\+::distance().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a78718071fcf2700e3a0cc304dd4e1dcc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a78718071fcf2700e3a0cc304dd4e1dcc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a8000a709f6336e47359c6e9ee4a5efd5}\label{classDVision_1_1BRIEF_a8000a709f6336e47359c6e9ee4a5efd5}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!export\+Pairs@{export\+Pairs}}
+\index{export\+Pairs@{export\+Pairs}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{export\+Pairs()}{exportPairs()}}
+{\footnotesize\ttfamily void D\+Vision\+::\+B\+R\+I\+E\+F\+::export\+Pairs (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{x1,  }\item[{std\+::vector$<$ int $>$ \&}]{y1,  }\item[{std\+::vector$<$ int $>$ \&}]{x2,  }\item[{std\+::vector$<$ int $>$ \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Exports the test pattern 
+\begin{DoxyParams}{Parameters}
+{\em x1} & x1 coordinates of pairs \\
+\hline
+{\em y1} & y1 coordinates of pairs \\
+\hline
+{\em x2} & x2 coordinates of pairs \\
+\hline
+{\em y2} & y2 coordinates of pairs \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+x1.
+
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a6daf52c01b9cbd845151077837870283}\label{classDVision_1_1BRIEF_a6daf52c01b9cbd845151077837870283}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!generate\+Test\+Points@{generate\+Test\+Points}}
+\index{generate\+Test\+Points@{generate\+Test\+Points}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{generate\+Test\+Points()}{generateTestPoints()}}
+{\footnotesize\ttfamily void B\+R\+I\+E\+F\+::generate\+Test\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates random points in the patch coordinates, according to m\+\_\+patch\+\_\+size and m\+\_\+bit\+\_\+length 
+
+References m\+\_\+bit\+\_\+length, m\+\_\+patch\+\_\+size, m\+\_\+type, m\+\_\+x1, D\+Utils\+::\+Random\+::\+Random\+Gaussian\+Value(), and D\+Utils\+::\+Random\+::\+Seed\+Rand\+Once().
+
+
+
+Referenced by B\+R\+I\+E\+F(), and distance().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a6daf52c01b9cbd845151077837870283_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a6daf52c01b9cbd845151077837870283_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDVision_1_1BRIEF_aa7679cb7d06344d75e4375baf779b84c}\label{classDVision_1_1BRIEF_aa7679cb7d06344d75e4375baf779b84c}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!get\+Descriptor\+Length\+In\+Bits@{get\+Descriptor\+Length\+In\+Bits}}
+\index{get\+Descriptor\+Length\+In\+Bits@{get\+Descriptor\+Length\+In\+Bits}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{get\+Descriptor\+Length\+In\+Bits()}{getDescriptorLengthInBits()}}
+{\footnotesize\ttfamily int D\+Vision\+::\+B\+R\+I\+E\+F\+::get\+Descriptor\+Length\+In\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the descriptor length in bits \begin{DoxyReturn}{Returns}
+descriptor length in bits 
+\end{DoxyReturn}
+
+
+References m\+\_\+bit\+\_\+length.
+
+\mbox{\Hypertarget{classDVision_1_1BRIEF_aabaa4937582b567fa1f53ec6004cfc00}\label{classDVision_1_1BRIEF_aabaa4937582b567fa1f53ec6004cfc00}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!get\+Patch\+Size@{get\+Patch\+Size}}
+\index{get\+Patch\+Size@{get\+Patch\+Size}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{get\+Patch\+Size()}{getPatchSize()}}
+{\footnotesize\ttfamily int D\+Vision\+::\+B\+R\+I\+E\+F\+::get\+Patch\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the size of the patch 
+
+References m\+\_\+patch\+\_\+size.
+
+\mbox{\Hypertarget{classDVision_1_1BRIEF_ad2b1b7422d05905597e31939528cbd2a}\label{classDVision_1_1BRIEF_ad2b1b7422d05905597e31939528cbd2a}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \hyperlink{classDVision_1_1BRIEF_a0203beaaafe3aca790393cc032eeb499}{Type} D\+Vision\+::\+B\+R\+I\+E\+F\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the type of classifier 
+
+References m\+\_\+type.
+
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a019cd2ef2f6757da94fdb1f74d20b581}\label{classDVision_1_1BRIEF_a019cd2ef2f6757da94fdb1f74d20b581}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!import\+Pairs@{import\+Pairs}}
+\index{import\+Pairs@{import\+Pairs}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{import\+Pairs()}{importPairs()}}
+{\footnotesize\ttfamily void D\+Vision\+::\+B\+R\+I\+E\+F\+::import\+Pairs (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{x1,  }\item[{const std\+::vector$<$ int $>$ \&}]{y1,  }\item[{const std\+::vector$<$ int $>$ \&}]{x2,  }\item[{const std\+::vector$<$ int $>$ \&}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the test pattern 
+\begin{DoxyParams}{Parameters}
+{\em x1} & x1 coordinates of pairs \\
+\hline
+{\em y1} & y1 coordinates of pairs \\
+\hline
+{\em x2} & x2 coordinates of pairs \\
+\hline
+{\em y2} & y2 coordinates of pairs \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+bit\+\_\+length, and m\+\_\+x1.
+
+\mbox{\Hypertarget{classDVision_1_1BRIEF_a290ee93994c09ed3b2164c5d3df182a9}\label{classDVision_1_1BRIEF_a290ee93994c09ed3b2164c5d3df182a9}} 
+\index{D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}!operator()@{operator()}}
+\index{operator()@{operator()}!D\+Vision\+::\+B\+R\+I\+EF@{D\+Vision\+::\+B\+R\+I\+EF}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void D\+Vision\+::\+B\+R\+I\+E\+F\+::operator() (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{image,  }\item[{const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&}]{points,  }\item[{std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{bitset} $>$ \&}]{descriptors,  }\item[{bool}]{treat\+\_\+image = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the \hyperlink{classDVision_1_1BRIEF}{B\+R\+I\+EF} descriptors of the given keypoints in the given image 
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em points} & \\
+\hline
+{\em descriptors} & \\
+\hline
+{\em treat\+\_\+image} & (default\+: true) if true, the image is converted to grayscale if needed and smoothed. If not, it is assumed the image has been treated by the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this function is similar to \hyperlink{classDVision_1_1BRIEF_afda5792d22d954fabbadeed3388ca6c7}{B\+R\+I\+E\+F\+::compute} 
+\end{DoxyNote}
+
+
+References compute().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDVision_1_1BRIEF_a290ee93994c09ed3b2164c5d3df182a9_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Vision/B\+R\+I\+E\+F.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Vision/B\+R\+I\+E\+F.\+cpp\end{DoxyCompactItemize}

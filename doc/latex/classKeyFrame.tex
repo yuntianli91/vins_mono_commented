@@ -1,0 +1,143 @@
+\hypertarget{classKeyFrame}{}\section{Key\+Frame Class Reference}
+\label{classKeyFrame}\index{Key\+Frame@{Key\+Frame}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a2c9cb1c7f516c82a60208072fe91502f}\label{classKeyFrame_a2c9cb1c7f516c82a60208072fe91502f}} 
+{\bfseries Key\+Frame} (double \+\_\+time\+\_\+stamp, int \+\_\+index, Vector3d \&\+\_\+vio\+\_\+\+T\+\_\+w\+\_\+i, Matrix3d \&\+\_\+vio\+\_\+\+R\+\_\+w\+\_\+i, cv\+::\+Mat \&\+\_\+image, vector$<$ cv\+::\+Point3f $>$ \&\+\_\+point\+\_\+3d, vector$<$ cv\+::\+Point2f $>$ \&\+\_\+point\+\_\+2d\+\_\+uv, vector$<$ cv\+::\+Point2f $>$ \&\+\_\+point\+\_\+2d\+\_\+normal, vector$<$ double $>$ \&\+\_\+point\+\_\+id, int \+\_\+sequence)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a5f5bf8c31462cbf62fd741c91bd5012a}\label{classKeyFrame_a5f5bf8c31462cbf62fd741c91bd5012a}} 
+{\bfseries Key\+Frame} (double \+\_\+time\+\_\+stamp, int \+\_\+index, Vector3d \&\+\_\+vio\+\_\+\+T\+\_\+w\+\_\+i, Matrix3d \&\+\_\+vio\+\_\+\+R\+\_\+w\+\_\+i, Vector3d \&\+\_\+\+T\+\_\+w\+\_\+i, Matrix3d \&\+\_\+\+R\+\_\+w\+\_\+i, cv\+::\+Mat \&\+\_\+image, int \+\_\+loop\+\_\+index, Eigen\+::\+Matrix$<$ double, 8, 1 $>$ \&\+\_\+loop\+\_\+info, vector$<$ cv\+::\+Key\+Point $>$ \&\+\_\+keypoints, vector$<$ cv\+::\+Key\+Point $>$ \&\+\_\+keypoints\+\_\+norm, vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} $>$ \&\+\_\+brief\+\_\+descriptors)
+\item 
+\mbox{\Hypertarget{classKeyFrame_aaf4aa53cbb3626f2fd9976569f2b78fc}\label{classKeyFrame_aaf4aa53cbb3626f2fd9976569f2b78fc}} 
+bool {\bfseries find\+Connection} (\hyperlink{classKeyFrame}{Key\+Frame} $\ast$old\+\_\+kf)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a79c56cd9600bec5ce986aaf65949d539}\label{classKeyFrame_a79c56cd9600bec5ce986aaf65949d539}} 
+void {\bfseries compute\+Window\+B\+R\+I\+E\+F\+Point} ()
+\item 
+\mbox{\Hypertarget{classKeyFrame_a324423664a8bdeea052940cceb69b531}\label{classKeyFrame_a324423664a8bdeea052940cceb69b531}} 
+void {\bfseries compute\+B\+R\+I\+E\+F\+Point} ()
+\item 
+\mbox{\Hypertarget{classKeyFrame_a70c5838cae872deb17638059f23d75a9}\label{classKeyFrame_a70c5838cae872deb17638059f23d75a9}} 
+int {\bfseries Hamming\+Dis} (const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} \&a, const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} \&b)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a9123dc2de5c56ba6029a92b0d86f7dc6}\label{classKeyFrame_a9123dc2de5c56ba6029a92b0d86f7dc6}} 
+bool {\bfseries search\+In\+Aera} (const \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} window\+\_\+descriptor, const std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} $>$ \&descriptors\+\_\+old, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints\+\_\+old, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints\+\_\+old\+\_\+norm, cv\+::\+Point2f \&best\+\_\+match, cv\+::\+Point2f \&best\+\_\+match\+\_\+norm)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a1ae28307d98afe6239e0867feb70bf47}\label{classKeyFrame_a1ae28307d98afe6239e0867feb70bf47}} 
+void {\bfseries search\+By\+B\+R\+I\+E\+F\+Des} (std\+::vector$<$ cv\+::\+Point2f $>$ \&matched\+\_\+2d\+\_\+old, std\+::vector$<$ cv\+::\+Point2f $>$ \&matched\+\_\+2d\+\_\+old\+\_\+norm, std\+::vector$<$ uchar $>$ \&status, const std\+::vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} $>$ \&descriptors\+\_\+old, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints\+\_\+old, const std\+::vector$<$ cv\+::\+Key\+Point $>$ \&keypoints\+\_\+old\+\_\+norm)
+\item 
+\mbox{\Hypertarget{classKeyFrame_ad4ba1c7ac182ae1e81f83c2bfe932677}\label{classKeyFrame_ad4ba1c7ac182ae1e81f83c2bfe932677}} 
+void {\bfseries Fundmantal\+Matrix\+R\+A\+N\+S\+AC} (const std\+::vector$<$ cv\+::\+Point2f $>$ \&matched\+\_\+2d\+\_\+cur\+\_\+norm, const std\+::vector$<$ cv\+::\+Point2f $>$ \&matched\+\_\+2d\+\_\+old\+\_\+norm, vector$<$ uchar $>$ \&status)
+\item 
+\mbox{\Hypertarget{classKeyFrame_ade03e174104940fd8a355adc2d814bdf}\label{classKeyFrame_ade03e174104940fd8a355adc2d814bdf}} 
+void {\bfseries Pn\+P\+R\+A\+N\+S\+AC} (const vector$<$ cv\+::\+Point2f $>$ \&matched\+\_\+2d\+\_\+old\+\_\+norm, const std\+::vector$<$ cv\+::\+Point3f $>$ \&matched\+\_\+3d, std\+::vector$<$ uchar $>$ \&status, Eigen\+::\+Vector3d \&Pn\+P\+\_\+\+T\+\_\+old, Eigen\+::\+Matrix3d \&Pn\+P\+\_\+\+R\+\_\+old)
+\item 
+\mbox{\Hypertarget{classKeyFrame_ac52e119d0490ba6bff36531032bd3840}\label{classKeyFrame_ac52e119d0490ba6bff36531032bd3840}} 
+void {\bfseries get\+Vio\+Pose} (Eigen\+::\+Vector3d \&\+\_\+\+T\+\_\+w\+\_\+i, Eigen\+::\+Matrix3d \&\+\_\+\+R\+\_\+w\+\_\+i)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a24f40f8b54c3b1be6b5bde3e8f6b682f}\label{classKeyFrame_a24f40f8b54c3b1be6b5bde3e8f6b682f}} 
+void {\bfseries get\+Pose} (Eigen\+::\+Vector3d \&\+\_\+\+T\+\_\+w\+\_\+i, Eigen\+::\+Matrix3d \&\+\_\+\+R\+\_\+w\+\_\+i)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a553565034bc1933f122352a90a552c98}\label{classKeyFrame_a553565034bc1933f122352a90a552c98}} 
+void {\bfseries update\+Pose} (const Eigen\+::\+Vector3d \&\+\_\+\+T\+\_\+w\+\_\+i, const Eigen\+::\+Matrix3d \&\+\_\+\+R\+\_\+w\+\_\+i)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a5947ef3d15931e4b9c426f0f2bd28821}\label{classKeyFrame_a5947ef3d15931e4b9c426f0f2bd28821}} 
+void {\bfseries update\+Vio\+Pose} (const Eigen\+::\+Vector3d \&\+\_\+\+T\+\_\+w\+\_\+i, const Eigen\+::\+Matrix3d \&\+\_\+\+R\+\_\+w\+\_\+i)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a3a0626bee71655eb94061eb738a49054}\label{classKeyFrame_a3a0626bee71655eb94061eb738a49054}} 
+void {\bfseries update\+Loop} (Eigen\+::\+Matrix$<$ double, 8, 1 $>$ \&\+\_\+loop\+\_\+info)
+\item 
+\mbox{\Hypertarget{classKeyFrame_a83ec888526786fe846f9c464b4998af2}\label{classKeyFrame_a83ec888526786fe846f9c464b4998af2}} 
+Eigen\+::\+Vector3d {\bfseries get\+Loop\+RelativeT} ()
+\item 
+\mbox{\Hypertarget{classKeyFrame_a3bb8e41d6333c43251d9347f054665f1}\label{classKeyFrame_a3bb8e41d6333c43251d9347f054665f1}} 
+double {\bfseries get\+Loop\+Relative\+Yaw} ()
+\item 
+\mbox{\Hypertarget{classKeyFrame_a2dd650aed62f98f8e296b43365a89047}\label{classKeyFrame_a2dd650aed62f98f8e296b43365a89047}} 
+Eigen\+::\+Quaterniond {\bfseries get\+Loop\+RelativeQ} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKeyFrame_abdef3838dc026096551ff2d4d1ad9038}\label{classKeyFrame_abdef3838dc026096551ff2d4d1ad9038}} 
+double {\bfseries time\+\_\+stamp}
+\item 
+\mbox{\Hypertarget{classKeyFrame_aa2a7f1521cf12de3422f3299abc8f8c6}\label{classKeyFrame_aa2a7f1521cf12de3422f3299abc8f8c6}} 
+int {\bfseries index}
+\item 
+\mbox{\Hypertarget{classKeyFrame_acd2198c3ac31c5833c72c8a22faf2e45}\label{classKeyFrame_acd2198c3ac31c5833c72c8a22faf2e45}} 
+int {\bfseries local\+\_\+index}
+\item 
+\mbox{\Hypertarget{classKeyFrame_af632ed5cb66b87a3668a6095c7840efb}\label{classKeyFrame_af632ed5cb66b87a3668a6095c7840efb}} 
+Eigen\+::\+Vector3d {\bfseries vio\+\_\+\+T\+\_\+w\+\_\+i}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a91f8ef51bccce2be9a4683a174c91d3b}\label{classKeyFrame_a91f8ef51bccce2be9a4683a174c91d3b}} 
+Eigen\+::\+Matrix3d {\bfseries vio\+\_\+\+R\+\_\+w\+\_\+i}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a80e83a6eef5fab45d81848c6e3304bbd}\label{classKeyFrame_a80e83a6eef5fab45d81848c6e3304bbd}} 
+Eigen\+::\+Vector3d {\bfseries T\+\_\+w\+\_\+i}
+\item 
+\mbox{\Hypertarget{classKeyFrame_af4b3fb66d01e34b5a8aa70990e535d25}\label{classKeyFrame_af4b3fb66d01e34b5a8aa70990e535d25}} 
+Eigen\+::\+Matrix3d {\bfseries R\+\_\+w\+\_\+i}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a527fc4d69bd758b3fb76b2604e0ddc12}\label{classKeyFrame_a527fc4d69bd758b3fb76b2604e0ddc12}} 
+Eigen\+::\+Vector3d {\bfseries origin\+\_\+vio\+\_\+T}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a7311b1599da2656631266ccdd6fdf6e6}\label{classKeyFrame_a7311b1599da2656631266ccdd6fdf6e6}} 
+Eigen\+::\+Matrix3d {\bfseries origin\+\_\+vio\+\_\+R}
+\item 
+\mbox{\Hypertarget{classKeyFrame_aa11844ef0505eccedf8ed43b25111859}\label{classKeyFrame_aa11844ef0505eccedf8ed43b25111859}} 
+cv\+::\+Mat {\bfseries image}
+\item 
+\mbox{\Hypertarget{classKeyFrame_abe8f283df747a1d5a8268ce7cb65b698}\label{classKeyFrame_abe8f283df747a1d5a8268ce7cb65b698}} 
+cv\+::\+Mat {\bfseries thumbnail}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a76734cb8b395bdb2f83fdc4deec4daa9}\label{classKeyFrame_a76734cb8b395bdb2f83fdc4deec4daa9}} 
+vector$<$ cv\+::\+Point3f $>$ {\bfseries point\+\_\+3d}
+\item 
+\mbox{\Hypertarget{classKeyFrame_ab469903f9a6893b76dfb023df2245447}\label{classKeyFrame_ab469903f9a6893b76dfb023df2245447}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries point\+\_\+2d\+\_\+uv}
+\item 
+\mbox{\Hypertarget{classKeyFrame_ac310ed11278f6a9be8baebc423d78276}\label{classKeyFrame_ac310ed11278f6a9be8baebc423d78276}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries point\+\_\+2d\+\_\+norm}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a29e1084cab91ec970ad7e731f8c1cec7}\label{classKeyFrame_a29e1084cab91ec970ad7e731f8c1cec7}} 
+vector$<$ double $>$ {\bfseries point\+\_\+id}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a27fcc3c3b7000fb82991299e0c5285c6}\label{classKeyFrame_a27fcc3c3b7000fb82991299e0c5285c6}} 
+vector$<$ cv\+::\+Key\+Point $>$ {\bfseries keypoints}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a25ae96b0d2b00a86459d90d04109bcd7}\label{classKeyFrame_a25ae96b0d2b00a86459d90d04109bcd7}} 
+vector$<$ cv\+::\+Key\+Point $>$ {\bfseries keypoints\+\_\+norm}
+\item 
+\mbox{\Hypertarget{classKeyFrame_ad3bf8e781f139983ee8b4a8dbc5277d5}\label{classKeyFrame_ad3bf8e781f139983ee8b4a8dbc5277d5}} 
+vector$<$ cv\+::\+Key\+Point $>$ {\bfseries window\+\_\+keypoints}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a7603c27ea0b6339154e713908013c335}\label{classKeyFrame_a7603c27ea0b6339154e713908013c335}} 
+vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} $>$ {\bfseries brief\+\_\+descriptors}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a8ee95568c50c8b7bb4dc4e32d71e57af}\label{classKeyFrame_a8ee95568c50c8b7bb4dc4e32d71e57af}} 
+vector$<$ \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{B\+R\+I\+E\+F\+::bitset} $>$ {\bfseries window\+\_\+brief\+\_\+descriptors}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a23a16b1456db21477bc96303b6ab7328}\label{classKeyFrame_a23a16b1456db21477bc96303b6ab7328}} 
+bool {\bfseries has\+\_\+fast\+\_\+point}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a89d480b06f7d27750a13ebff55565f8d}\label{classKeyFrame_a89d480b06f7d27750a13ebff55565f8d}} 
+int {\bfseries sequence}
+\item 
+\mbox{\Hypertarget{classKeyFrame_ac79ed3195f749f9e7aef7af0be3cfcb3}\label{classKeyFrame_ac79ed3195f749f9e7aef7af0be3cfcb3}} 
+bool {\bfseries has\+\_\+loop}
+\item 
+\mbox{\Hypertarget{classKeyFrame_ab2a6a3d21e8dfca017c3c88fdf4a0a35}\label{classKeyFrame_ab2a6a3d21e8dfca017c3c88fdf4a0a35}} 
+int {\bfseries loop\+\_\+index}
+\item 
+\mbox{\Hypertarget{classKeyFrame_a771e35fa06a1cb90a7cc1c45ac2f0f5d}\label{classKeyFrame_a771e35fa06a1cb90a7cc1c45ac2f0f5d}} 
+Eigen\+::\+Matrix$<$ double, 8, 1 $>$ {\bfseries loop\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/keyframe.\+h\item 
+pose\+\_\+graph/src/keyframe.\+cpp\end{DoxyCompactItemize}

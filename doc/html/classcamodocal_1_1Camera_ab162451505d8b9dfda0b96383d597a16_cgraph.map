@@ -1,0 +1,4 @@
+<map id="camodocal::Camera::reprojectionError" name="camodocal::Camera::reprojectionError">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera.html#ab8dfa1aa8a60c5569920939ba7d85440" title="project 3D points to 2d plane " alt="" coords="200,5,347,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1Camera.html#acf49bd1ef0919e0faf89d060dc497b52" title="Projects 3D points to the image plane (Pi function) " alt="" coords="395,5,541,47"/>
+</map>

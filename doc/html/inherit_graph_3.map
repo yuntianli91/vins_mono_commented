@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcamodocal_1_1Camera.html" title="base class for all camera model " alt="" coords="5,81,144,108"/>
+<area shape="rect" id="node2" href="$classcamodocal_1_1CataCamera.html" title="camodocal::CataCamera" alt="" coords="211,5,377,32"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1EquidistantCamera.html" title="camodocal::EquidistantCamera" alt="" coords="192,56,396,83"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1OCAMCamera.html" title="camodocal::OCAMCamera" alt="" coords="205,107,383,133"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1PinholeCamera.html" title="camodocal::PinholeCamera" alt="" coords="203,157,385,184"/>
+</map>

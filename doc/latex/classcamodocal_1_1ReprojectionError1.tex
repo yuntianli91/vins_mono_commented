@@ -1,0 +1,40 @@
+\hypertarget{classcamodocal_1_1ReprojectionError1}{}\section{camodocal\+:\+:Reprojection\+Error1$<$ CameraT $>$ Class Template Reference}
+\label{classcamodocal_1_1ReprojectionError1}\index{camodocal\+::\+Reprojection\+Error1$<$ Camera\+T $>$@{camodocal\+::\+Reprojection\+Error1$<$ Camera\+T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a07e09ab098f3cde8c20078aafc27851a}\label{classcamodocal_1_1ReprojectionError1_a07e09ab098f3cde8c20078aafc27851a}} 
+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW {\bfseries Reprojection\+Error1} (const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a2ec3c16008c34dc1cacff1d08f6146eb}\label{classcamodocal_1_1ReprojectionError1_a2ec3c16008c34dc1cacff1d08f6146eb}} 
+{\bfseries Reprojection\+Error1} (const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p, const Eigen\+::\+Matrix2d \&sqrt\+Precision\+Mat)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a522a4978f8e924d138a660b416cd4254}\label{classcamodocal_1_1ReprojectionError1_a522a4978f8e924d138a660b416cd4254}} 
+{\bfseries Reprojection\+Error1} (const std\+::vector$<$ double $>$ \&intrinsic\+\_\+params, const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a28835c8b5c50e798d173c556c9553d9b}\label{classcamodocal_1_1ReprojectionError1_a28835c8b5c50e798d173c556c9553d9b}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const intrinsic\+\_\+params, const T $\ast$const q, const T $\ast$const t, T $\ast$residuals) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a1b012d6fbddaeb5d2b3ffddbcf62f9ef}\label{classcamodocal_1_1ReprojectionError1_a1b012d6fbddaeb5d2b3ffddbcf62f9ef}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const q\+\_\+cam\+\_\+odo, const T $\ast$const t\+\_\+cam\+\_\+odo, const T $\ast$const p\+\_\+odo, const T $\ast$const att\+\_\+odo, T $\ast$residuals) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a1624e7d4a7a9bed987bb4e17ee116666}\label{classcamodocal_1_1ReprojectionError1_a1624e7d4a7a9bed987bb4e17ee116666}} 
+std\+::vector$<$ double $>$ {\bfseries m\+\_\+intrinsic\+\_\+params}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a7ac66bc3e242cc98deab09e74a1db1e9}\label{classcamodocal_1_1ReprojectionError1_a7ac66bc3e242cc98deab09e74a1db1e9}} 
+Eigen\+::\+Vector3d {\bfseries m\+\_\+observed\+\_\+P}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_a1faf79def1cfeeb3b46f12b989723f43}\label{classcamodocal_1_1ReprojectionError1_a1faf79def1cfeeb3b46f12b989723f43}} 
+Eigen\+::\+Vector2d {\bfseries m\+\_\+observed\+\_\+p}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError1_aeb2f5b9de13cf9afd70cd15065714b4e}\label{classcamodocal_1_1ReprojectionError1_aeb2f5b9de13cf9afd70cd15065714b4e}} 
+Eigen\+::\+Matrix2d {\bfseries m\+\_\+sqrt\+Precision\+Mat}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/src/camera\+\_\+models/Cost\+Function\+Factory.\+cc\end{DoxyCompactItemize}

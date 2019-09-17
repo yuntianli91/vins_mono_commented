@@ -1,0 +1,43 @@
+\hypertarget{classInitialEXRotation}{}\section{Initial\+E\+X\+Rotation Class Reference}
+\label{classInitialEXRotation}\index{Initial\+E\+X\+Rotation@{Initial\+E\+X\+Rotation}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInitialEXRotation_ad8401b1a0623b248681568c5486c83a0}\label{classInitialEXRotation_ad8401b1a0623b248681568c5486c83a0}} 
+\hyperlink{classInitialEXRotation_ad8401b1a0623b248681568c5486c83a0}{Initial\+E\+X\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classInitialEXRotation}{Initial\+E\+X\+Rotation} object and set all rotation matrix to Identity matrix. \end{DoxyCompactList}\item 
+bool \hyperlink{classInitialEXRotation_af2c4af3befcb13b52bb76ad96fb51235}{Calibration\+Ex\+Rotation} (vector$<$ pair$<$ Vector3d, Vector3d $>$$>$ corres, Quaterniond delta\+\_\+q\+\_\+imu, Matrix3d \&calib\+\_\+ric\+\_\+result)
+\begin{DoxyCompactList}\small\item\em caliberate extrinsic matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInitialEXRotation_af2c4af3befcb13b52bb76ad96fb51235}\label{classInitialEXRotation_af2c4af3befcb13b52bb76ad96fb51235}} 
+\index{Initial\+E\+X\+Rotation@{Initial\+E\+X\+Rotation}!Calibration\+Ex\+Rotation@{Calibration\+Ex\+Rotation}}
+\index{Calibration\+Ex\+Rotation@{Calibration\+Ex\+Rotation}!Initial\+E\+X\+Rotation@{Initial\+E\+X\+Rotation}}
+\subsubsection{\texorpdfstring{Calibration\+Ex\+Rotation()}{CalibrationExRotation()}}
+{\footnotesize\ttfamily bool Initial\+E\+X\+Rotation\+::\+Calibration\+Ex\+Rotation (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ Vector3d, Vector3d $>$$>$}]{corres,  }\item[{Quaterniond}]{delta\+\_\+q\+\_\+imu,  }\item[{Matrix3d \&}]{calib\+\_\+ric\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+caliberate extrinsic matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em corres} & all corresponding point in two frames \\
+\hline
+{\em delta\+\_\+q\+\_\+imu} & rotation quaternion from b\+\_\+\{k+1\} to b\+\_\+k \\
+\hline
+{\em calib\+\_\+ric\+\_\+result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/initial/initial\+\_\+ex\+\_\+rotation.\+h\item 
+vins\+\_\+estimator/src/initial/initial\+\_\+ex\+\_\+rotation.\+cpp\end{DoxyCompactItemize}

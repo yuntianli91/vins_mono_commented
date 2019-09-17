@@ -1,0 +1,77 @@
+\hypertarget{classProjectionTdFactor}{}\section{Projection\+Td\+Factor Class Reference}
+\label{classProjectionTdFactor}\index{Projection\+Td\+Factor@{Projection\+Td\+Factor}}
+
+
+Inheritance diagram for Projection\+Td\+Factor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classProjectionTdFactor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Projection\+Td\+Factor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classProjectionTdFactor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a05f239cc95ee0532822e4d8399d4067e}\label{classProjectionTdFactor_a05f239cc95ee0532822e4d8399d4067e}} 
+{\bfseries Projection\+Td\+Factor} (const Eigen\+::\+Vector3d \&\+\_\+pts\+\_\+i, const Eigen\+::\+Vector3d \&\+\_\+pts\+\_\+j, const Eigen\+::\+Vector2d \&\+\_\+velocity\+\_\+i, const Eigen\+::\+Vector2d \&\+\_\+velocity\+\_\+j, const double \+\_\+td\+\_\+i, const double \+\_\+td\+\_\+j, const double \+\_\+row\+\_\+i, const double \+\_\+row\+\_\+j)
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a1a74d1d8421bd31890bcb6f433c4010f}\label{classProjectionTdFactor_a1a74d1d8421bd31890bcb6f433c4010f}} 
+virtual bool {\bfseries Evaluate} (double const $\ast$const $\ast$parameters, double $\ast$residuals, double $\ast$$\ast$jacobians) const
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_ad542eac295b42db775042d00702584f7}\label{classProjectionTdFactor_ad542eac295b42db775042d00702584f7}} 
+void {\bfseries check} (double $\ast$$\ast$parameters)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a3bb1f7046045912b694ecdb853b2621a}\label{classProjectionTdFactor_a3bb1f7046045912b694ecdb853b2621a}} 
+Eigen\+::\+Vector3d {\bfseries pts\+\_\+i}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a148ce15b82b739fbd8bb55d258ff7ffd}\label{classProjectionTdFactor_a148ce15b82b739fbd8bb55d258ff7ffd}} 
+Eigen\+::\+Vector3d {\bfseries pts\+\_\+j}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_abfd7bbf122693991b7f88f15e404cc5a}\label{classProjectionTdFactor_abfd7bbf122693991b7f88f15e404cc5a}} 
+Eigen\+::\+Vector3d {\bfseries velocity\+\_\+i}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a5f1976fe99e15c9c6c760c08dc540610}\label{classProjectionTdFactor_a5f1976fe99e15c9c6c760c08dc540610}} 
+Eigen\+::\+Vector3d {\bfseries velocity\+\_\+j}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_afa1ebcc4e99461ef26d3ed157575daf2}\label{classProjectionTdFactor_afa1ebcc4e99461ef26d3ed157575daf2}} 
+double {\bfseries td\+\_\+i}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a7f00a4f5183ca9edb086f84254d80094}\label{classProjectionTdFactor_a7f00a4f5183ca9edb086f84254d80094}} 
+double {\bfseries td\+\_\+j}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a9f82c101670e4ecd36f7de54f091f2a2}\label{classProjectionTdFactor_a9f82c101670e4ecd36f7de54f091f2a2}} 
+Eigen\+::\+Matrix$<$ double, 2, 3 $>$ {\bfseries tangent\+\_\+base}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_aa4bf485a08d475c917a504e3fe758aed}\label{classProjectionTdFactor_aa4bf485a08d475c917a504e3fe758aed}} 
+double {\bfseries row\+\_\+i}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_aa1b634bde871441c6bc6ed3de39eee72}\label{classProjectionTdFactor_aa1b634bde871441c6bc6ed3de39eee72}} 
+double {\bfseries row\+\_\+j}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a313cac450151c3b5833079dd6e1fab56}\label{classProjectionTdFactor_a313cac450151c3b5833079dd6e1fab56}} 
+static Eigen\+::\+Matrix2d {\bfseries sqrt\+\_\+info}
+\item 
+\mbox{\Hypertarget{classProjectionTdFactor_a1c93211ab118fdfb5afa458d0d933874}\label{classProjectionTdFactor_a1c93211ab118fdfb5afa458d0d933874}} 
+static double {\bfseries sum\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/factor/projection\+\_\+td\+\_\+factor.\+h\item 
+vins\+\_\+estimator/src/factor/projection\+\_\+td\+\_\+factor.\+cpp\end{DoxyCompactItemize}

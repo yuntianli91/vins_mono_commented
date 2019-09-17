@@ -1,0 +1,6 @@
+<map id="camodocal::CataCamera::distortion" name="camodocal::CataCamera::distortion">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera_1_1Parameters.html#a2dcff4a5472ebc79d5d72762681220a3" title="return image height of current camera object " alt="" coords="220,5,391,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1Camera_1_1Parameters.html#a92c11d296cb64c91a0c15528a8a7b813" title="return image width of current camera object " alt="" coords="222,71,389,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1CataCamera.html#ab705d867d93d87c85d755bb7b1022a2c" title="Project a 3D point (x,y,z) to the image plane in (u,v) " alt="" coords="222,136,389,177"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1CataCamera.html#ade73e1a665f97d5a95d09f0fff19a3f7" title="Apply distortion to input point (from the normalised plane) " alt="" coords="439,136,605,177"/>
+</map>

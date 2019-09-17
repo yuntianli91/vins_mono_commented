@@ -1,0 +1,623 @@
+\hypertarget{classDBoW2_1_1TemplatedDatabase}{}\section{D\+Bo\+W2\+:\+:Templated\+Database$<$ T\+Descriptor, F $>$ Class Template Reference}
+\label{classDBoW2_1_1TemplatedDatabase}\index{D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$@{D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$}}
+
+
+Generic Database.  
+
+
+
+
+{\ttfamily \#include $<$Templated\+Database.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDBoW2_1_1TemplatedDatabase_1_1IFPair}{I\+F\+Pair}
+\begin{DoxyCompactList}\small\item\em Item of I\+F\+Row. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_a1353c2b87638fc27696fcc87b09d65cb}{Templated\+Database} (bool use\+\_\+di=true, int di\+\_\+levels=0)
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classDBoW2_1_1TemplatedDatabase_a00022acf352915aa913488fb56fb3506}{Templated\+Database} (const T \&voc, bool use\+\_\+di=true, int di\+\_\+levels=0)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_a8ae59817af3251f63c0345d9b814b23f}{Templated\+Database} (const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&db)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_a811328512cdcb50220ca4f38a8982132}{Templated\+Database} (const std\+::string \&filename)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_a4e93c45263abda6bd1870e1baae820b0}{Templated\+Database} (const char $\ast$filename)
+\item 
+virtual \hyperlink{classDBoW2_1_1TemplatedDatabase_aca2f045e0974babd7ef5b491b5e24c25}{$\sim$\+Templated\+Database} (void)
+\item 
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \& \hyperlink{classDBoW2_1_1TemplatedDatabase_a654d8d3c7f80172be1e091663e47535d}{operator=} (const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&db)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classDBoW2_1_1TemplatedDatabase_a7d282bfdd4a6883b282fc71d0fd5dcb4}{set\+Vocabulary} (const T \&voc)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classDBoW2_1_1TemplatedDatabase_aaf1d0ecfdab16ff0609386e2638e76b6}{set\+Vocabulary} (const T \&voc, bool use\+\_\+di, int di\+\_\+levels=0)
+\item 
+const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}$<$ T\+Descriptor, F $>$ $\ast$ \hyperlink{classDBoW2_1_1TemplatedDatabase_a2053ce792884183af75e4343026ef7dd}{get\+Vocabulary} () const
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a5b410217ede05dc0920e2adc1e20b4b5}{allocate} (int nd=0, int ni=0)
+\item 
+\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \hyperlink{classDBoW2_1_1TemplatedDatabase_a7a3af9e631370017d1e54da43d9b790b}{add} (const std\+::vector$<$ T\+Descriptor $>$ \&features, \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} $\ast$bowvec=N\+U\+LL, \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} $\ast$fvec=N\+U\+LL)
+\item 
+\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \hyperlink{classDBoW2_1_1TemplatedDatabase_aa4e2521632542181e40930faffc8fee9}{add} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \&fec=\hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector}())
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a26de02af2eef17aab551cc05a61e4c96}\label{classDBoW2_1_1TemplatedDatabase_a26de02af2eef17aab551cc05a61e4c96}} 
+void {\bfseries delete\+\_\+entry} (const \hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} entry\+\_\+id)
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a88fe9b880f9b753de1ea6e07fe42808b}{clear} ()
+\item 
+unsigned int \hyperlink{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d}{size} () const
+\item 
+bool \hyperlink{classDBoW2_1_1TemplatedDatabase_ad0fbf387b5707d6da34f0df05dc87401}{using\+Direct\+Index} () const
+\item 
+int \hyperlink{classDBoW2_1_1TemplatedDatabase_af1fd1540b9e81fae498d41b87050efb0}{get\+Direct\+Index\+Levels} () const
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_aea53ba2ef3cbfe8fa9eaaa8152e16c85}{query} (const std\+::vector$<$ T\+Descriptor $>$ \&features, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results=1, int max\+\_\+id=-\/1) const
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a27b2365cd82bf44bd41c20bc37d698ec}{query} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results=1, int max\+\_\+id=-\/1) const
+\item 
+const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \& \hyperlink{classDBoW2_1_1TemplatedDatabase_ac6501f207868c7466322827a59c6eb3e}{retrieve\+Features} (\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} id) const
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a7162dee10a5602c309729900bff52ead}{save} (const std\+::string \&filename) const
+\item 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_aff1528af5cff047539eb1e2c75fb6345}{load} (const std\+::string \&filename)
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedDatabase_a69b77a060880f10e11d86d1f665cfd24}{save} (cv\+::\+File\+Storage \&fs, const std\+::string \&name=\char`\"{}database\char`\"{}) const
+\item 
+virtual void \hyperlink{classDBoW2_1_1TemplatedDatabase_a9aef0b11da757aba5f07deb2f5b66097}{load} (const cv\+::\+File\+Storage \&fs, const std\+::string \&name=\char`\"{}database\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_ae1837c4f89c6c55b460b761f8b79b568}\label{classDBoW2_1_1TemplatedDatabase_ae1837c4f89c6c55b460b761f8b79b568}} 
+typedef std\+::list$<$ \hyperlink{structDBoW2_1_1TemplatedDatabase_1_1IFPair}{I\+F\+Pair} $>$ \hyperlink{classDBoW2_1_1TemplatedDatabase_ae1837c4f89c6c55b460b761f8b79b568}{I\+F\+Row}
+\begin{DoxyCompactList}\small\item\em Row of Inverted\+File. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_ad16f54a326cfb827de3af1d979c52768}\label{classDBoW2_1_1TemplatedDatabase_ad16f54a326cfb827de3af1d979c52768}} 
+typedef std\+::vector$<$ \hyperlink{classDBoW2_1_1TemplatedDatabase_ae1837c4f89c6c55b460b761f8b79b568}{I\+F\+Row} $>$ \hyperlink{classDBoW2_1_1TemplatedDatabase_ad16f54a326cfb827de3af1d979c52768}{Inverted\+File}
+\begin{DoxyCompactList}\small\item\em Inverted index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aa74effa19eeb016d54e256861938aac9}\label{classDBoW2_1_1TemplatedDatabase_aa74effa19eeb016d54e256861938aac9}} 
+typedef std\+::vector$<$ \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} $>$ \hyperlink{classDBoW2_1_1TemplatedDatabase_aa74effa19eeb016d54e256861938aac9}{Direct\+File}
+\begin{DoxyCompactList}\small\item\em Direct index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a882b65604323fd587bbf9190033356b1}\label{classDBoW2_1_1TemplatedDatabase_a882b65604323fd587bbf9190033356b1}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a882b65604323fd587bbf9190033356b1}{query\+L1} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with L1 scoring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a8bbb5131f357461df7fa52c172f23962}\label{classDBoW2_1_1TemplatedDatabase_a8bbb5131f357461df7fa52c172f23962}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a8bbb5131f357461df7fa52c172f23962}{query\+L2} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with L2 scoring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a652506c5bd24baaba138b3b793f96fb5}\label{classDBoW2_1_1TemplatedDatabase_a652506c5bd24baaba138b3b793f96fb5}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a652506c5bd24baaba138b3b793f96fb5}{query\+Chi\+Square} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with Chi square scoring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aa5cde1d8e4cc60e544baf2b3028718c3}\label{classDBoW2_1_1TemplatedDatabase_aa5cde1d8e4cc60e544baf2b3028718c3}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_aa5cde1d8e4cc60e544baf2b3028718c3}{query\+Bhattacharyya} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with Bhattacharyya scoring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a8bbb3e83e33dc2a047c8d733bd58b17c}\label{classDBoW2_1_1TemplatedDatabase_a8bbb3e83e33dc2a047c8d733bd58b17c}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_a8bbb3e83e33dc2a047c8d733bd58b17c}{query\+KL} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with KL divergence scoring. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aae437bbd6ce1b4f9bbfc401d26bd2c4e}\label{classDBoW2_1_1TemplatedDatabase_aae437bbd6ce1b4f9bbfc401d26bd2c4e}} 
+void \hyperlink{classDBoW2_1_1TemplatedDatabase_aae437bbd6ce1b4f9bbfc401d26bd2c4e}{query\+Dot\+Product} (const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&vec, \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret, int max\+\_\+results, int max\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Query with dot product scoring. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_ab0c5f84016743f6829c80041cd54391d}\label{classDBoW2_1_1TemplatedDatabase_ab0c5f84016743f6829c80041cd54391d}} 
+\hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}$<$ T\+Descriptor, F $>$ $\ast$ \hyperlink{classDBoW2_1_1TemplatedDatabase_ab0c5f84016743f6829c80041cd54391d}{m\+\_\+voc}
+\begin{DoxyCompactList}\small\item\em Associated vocabulary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a3131f1682a80fd704221eaa88e45d59f}\label{classDBoW2_1_1TemplatedDatabase_a3131f1682a80fd704221eaa88e45d59f}} 
+bool \hyperlink{classDBoW2_1_1TemplatedDatabase_a3131f1682a80fd704221eaa88e45d59f}{m\+\_\+use\+\_\+di}
+\begin{DoxyCompactList}\small\item\em Flag to use direct index. \end{DoxyCompactList}\item 
+int \hyperlink{classDBoW2_1_1TemplatedDatabase_a0cd32f1e5a9a0a6c61d976da754d507d}{m\+\_\+dilevels}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a27c2c9247ba8872a997c5dcf49ba4098}\label{classDBoW2_1_1TemplatedDatabase_a27c2c9247ba8872a997c5dcf49ba4098}} 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_ad16f54a326cfb827de3af1d979c52768}{Inverted\+File} \hyperlink{classDBoW2_1_1TemplatedDatabase_a27c2c9247ba8872a997c5dcf49ba4098}{m\+\_\+ifile}
+\begin{DoxyCompactList}\small\item\em Inverted file (must have \hyperlink{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d}{size()} == $\vert$words$\vert$) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a7c9d56812538121c9f6cf930eea54c1f}\label{classDBoW2_1_1TemplatedDatabase_a7c9d56812538121c9f6cf930eea54c1f}} 
+\hyperlink{classDBoW2_1_1TemplatedDatabase_aa74effa19eeb016d54e256861938aac9}{Direct\+File} \hyperlink{classDBoW2_1_1TemplatedDatabase_a7c9d56812538121c9f6cf930eea54c1f}{m\+\_\+dfile}
+\begin{DoxyCompactList}\small\item\em Direct file (resized for allocation) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aa4437e8fddbd4f7024086a3851580952}\label{classDBoW2_1_1TemplatedDatabase_aa4437e8fddbd4f7024086a3851580952}} 
+std\+::vector$<$ \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} $>$ {\bfseries m\+\_\+d\+Bowfile}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a42e3e42a79ffeb46b5020c477567324d}\label{classDBoW2_1_1TemplatedDatabase_a42e3e42a79ffeb46b5020c477567324d}} 
+int \hyperlink{classDBoW2_1_1TemplatedDatabase_a42e3e42a79ffeb46b5020c477567324d}{m\+\_\+nentries}
+\begin{DoxyCompactList}\small\item\em Number of valid entries in m\+\_\+dfile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T\+Descriptor, class F$>$\newline
+class D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$}
+
+Generic Database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\+Descriptor} & class of descriptor \\
+\hline
+{\em F} & class of descriptor functions \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a1353c2b87638fc27696fcc87b09d65cb}\label{classDBoW2_1_1TemplatedDatabase_a1353c2b87638fc27696fcc87b09d65cb}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!Templated\+Database@{Templated\+Database}}
+\index{Templated\+Database@{Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{Templated\+Database()}{TemplatedDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+di = {\ttfamily true},  }\item[{int}]{di\+\_\+levels = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates an empty database without vocabulary 
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+di} & a direct index is used to store feature indexes \\
+\hline
+{\em di\+\_\+levels} & levels to go up the vocabulary tree to select the node id to store in the direct index when adding images \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::\+Templated\+Database().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classDBoW2_1_1TemplatedDatabase_a1353c2b87638fc27696fcc87b09d65cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a00022acf352915aa913488fb56fb3506}\label{classDBoW2_1_1TemplatedDatabase_a00022acf352915aa913488fb56fb3506}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!Templated\+Database@{Templated\+Database}}
+\index{Templated\+Database@{Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{Templated\+Database()}{TemplatedDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+template$<$class T $>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{const T \&}]{voc,  }\item[{bool}]{use\+\_\+di = {\ttfamily true},  }\item[{int}]{di\+\_\+levels = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a database with the given vocabulary 
+\begin{DoxyParams}{Parameters}
+{\em T} & class inherited from Templated\+Vocabulary$<$\+T\+Descriptor, F$>$ \\
+\hline
+{\em voc} & vocabulary \\
+\hline
+{\em use\+\_\+di} & a direct index is used to store feature indexes \\
+\hline
+{\em di\+\_\+levels} & levels to go up the vocabulary tree to select the node id to store in the direct index when adding images \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a8ae59817af3251f63c0345d9b814b23f}\label{classDBoW2_1_1TemplatedDatabase_a8ae59817af3251f63c0345d9b814b23f}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!Templated\+Database@{Templated\+Database}}
+\index{Templated\+Database@{Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{Templated\+Database()}{TemplatedDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&}]{db }\end{DoxyParamCaption})}
+
+Copy constructor. Copies the vocabulary too 
+\begin{DoxyParams}{Parameters}
+{\em db} & object to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a811328512cdcb50220ca4f38a8982132}\label{classDBoW2_1_1TemplatedDatabase_a811328512cdcb50220ca4f38a8982132}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!Templated\+Database@{Templated\+Database}}
+\index{Templated\+Database@{Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{Templated\+Database()}{TemplatedDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Creates the database from a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a4e93c45263abda6bd1870e1baae820b0}\label{classDBoW2_1_1TemplatedDatabase_a4e93c45263abda6bd1870e1baae820b0}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!Templated\+Database@{Templated\+Database}}
+\index{Templated\+Database@{Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{Templated\+Database()}{TemplatedDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Creates the database from a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aca2f045e0974babd7ef5b491b5e24c25}\label{classDBoW2_1_1TemplatedDatabase_aca2f045e0974babd7ef5b491b5e24c25}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!````~Templated\+Database@{$\sim$\+Templated\+Database}}
+\index{````~Templated\+Database@{$\sim$\+Templated\+Database}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{$\sim$\+Templated\+Database()}{~TemplatedDatabase()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::$\sim$\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a7a3af9e631370017d1e54da43d9b790b}\label{classDBoW2_1_1TemplatedDatabase_a7a3af9e631370017d1e54da43d9b790b}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!add@{add}}
+\index{add@{add}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F $>$ \\
+\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::add (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T\+Descriptor $>$ \&}]{features,  }\item[{\hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} $\ast$}]{bowvec = {\ttfamily NULL},  }\item[{\hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} $\ast$}]{fvec = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Adds an entry to the database and returns its index 
+\begin{DoxyParams}{Parameters}
+{\em features} & features of the new entry \\
+\hline
+{\em bowvec} & if given, the bow vector of these features is returned \\
+\hline
+{\em fvec} & if given, the vector of nodes and feature indexes is returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id of new entry 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::add().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classDBoW2_1_1TemplatedDatabase_a7a3af9e631370017d1e54da43d9b790b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aa4e2521632542181e40930faffc8fee9}\label{classDBoW2_1_1TemplatedDatabase_aa4e2521632542181e40930faffc8fee9}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!add@{add}}
+\index{add@{add}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F $>$ \\
+\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::add (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&}]{vec,  }\item[{const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \&}]{fec = {\ttfamily \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector}()} }\end{DoxyParamCaption})}
+
+Adss an entry to the database and returns its index 
+\begin{DoxyParams}{Parameters}
+{\em vec} & bow vector \\
+\hline
+{\em fec} & feature vector to add the entry. Only necessary if using the direct index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id of new entry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a5b410217ede05dc0920e2adc1e20b4b5}\label{classDBoW2_1_1TemplatedDatabase_a5b410217ede05dc0920e2adc1e20b4b5}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!allocate@{allocate}}
+\index{allocate@{allocate}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::allocate (\begin{DoxyParamCaption}\item[{int}]{nd = {\ttfamily 0},  }\item[{int}]{ni = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Allocates some memory for the direct and inverted indexes 
+\begin{DoxyParams}{Parameters}
+{\em nd} & number of expected image entries in the database \\
+\hline
+{\em ni} & number of expected words per image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Use 0 to ignore a parameter 
+\end{DoxyNote}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a88fe9b880f9b753de1ea6e07fe42808b}\label{classDBoW2_1_1TemplatedDatabase_a88fe9b880f9b753de1ea6e07fe42808b}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!clear@{clear}}
+\index{clear@{clear}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Empties the database 
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::load(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::set\+Vocabulary(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::\+Templated\+Database().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_a88fe9b880f9b753de1ea6e07fe42808b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_af1fd1540b9e81fae498d41b87050efb0}\label{classDBoW2_1_1TemplatedDatabase_af1fd1540b9e81fae498d41b87050efb0}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!get\+Direct\+Index\+Levels@{get\+Direct\+Index\+Levels}}
+\index{get\+Direct\+Index\+Levels@{get\+Direct\+Index\+Levels}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{get\+Direct\+Index\+Levels()}{getDirectIndexLevels()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+int \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::get\+Direct\+Index\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the di levels when using direct index \begin{DoxyReturn}{Returns}
+di levels 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::operator$<$$<$().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_af1fd1540b9e81fae498d41b87050efb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a2053ce792884183af75e4343026ef7dd}\label{classDBoW2_1_1TemplatedDatabase_a2053ce792884183af75e4343026ef7dd}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!get\+Vocabulary@{get\+Vocabulary}}
+\index{get\+Vocabulary@{get\+Vocabulary}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{get\+Vocabulary()}{getVocabulary()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}$<$ T\+Descriptor, F $>$ $\ast$ \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::get\+Vocabulary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the vocabulary used \begin{DoxyReturn}{Returns}
+vocabulary 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::operator$<$$<$().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_a2053ce792884183af75e4343026ef7dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aff1528af5cff047539eb1e2c75fb6345}\label{classDBoW2_1_1TemplatedDatabase_aff1528af5cff047539eb1e2c75fb6345}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!load@{load}}
+\index{load@{load}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Loads the database from a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::load(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::\+Templated\+Database().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_aff1528af5cff047539eb1e2c75fb6345_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a9aef0b11da757aba5f07deb2f5b66097}\label{classDBoW2_1_1TemplatedDatabase_a9aef0b11da757aba5f07deb2f5b66097}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!load@{load}}
+\index{load@{load}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::load (\begin{DoxyParamCaption}\item[{const cv\+::\+File\+Storage \&}]{fs,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}database\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Loads the database from the given file storage structure 
+\begin{DoxyParams}{Parameters}
+{\em fs} & \\
+\hline
+{\em name} & node name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a654d8d3c7f80172be1e091663e47535d}\label{classDBoW2_1_1TemplatedDatabase_a654d8d3c7f80172be1e091663e47535d}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!operator=@{operator=}}
+\index{operator=@{operator=}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \& \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&}]{db }\end{DoxyParamCaption})}
+
+Copies the given database and its vocabulary 
+\begin{DoxyParams}{Parameters}
+{\em db} & database to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aea53ba2ef3cbfe8fa9eaaa8152e16c85}\label{classDBoW2_1_1TemplatedDatabase_aea53ba2ef3cbfe8fa9eaaa8152e16c85}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!query@{query}}
+\index{query@{query}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::query (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T\+Descriptor $>$ \&}]{features,  }\item[{\hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&}]{ret,  }\item[{int}]{max\+\_\+results = {\ttfamily 1},  }\item[{int}]{max\+\_\+id = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+Queries the database with some features 
+\begin{DoxyParams}{Parameters}
+{\em features} & query features \\
+\hline
+{\em ret} & (out) query results \\
+\hline
+{\em max\+\_\+results} & number of results to return. $<$= 0 means all \\
+\hline
+{\em max\+\_\+id} & only entries with id $<$= max\+\_\+id are returned in ret. $<$ 0 means all \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::query().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classDBoW2_1_1TemplatedDatabase_aea53ba2ef3cbfe8fa9eaaa8152e16c85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a27b2365cd82bf44bd41c20bc37d698ec}\label{classDBoW2_1_1TemplatedDatabase_a27b2365cd82bf44bd41c20bc37d698ec}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!query@{query}}
+\index{query@{query}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{query()}{query()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::query (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&}]{vec,  }\item[{\hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&}]{ret,  }\item[{int}]{max\+\_\+results = {\ttfamily 1},  }\item[{int}]{max\+\_\+id = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+Queries the database with a vector 
+\begin{DoxyParams}{Parameters}
+{\em vec} & bow vector already normalized \\
+\hline
+{\em ret} & results \\
+\hline
+{\em max\+\_\+results} & number of results to return. $<$= 0 means all \\
+\hline
+{\em max\+\_\+id} & only entries with id $<$= max\+\_\+id are returned in ret. $<$ 0 means all \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_ac6501f207868c7466322827a59c6eb3e}\label{classDBoW2_1_1TemplatedDatabase_ac6501f207868c7466322827a59c6eb3e}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!retrieve\+Features@{retrieve\+Features}}
+\index{retrieve\+Features@{retrieve\+Features}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{retrieve\+Features()}{retrieveFeatures()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \& \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::retrieve\+Features (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id}}]{id }\end{DoxyParamCaption}) const}
+
+Returns the a feature vector associated with a database entry 
+\begin{DoxyParams}{Parameters}
+{\em id} & entry id (must be $<$ \hyperlink{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d}{size()}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const reference to map of nodes and their associated features in the given entry 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::query\+Dot\+Product().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_ac6501f207868c7466322827a59c6eb3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a7162dee10a5602c309729900bff52ead}\label{classDBoW2_1_1TemplatedDatabase_a7162dee10a5602c309729900bff52ead}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!save@{save}}
+\index{save@{save}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::save (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+Stores the database in a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::save().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classDBoW2_1_1TemplatedDatabase_a7162dee10a5602c309729900bff52ead_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a69b77a060880f10e11d86d1f665cfd24}\label{classDBoW2_1_1TemplatedDatabase_a69b77a060880f10e11d86d1f665cfd24}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!save@{save}}
+\index{save@{save}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::save (\begin{DoxyParamCaption}\item[{cv\+::\+File\+Storage \&}]{fs,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}database\char`\"{}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Stores the database in the given file storage structure 
+\begin{DoxyParams}{Parameters}
+{\em fs} & \\
+\hline
+{\em name} & node name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a7d282bfdd4a6883b282fc71d0fd5dcb4}\label{classDBoW2_1_1TemplatedDatabase_a7d282bfdd4a6883b282fc71d0fd5dcb4}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!set\+Vocabulary@{set\+Vocabulary}}
+\index{set\+Vocabulary@{set\+Vocabulary}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{set\+Vocabulary()}{setVocabulary()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+template$<$class T $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::set\+Vocabulary (\begin{DoxyParamCaption}\item[{const T \&}]{voc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the vocabulary to use and clears the content of the database. 
+\begin{DoxyParams}{Parameters}
+{\em T} & class inherited from Templated\+Vocabulary$<$\+T\+Descriptor, F$>$ \\
+\hline
+{\em voc} & vocabulary to copy \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::add(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::operator=(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::set\+Vocabulary(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::\+Templated\+Database().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_a7d282bfdd4a6883b282fc71d0fd5dcb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_aaf1d0ecfdab16ff0609386e2638e76b6}\label{classDBoW2_1_1TemplatedDatabase_aaf1d0ecfdab16ff0609386e2638e76b6}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!set\+Vocabulary@{set\+Vocabulary}}
+\index{set\+Vocabulary@{set\+Vocabulary}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{set\+Vocabulary()}{setVocabulary()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+template$<$class T $>$ \\
+void \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::set\+Vocabulary (\begin{DoxyParamCaption}\item[{const T \&}]{voc,  }\item[{bool}]{use\+\_\+di,  }\item[{int}]{di\+\_\+levels = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the vocabulary to use and the direct index parameters, and clears the content of the database 
+\begin{DoxyParams}{Parameters}
+{\em T} & class inherited from Templated\+Vocabulary$<$\+T\+Descriptor, F$>$ \\
+\hline
+{\em voc} & vocabulary to copy \\
+\hline
+{\em use\+\_\+di} & a direct index is used to store feature indexes \\
+\hline
+{\em di\+\_\+levels} & levels to go up the vocabulary tree to select the node id to store in the direct index when adding images \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d}\label{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!size@{size}}
+\index{size@{size}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+unsigned int \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of entries in the database \begin{DoxyReturn}{Returns}
+number of entries in the database 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::operator$<$$<$(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::retrieve\+Features().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_a5c30e54458f694aef1941a0dec193d4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_ad0fbf387b5707d6da34f0df05dc87401}\label{classDBoW2_1_1TemplatedDatabase_ad0fbf387b5707d6da34f0df05dc87401}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!using\+Direct\+Index@{using\+Direct\+Index}}
+\index{using\+Direct\+Index@{using\+Direct\+Index}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{using\+Direct\+Index()}{usingDirectIndex()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+bool \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::using\+Direct\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the direct index is being used \begin{DoxyReturn}{Returns}
+true iff using direct index 
+\end{DoxyReturn}
+
+
+Referenced by D\+Bo\+W2\+::operator$<$$<$().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1TemplatedDatabase_ad0fbf387b5707d6da34f0df05dc87401_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1TemplatedDatabase_a0cd32f1e5a9a0a6c61d976da754d507d}\label{classDBoW2_1_1TemplatedDatabase_a0cd32f1e5a9a0a6c61d976da754d507d}} 
+\index{D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}!m\+\_\+dilevels@{m\+\_\+dilevels}}
+\index{m\+\_\+dilevels@{m\+\_\+dilevels}!D\+Bo\+W2\+::\+Templated\+Database@{D\+Bo\+W2\+::\+Templated\+Database}}
+\subsubsection{\texorpdfstring{m\+\_\+dilevels}{m\_dilevels}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+int \hyperlink{classDBoW2_1_1TemplatedDatabase}{D\+Bo\+W2\+::\+Templated\+Database}$<$ T\+Descriptor, F $>$\+::m\+\_\+dilevels\hspace{0.3cm}{\ttfamily [protected]}}
+
+Levels to go up the vocabulary tree to select nodes to store in the direct index 
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::add(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::get\+Direct\+Index\+Levels(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::load(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::operator=(), D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::save(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::set\+Vocabulary().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Templated\+Database.\+h\end{DoxyCompactItemize}

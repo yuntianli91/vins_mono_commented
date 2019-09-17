@@ -1,0 +1,6 @@
+<map id="camodocal::Camera::Parameters::modelType" name="camodocal::Camera::Parameters::modelType">
+<area shape="rect" id="node2" href="$classcamodocal_1_1OCAMCamera.html#a149e69010e4f53c978e5e9f4b1ef120d" title="virtual type of function modelType " alt="" coords="226,5,405,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1PinholeCamera.html#aa740972c7a7bcd335f2c02d2558dbf3d" title="virtual type of function modelType " alt="" coords="224,71,407,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1CataCamera.html#a35b52f562558905b13f51a2a5879ebb1" title="virtual type of function modelType " alt="" coords="232,136,399,177"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1EquidistantCamera.html#a5fbae9e11f1bfdc4f8c221b3525c34a6" title="virtual type of function modelType " alt="" coords="213,201,417,243"/>
+</map>

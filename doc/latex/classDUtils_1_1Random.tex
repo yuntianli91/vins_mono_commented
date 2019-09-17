@@ -1,0 +1,226 @@
+\hypertarget{classDUtils_1_1Random}{}\section{D\+Utils\+:\+:Random Class Reference}
+\label{classDUtils_1_1Random}\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+
+
+Functions to generate pseudo-\/random numbers.  
+
+
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer}
+\begin{DoxyCompactList}\small\item\em Provides pseudo-\/random numbers with no repetitions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}{Seed\+Rand} ()
+\item 
+static void \hyperlink{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}{Seed\+Rand\+Once} ()
+\item 
+static void \hyperlink{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}{Seed\+Rand} (int seed)
+\item 
+static void \hyperlink{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}{Seed\+Rand\+Once} (int seed)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}{Random\+Value} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}{Random\+Value} (T min, T max)
+\item 
+static int \hyperlink{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}{Random\+Int} (int min, int max)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}{Random\+Gaussian\+Value} (T mean, T sigma)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to generate pseudo-\/random numbers. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}\label{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Random\+Gaussian\+Value@{Random\+Gaussian\+Value}}
+\index{Random\+Gaussian\+Value@{Random\+Gaussian\+Value}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Random\+Gaussian\+Value()}{RandomGaussianValue()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static T D\+Utils\+::\+Random\+::\+Random\+Gaussian\+Value (\begin{DoxyParamCaption}\item[{T}]{mean,  }\item[{T}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a random number from a gaussian distribution 
+\begin{DoxyParams}{Parameters}
+{\em mean} & \\
+\hline
+{\em sigma} & standard deviation \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Vision\+::\+B\+R\+I\+E\+F\+::generate\+Test\+Points().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a2c769bcd60a08fc3eba3ef4abf9761d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}\label{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Random\+Int@{Random\+Int}}
+\index{Random\+Int@{Random\+Int}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Random\+Int()}{RandomInt()}}
+{\footnotesize\ttfamily int D\+Utils\+::\+Random\+::\+Random\+Int (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a random int in the range \mbox{[}min..max\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+random int in \mbox{[}min..max\mbox{]} 
+\end{DoxyReturn}
+
+
+Referenced by D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::get(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::initiate\+Clusters\+K\+Mpp(), and Random\+Value().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_aa25012101ecbca54025d5430bcf93d86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}\label{classDUtils_1_1Random_ac5d2e4d977afdec30071c531a7a96d88}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Random\+Value@{Random\+Value}}
+\index{Random\+Value@{Random\+Value}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Random\+Value()}{RandomValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static T D\+Utils\+::\+Random\+::\+Random\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a random number in the range \mbox{[}0..1\mbox{]} \begin{DoxyReturn}{Returns}
+random T number in \mbox{[}0..1\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}\label{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Random\+Value@{Random\+Value}}
+\index{Random\+Value@{Random\+Value}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Random\+Value()}{RandomValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static T D\+Utils\+::\+Random\+::\+Random\+Value (\begin{DoxyParamCaption}\item[{T}]{min,  }\item[{T}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a random number in the range \mbox{[}min..max\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+random T number in \mbox{[}min..max\mbox{]} 
+\end{DoxyReturn}
+
+
+References Random\+Int().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a13760f5d6d4b866fbcc350dbb0d39d02_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}\label{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Seed\+Rand@{Seed\+Rand}}
+\index{Seed\+Rand@{Seed\+Rand}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Seed\+Rand()}{SeedRand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Seed\+Rand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the random number seed to the current time 
+
+References D\+Utils\+::\+Timestamp\+::get\+Float\+Time(), and D\+Utils\+::\+Timestamp\+::set\+To\+Current\+Time().
+
+
+
+Referenced by Seed\+Rand\+Once().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a719a6489316343a771e062f0be58050f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}\label{classDUtils_1_1Random_aec19d58856a0cf0b48d783119a497233}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Seed\+Rand@{Seed\+Rand}}
+\index{Seed\+Rand@{Seed\+Rand}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Seed\+Rand()}{SeedRand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Seed\+Rand (\begin{DoxyParamCaption}\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the given random number seed 
+\begin{DoxyParams}{Parameters}
+{\em seed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}\label{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Seed\+Rand\+Once@{Seed\+Rand\+Once}}
+\index{Seed\+Rand\+Once@{Seed\+Rand\+Once}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Seed\+Rand\+Once()}{SeedRandOnce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Seed\+Rand\+Once (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the random number seed to the current time only the first time this function is called 
+
+References Seed\+Rand().
+
+
+
+Referenced by D\+Vision\+::\+B\+R\+I\+E\+F\+::generate\+Test\+Points(), D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::get(), and D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::initiate\+Clusters\+K\+Mpp().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_a168e77d82ce1e66c6759e97ef27adbbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}\label{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d}} 
+\index{D\+Utils\+::\+Random@{D\+Utils\+::\+Random}!Seed\+Rand\+Once@{Seed\+Rand\+Once}}
+\index{Seed\+Rand\+Once@{Seed\+Rand\+Once}!D\+Utils\+::\+Random@{D\+Utils\+::\+Random}}
+\subsubsection{\texorpdfstring{Seed\+Rand\+Once()}{SeedRandOnce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Seed\+Rand\+Once (\begin{DoxyParamCaption}\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the given random number seed only the first time this function is called 
+\begin{DoxyParams}{Parameters}
+{\em seed} & \\
+\hline
+\end{DoxyParams}
+
+
+References Seed\+Rand().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_ad3652f5d105ca4f6f22696b64f2a4a5d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Utils/Random.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Utils/Random.\+cpp\end{DoxyCompactItemize}

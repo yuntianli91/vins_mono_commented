@@ -1,0 +1,362 @@
+\hypertarget{classEstimator}{}\section{Estimator Class Reference}
+\label{classEstimator}\index{Estimator@{Estimator}}
+
+
+Collaboration diagram for Estimator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEstimator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEstimator_ae4545de83f6d64233515112f7ff27628}\label{classEstimator_ae4545de83f6d64233515112f7ff27628}} 
+enum {\bfseries Solver\+Flag} \{ {\bfseries I\+N\+I\+T\+I\+AL}, 
+{\bfseries N\+O\+N\+\_\+\+L\+I\+N\+E\+AR}
+ \}
+\item 
+\mbox{\Hypertarget{classEstimator_a020181ad0fe1f065d5ea8a4d414ce6b1}\label{classEstimator_a020181ad0fe1f065d5ea8a4d414ce6b1}} 
+enum {\bfseries Marginalization\+Flag} \{ {\bfseries M\+A\+R\+G\+I\+N\+\_\+\+O\+LD} = 0, 
+{\bfseries M\+A\+R\+G\+I\+N\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+N\+EW} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEstimator_a38f16d396fade5dee487db958d8f45da}\label{classEstimator_a38f16d396fade5dee487db958d8f45da}} 
+void {\bfseries set\+Parameter} ()
+\item 
+void \hyperlink{classEstimator_aa44c20668ac637af041152abd568fe81}{process\+I\+MU} (double t, const Vector3d \&linear\+\_\+acceleration, const Vector3d \&angular\+\_\+velocity)
+\begin{DoxyCompactList}\small\item\em processs I\+MU measurement \end{DoxyCompactList}\item 
+void \hyperlink{classEstimator_aa6fb65bc801f80dc142e3a5f9d0109ee}{process\+Image} (const map$<$ int, vector$<$ pair$<$ int, Eigen\+::\+Matrix$<$ double, 7, 1 $>$$>$$>$$>$ \&image, const std\+\_\+msgs\+::\+Header \&header)
+\begin{DoxyCompactList}\small\item\em process Image \end{DoxyCompactList}\item 
+void \hyperlink{classEstimator_a13444b276377b490d799bad3a21c8bf9}{set\+Relo\+Frame} (double \+\_\+frame\+\_\+stamp, int \+\_\+frame\+\_\+index, vector$<$ Vector3d $>$ \&\+\_\+match\+\_\+points, Vector3d \+\_\+relo\+\_\+t, Matrix3d \+\_\+relo\+\_\+r)
+\begin{DoxyCompactList}\small\item\em Set the Relo Frame object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstimator_afd9366e076daf96e28a3b2b419a7b3ba}\label{classEstimator_afd9366e076daf96e28a3b2b419a7b3ba}} 
+void {\bfseries clear\+State} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a6da34743ac07ff0be15d58cfbe9ea9f1}\label{classEstimator_a6da34743ac07ff0be15d58cfbe9ea9f1}} 
+bool {\bfseries initial\+Structure} ()
+\item 
+\mbox{\Hypertarget{classEstimator_af34f289f486b9d1e75ba83cae20980a7}\label{classEstimator_af34f289f486b9d1e75ba83cae20980a7}} 
+bool {\bfseries visual\+Initial\+Align} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a60ff51cc613465e06360f12966c7e1b5}\label{classEstimator_a60ff51cc613465e06360f12966c7e1b5}} 
+bool {\bfseries relative\+Pose} (Matrix3d \&relative\+\_\+R, Vector3d \&relative\+\_\+T, int \&l)
+\item 
+\mbox{\Hypertarget{classEstimator_ac118df0372730107c7031489b26df117}\label{classEstimator_ac118df0372730107c7031489b26df117}} 
+void {\bfseries slide\+Window} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a6586d5b1a4d071f89e13c0a37e46d112}\label{classEstimator_a6586d5b1a4d071f89e13c0a37e46d112}} 
+void {\bfseries solve\+Odometry} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a6322c2277c69960554c7360ea3932360}\label{classEstimator_a6322c2277c69960554c7360ea3932360}} 
+void {\bfseries slide\+Window\+New} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a6763ef70f085dc18c36e3be425e015ca}\label{classEstimator_a6763ef70f085dc18c36e3be425e015ca}} 
+void {\bfseries slide\+Window\+Old} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a97efa571ccabe805e468ea8e497f86e3}\label{classEstimator_a97efa571ccabe805e468ea8e497f86e3}} 
+void {\bfseries optimization} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a7cef725addfe53cc17f929b7d303ca59}\label{classEstimator_a7cef725addfe53cc17f929b7d303ca59}} 
+void {\bfseries vector2double} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a1018d937f1596d05b7d9a8f119c5985a}\label{classEstimator_a1018d937f1596d05b7d9a8f119c5985a}} 
+void {\bfseries double2vector} ()
+\item 
+\mbox{\Hypertarget{classEstimator_a9677152e40b9364ebc279c03ff932c56}\label{classEstimator_a9677152e40b9364ebc279c03ff932c56}} 
+bool {\bfseries failure\+Detection} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEstimator_a324ff7205fc2cce24547b6ff96e63271}\label{classEstimator_a324ff7205fc2cce24547b6ff96e63271}} 
+Solver\+Flag {\bfseries solver\+\_\+flag}
+\item 
+\mbox{\Hypertarget{classEstimator_a4b22b2fb74b9118ff6732fc5342e5636}\label{classEstimator_a4b22b2fb74b9118ff6732fc5342e5636}} 
+Marginalization\+Flag {\bfseries marginalization\+\_\+flag}
+\item 
+\mbox{\Hypertarget{classEstimator_aa47626f7b8776f9ddd8c9aec1f0a9921}\label{classEstimator_aa47626f7b8776f9ddd8c9aec1f0a9921}} 
+Vector3d {\bfseries g}
+\item 
+\mbox{\Hypertarget{classEstimator_a2d641d68416a77576d1a23cc8d03beb4}\label{classEstimator_a2d641d68416a77576d1a23cc8d03beb4}} 
+Matrix\+Xd {\bfseries Ap} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a2b5ba9e2978481957725122269513377}\label{classEstimator_a2b5ba9e2978481957725122269513377}} 
+Matrix\+Xd {\bfseries backup\+\_\+A}
+\item 
+\mbox{\Hypertarget{classEstimator_ab06a60da062f5de4216b69cf10a972c3}\label{classEstimator_ab06a60da062f5de4216b69cf10a972c3}} 
+Vector\+Xd {\bfseries bp} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a5d8208de33fb48e77d64e80c6ed7d159}\label{classEstimator_a5d8208de33fb48e77d64e80c6ed7d159}} 
+Vector\+Xd {\bfseries backup\+\_\+b}
+\item 
+\mbox{\Hypertarget{classEstimator_aa2281c4dbc639434752ff72a63c143c5}\label{classEstimator_aa2281c4dbc639434752ff72a63c143c5}} 
+Matrix3d {\bfseries ric} \mbox{[}N\+U\+M\+\_\+\+O\+F\+\_\+\+C\+AM\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a2cc2a6796ea2f568543364fede9e1741}\label{classEstimator_a2cc2a6796ea2f568543364fede9e1741}} 
+Vector3d {\bfseries tic} \mbox{[}N\+U\+M\+\_\+\+O\+F\+\_\+\+C\+AM\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_ae39aafb5802c16f66b9b478861c05214}\label{classEstimator_ae39aafb5802c16f66b9b478861c05214}} 
+Vector3d {\bfseries Ps} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a261ce91e7dbfb155d52c09daf1a81f4e}\label{classEstimator_a261ce91e7dbfb155d52c09daf1a81f4e}} 
+Vector3d {\bfseries Vs} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a95fb17a6e27d168aeecfea6debc5b654}\label{classEstimator_a95fb17a6e27d168aeecfea6debc5b654}} 
+Matrix3d {\bfseries Rs} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_ab37b75b88457b47d77cb98d98c84313b}\label{classEstimator_ab37b75b88457b47d77cb98d98c84313b}} 
+Vector3d {\bfseries Bas} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a75bcfcfcd62b388231812b7cf54d0609}\label{classEstimator_a75bcfcfcd62b388231812b7cf54d0609}} 
+Vector3d {\bfseries Bgs} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_af5af4dd3209c9bb1cac39b28ca13ef9e}\label{classEstimator_af5af4dd3209c9bb1cac39b28ca13ef9e}} 
+double {\bfseries td}
+\item 
+\mbox{\Hypertarget{classEstimator_ae25ec3c331182aa10cf93062a0013462}\label{classEstimator_ae25ec3c331182aa10cf93062a0013462}} 
+Matrix3d {\bfseries back\+\_\+\+R0}
+\item 
+\mbox{\Hypertarget{classEstimator_ae767a1f8631b2e48cdd2f5a5f94af4f8}\label{classEstimator_ae767a1f8631b2e48cdd2f5a5f94af4f8}} 
+Matrix3d {\bfseries last\+\_\+R}
+\item 
+\mbox{\Hypertarget{classEstimator_ad66c36afc29ed73dae943d7dbb93339c}\label{classEstimator_ad66c36afc29ed73dae943d7dbb93339c}} 
+Matrix3d {\bfseries last\+\_\+\+R0}
+\item 
+\mbox{\Hypertarget{classEstimator_a488253ad9835484585df51adde8f4bb8}\label{classEstimator_a488253ad9835484585df51adde8f4bb8}} 
+Vector3d {\bfseries back\+\_\+\+P0}
+\item 
+\mbox{\Hypertarget{classEstimator_a3c69cfe5a1b003eb19c4869e3db6b7d7}\label{classEstimator_a3c69cfe5a1b003eb19c4869e3db6b7d7}} 
+Vector3d {\bfseries last\+\_\+P}
+\item 
+\mbox{\Hypertarget{classEstimator_a7739a4e119a156d5c544072289bfbad2}\label{classEstimator_a7739a4e119a156d5c544072289bfbad2}} 
+Vector3d {\bfseries last\+\_\+\+P0}
+\item 
+\mbox{\Hypertarget{classEstimator_ab0dfabed3a2b43af2edbb27034c00837}\label{classEstimator_ab0dfabed3a2b43af2edbb27034c00837}} 
+std\+\_\+msgs\+::\+Header {\bfseries Headers} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_ad4eda10e539c70aa084b2c12b3f2a91e}\label{classEstimator_ad4eda10e539c70aa084b2c12b3f2a91e}} 
+\hyperlink{classIntegrationBase}{Integration\+Base} $\ast$ {\bfseries pre\+\_\+integrations} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aaf838ba54ec51344bdb46ab8fed5a31a}\label{classEstimator_aaf838ba54ec51344bdb46ab8fed5a31a}} 
+Vector3d {\bfseries acc\+\_\+0}
+\item 
+\mbox{\Hypertarget{classEstimator_ab100397542d96248fd4e96cdcb5c7b6a}\label{classEstimator_ab100397542d96248fd4e96cdcb5c7b6a}} 
+Vector3d {\bfseries gyr\+\_\+0}
+\item 
+\mbox{\Hypertarget{classEstimator_a844443a999600e2627f7486ea28a5eb6}\label{classEstimator_a844443a999600e2627f7486ea28a5eb6}} 
+vector$<$ double $>$ {\bfseries dt\+\_\+buf} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aaae7dad254aba40dc261f29ae985fa9d}\label{classEstimator_aaae7dad254aba40dc261f29ae985fa9d}} 
+vector$<$ Vector3d $>$ {\bfseries linear\+\_\+acceleration\+\_\+buf} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a653b46f9a739aa16ab0d2da59b747ba1}\label{classEstimator_a653b46f9a739aa16ab0d2da59b747ba1}} 
+vector$<$ Vector3d $>$ {\bfseries angular\+\_\+velocity\+\_\+buf} \mbox{[}(W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1)\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_add0682c516a2c046091eb78fb66a074b}\label{classEstimator_add0682c516a2c046091eb78fb66a074b}} 
+int {\bfseries frame\+\_\+count}
+\item 
+\mbox{\Hypertarget{classEstimator_a687dfa6523f8b161a58d364981fc89d6}\label{classEstimator_a687dfa6523f8b161a58d364981fc89d6}} 
+int {\bfseries sum\+\_\+of\+\_\+outlier}
+\item 
+\mbox{\Hypertarget{classEstimator_a9373c8ca8fa2f85429c533a9e962cac9}\label{classEstimator_a9373c8ca8fa2f85429c533a9e962cac9}} 
+int {\bfseries sum\+\_\+of\+\_\+back}
+\item 
+\mbox{\Hypertarget{classEstimator_a116e4d7566f6085634a1b584a969e1d6}\label{classEstimator_a116e4d7566f6085634a1b584a969e1d6}} 
+int {\bfseries sum\+\_\+of\+\_\+front}
+\item 
+\mbox{\Hypertarget{classEstimator_a995855d093897b972fc2f6197c4691be}\label{classEstimator_a995855d093897b972fc2f6197c4691be}} 
+int {\bfseries sum\+\_\+of\+\_\+invalid}
+\item 
+\mbox{\Hypertarget{classEstimator_a538a896b46287ec27eb8bf2b9f9efbdb}\label{classEstimator_a538a896b46287ec27eb8bf2b9f9efbdb}} 
+\hyperlink{classFeatureManager}{Feature\+Manager} {\bfseries f\+\_\+manager}
+\item 
+\mbox{\Hypertarget{classEstimator_aec88a9bb2c79e1b1f3f9132250e1758c}\label{classEstimator_aec88a9bb2c79e1b1f3f9132250e1758c}} 
+\hyperlink{classMotionEstimator}{Motion\+Estimator} {\bfseries m\+\_\+estimator}
+\item 
+\mbox{\Hypertarget{classEstimator_a8fc923bb45f8bfe6419d54c6dd34c8f5}\label{classEstimator_a8fc923bb45f8bfe6419d54c6dd34c8f5}} 
+\hyperlink{classInitialEXRotation}{Initial\+E\+X\+Rotation} {\bfseries initial\+\_\+ex\+\_\+rotation}
+\item 
+\mbox{\Hypertarget{classEstimator_afc50690d3bca730204f82d445bb54595}\label{classEstimator_afc50690d3bca730204f82d445bb54595}} 
+bool {\bfseries first\+\_\+imu}
+\item 
+\mbox{\Hypertarget{classEstimator_acbc6a7508fbfd8fd6fef84b265c4b997}\label{classEstimator_acbc6a7508fbfd8fd6fef84b265c4b997}} 
+bool {\bfseries is\+\_\+valid}
+\item 
+\mbox{\Hypertarget{classEstimator_aee5ac9e3fc04d1d8b4fa21f9265529d1}\label{classEstimator_aee5ac9e3fc04d1d8b4fa21f9265529d1}} 
+bool {\bfseries is\+\_\+key}
+\item 
+\mbox{\Hypertarget{classEstimator_aaa1373cca2384c09ec5569040d57949b}\label{classEstimator_aaa1373cca2384c09ec5569040d57949b}} 
+bool {\bfseries failure\+\_\+occur}
+\item 
+\mbox{\Hypertarget{classEstimator_aaffeb52bc8eb64345b171316fd45d08f}\label{classEstimator_aaffeb52bc8eb64345b171316fd45d08f}} 
+vector$<$ Vector3d $>$ {\bfseries point\+\_\+cloud}
+\item 
+\mbox{\Hypertarget{classEstimator_a1fe1c936d5316a4b9730b2a2c4f8d1e6}\label{classEstimator_a1fe1c936d5316a4b9730b2a2c4f8d1e6}} 
+vector$<$ Vector3d $>$ {\bfseries margin\+\_\+cloud}
+\item 
+\mbox{\Hypertarget{classEstimator_a2366a415eb299d9c0dafaf685e64ab5d}\label{classEstimator_a2366a415eb299d9c0dafaf685e64ab5d}} 
+vector$<$ Vector3d $>$ {\bfseries key\+\_\+poses}
+\item 
+\mbox{\Hypertarget{classEstimator_af16e6493e5161056a25669fabbcc94e7}\label{classEstimator_af16e6493e5161056a25669fabbcc94e7}} 
+double {\bfseries initial\+\_\+timestamp}
+\item 
+\mbox{\Hypertarget{classEstimator_a784461c0ec721136a5e81280320464ca}\label{classEstimator_a784461c0ec721136a5e81280320464ca}} 
+double {\bfseries para\+\_\+\+Pose} \mbox{[}W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1\mbox{]}\mbox{[}S\+I\+Z\+E\+\_\+\+P\+O\+SE\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aeb6a30336a78f219f0ae9b40ae30d4b9}\label{classEstimator_aeb6a30336a78f219f0ae9b40ae30d4b9}} 
+double {\bfseries para\+\_\+\+Speed\+Bias} \mbox{[}W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE+1\mbox{]}\mbox{[}S\+I\+Z\+E\+\_\+\+S\+P\+E\+E\+D\+B\+I\+AS\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aeca39f6e3a06edf52e113840e2abe69b}\label{classEstimator_aeca39f6e3a06edf52e113840e2abe69b}} 
+double {\bfseries para\+\_\+\+Feature} \mbox{[}N\+U\+M\+\_\+\+O\+F\+\_\+F\mbox{]}\mbox{[}S\+I\+Z\+E\+\_\+\+F\+E\+A\+T\+U\+RE\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aebc1cb85071d7c6849865e4d20a02780}\label{classEstimator_aebc1cb85071d7c6849865e4d20a02780}} 
+double {\bfseries para\+\_\+\+Ex\+\_\+\+Pose} \mbox{[}N\+U\+M\+\_\+\+O\+F\+\_\+\+C\+AM\mbox{]}\mbox{[}S\+I\+Z\+E\+\_\+\+P\+O\+SE\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a0ec701cfdc86b7b48734a0a26731187e}\label{classEstimator_a0ec701cfdc86b7b48734a0a26731187e}} 
+double {\bfseries para\+\_\+\+Retrive\+\_\+\+Pose} \mbox{[}S\+I\+Z\+E\+\_\+\+P\+O\+SE\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_a19f645fa7edf6b47ad0737300112077a}\label{classEstimator_a19f645fa7edf6b47ad0737300112077a}} 
+double {\bfseries para\+\_\+\+Td} \mbox{[}1\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_abe559fb7fa6553c83cc3813a51ce289e}\label{classEstimator_abe559fb7fa6553c83cc3813a51ce289e}} 
+double {\bfseries para\+\_\+\+Tr} \mbox{[}1\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_aede01f278966422211ea9996b62b54d8}\label{classEstimator_aede01f278966422211ea9996b62b54d8}} 
+int {\bfseries loop\+\_\+window\+\_\+index}
+\item 
+\mbox{\Hypertarget{classEstimator_ada21a832baba2ed43a09d025a73b1086}\label{classEstimator_ada21a832baba2ed43a09d025a73b1086}} 
+\hyperlink{classMarginalizationInfo}{Marginalization\+Info} $\ast$ {\bfseries last\+\_\+marginalization\+\_\+info}
+\item 
+\mbox{\Hypertarget{classEstimator_ac8e1ca84050653626b3a0850be59e344}\label{classEstimator_ac8e1ca84050653626b3a0850be59e344}} 
+vector$<$ double $\ast$ $>$ {\bfseries last\+\_\+marginalization\+\_\+parameter\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{classEstimator_ad6a31a9049e505fb4c17ff95211d5531}\label{classEstimator_ad6a31a9049e505fb4c17ff95211d5531}} 
+map$<$ double, \hyperlink{classImageFrame}{Image\+Frame} $>$ {\bfseries all\+\_\+image\+\_\+frame}
+\item 
+\mbox{\Hypertarget{classEstimator_aec37f5a60f299724b6b796969fa765f4}\label{classEstimator_aec37f5a60f299724b6b796969fa765f4}} 
+\hyperlink{classIntegrationBase}{Integration\+Base} $\ast$ {\bfseries tmp\+\_\+pre\+\_\+integration}
+\item 
+\mbox{\Hypertarget{classEstimator_ac40e539f316194131ffe2bf082f82537}\label{classEstimator_ac40e539f316194131ffe2bf082f82537}} 
+bool {\bfseries relocalization\+\_\+info}
+\item 
+\mbox{\Hypertarget{classEstimator_a72bb067de7c931a12676bd2730f55f35}\label{classEstimator_a72bb067de7c931a12676bd2730f55f35}} 
+double {\bfseries relo\+\_\+frame\+\_\+stamp}
+\item 
+\mbox{\Hypertarget{classEstimator_a086049606f6010d07fa9784b87b2b8cf}\label{classEstimator_a086049606f6010d07fa9784b87b2b8cf}} 
+double {\bfseries relo\+\_\+frame\+\_\+index}
+\item 
+\mbox{\Hypertarget{classEstimator_aefda23319479cd02fc65f1868a4c6563}\label{classEstimator_aefda23319479cd02fc65f1868a4c6563}} 
+int {\bfseries relo\+\_\+frame\+\_\+local\+\_\+index}
+\item 
+\mbox{\Hypertarget{classEstimator_aaaef771460da95bd973293e9d7b07678}\label{classEstimator_aaaef771460da95bd973293e9d7b07678}} 
+vector$<$ Vector3d $>$ {\bfseries match\+\_\+points}
+\item 
+\mbox{\Hypertarget{classEstimator_a00de2e0216cf87c7b5d65c49fec4cf3c}\label{classEstimator_a00de2e0216cf87c7b5d65c49fec4cf3c}} 
+double {\bfseries relo\+\_\+\+Pose} \mbox{[}S\+I\+Z\+E\+\_\+\+P\+O\+SE\mbox{]}
+\item 
+\mbox{\Hypertarget{classEstimator_af6f0798d2af603a09c33efae290e1ec3}\label{classEstimator_af6f0798d2af603a09c33efae290e1ec3}} 
+Matrix3d {\bfseries drift\+\_\+correct\+\_\+r}
+\item 
+\mbox{\Hypertarget{classEstimator_a922567580fbaaa68dc90a7baa06ec32b}\label{classEstimator_a922567580fbaaa68dc90a7baa06ec32b}} 
+Vector3d {\bfseries drift\+\_\+correct\+\_\+t}
+\item 
+\mbox{\Hypertarget{classEstimator_ac847ec23a5024ebbb3a73f3721ee3e47}\label{classEstimator_ac847ec23a5024ebbb3a73f3721ee3e47}} 
+Vector3d {\bfseries prev\+\_\+relo\+\_\+t}
+\item 
+\mbox{\Hypertarget{classEstimator_ad5c0584ee27e037a3a4378a73739c309}\label{classEstimator_ad5c0584ee27e037a3a4378a73739c309}} 
+Matrix3d {\bfseries prev\+\_\+relo\+\_\+r}
+\item 
+\mbox{\Hypertarget{classEstimator_ace6808815c79b92f2a818748e31f3e8b}\label{classEstimator_ace6808815c79b92f2a818748e31f3e8b}} 
+Vector3d {\bfseries relo\+\_\+relative\+\_\+t}
+\item 
+\mbox{\Hypertarget{classEstimator_a5d360d01f5f76bcf1a45ba7b98eda2d4}\label{classEstimator_a5d360d01f5f76bcf1a45ba7b98eda2d4}} 
+Quaterniond {\bfseries relo\+\_\+relative\+\_\+q}
+\item 
+\mbox{\Hypertarget{classEstimator_afc85fb295cdd4ec9bd851b4f4a591bdd}\label{classEstimator_afc85fb295cdd4ec9bd851b4f4a591bdd}} 
+double {\bfseries relo\+\_\+relative\+\_\+yaw}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEstimator_aa6fb65bc801f80dc142e3a5f9d0109ee}\label{classEstimator_aa6fb65bc801f80dc142e3a5f9d0109ee}} 
+\index{Estimator@{Estimator}!process\+Image@{process\+Image}}
+\index{process\+Image@{process\+Image}!Estimator@{Estimator}}
+\subsubsection{\texorpdfstring{process\+Image()}{processImage()}}
+{\footnotesize\ttfamily void Estimator\+::process\+Image (\begin{DoxyParamCaption}\item[{const map$<$ int, vector$<$ pair$<$ int, Eigen\+::\+Matrix$<$ double, 7, 1 $>$$>$$>$$>$ \&}]{image,  }\item[{const std\+\_\+msgs\+::\+Header \&}]{header }\end{DoxyParamCaption})}
+
+
+
+process Image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \\
+\hline
+{\em header} & \\
+\hline
+\end{DoxyParams}
+
+
+References Global\+S\+F\+M\+::construct(), S\+F\+M\+Feature\+::id, and S\+F\+M\+Feature\+::observation.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEstimator_aa6fb65bc801f80dc142e3a5f9d0109ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEstimator_aa44c20668ac637af041152abd568fe81}\label{classEstimator_aa44c20668ac637af041152abd568fe81}} 
+\index{Estimator@{Estimator}!process\+I\+MU@{process\+I\+MU}}
+\index{process\+I\+MU@{process\+I\+MU}!Estimator@{Estimator}}
+\subsubsection{\texorpdfstring{process\+I\+M\+U()}{processIMU()}}
+{\footnotesize\ttfamily void Estimator\+::process\+I\+MU (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{const Vector3d \&}]{linear\+\_\+acceleration,  }\item[{const Vector3d \&}]{angular\+\_\+velocity }\end{DoxyParamCaption})}
+
+
+
+processs I\+MU measurement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em linear\+\_\+acceleration} & \\
+\hline
+{\em angular\+\_\+velocity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEstimator_a13444b276377b490d799bad3a21c8bf9}\label{classEstimator_a13444b276377b490d799bad3a21c8bf9}} 
+\index{Estimator@{Estimator}!set\+Relo\+Frame@{set\+Relo\+Frame}}
+\index{set\+Relo\+Frame@{set\+Relo\+Frame}!Estimator@{Estimator}}
+\subsubsection{\texorpdfstring{set\+Relo\+Frame()}{setReloFrame()}}
+{\footnotesize\ttfamily void Estimator\+::set\+Relo\+Frame (\begin{DoxyParamCaption}\item[{double}]{\+\_\+frame\+\_\+stamp,  }\item[{int}]{\+\_\+frame\+\_\+index,  }\item[{vector$<$ Vector3d $>$ \&}]{\+\_\+match\+\_\+points,  }\item[{Vector3d}]{\+\_\+relo\+\_\+t,  }\item[{Matrix3d}]{\+\_\+relo\+\_\+r }\end{DoxyParamCaption})}
+
+
+
+Set the Relo Frame object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+frame\+\_\+stamp} & \\
+\hline
+{\em \+\_\+frame\+\_\+index} & \\
+\hline
+{\em \+\_\+match\+\_\+points} & \\
+\hline
+{\em \+\_\+relo\+\_\+t} & \\
+\hline
+{\em \+\_\+relo\+\_\+r} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/estimator.\+h\item 
+vins\+\_\+estimator/src/estimator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classcamodocal_1_1CameraFactory}{}\section{camodocal\+:\+:Camera\+Factory Class Reference}
+\label{classcamodocal_1_1CameraFactory}\index{camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{Camera\+Ptr} \hyperlink{classcamodocal_1_1CameraFactory_a853fe9e847faae5caa3981f87a9ab7c8}{generate\+Camera} (\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} model\+Type, const std\+::string \&camera\+Name, cv\+::\+Size image\+Size) const
+\begin{DoxyCompactList}\small\item\em generate \hyperlink{classcamodocal_1_1Camera}{Camera} object according to model\+Type \end{DoxyCompactList}\item 
+\hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{Camera\+Ptr} \hyperlink{classcamodocal_1_1CameraFactory_a8362492960d68a4ae43c40a1952df3a5}{generate\+Camera\+From\+Yaml\+File} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em generate camera object according to Y\+A\+ML file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boost\+::shared\+\_\+ptr$<$ \hyperlink{classcamodocal_1_1CameraFactory}{Camera\+Factory} $>$ \hyperlink{classcamodocal_1_1CameraFactory_a64645e95b821303ea4b550cb18f2641c}{instance} (void)
+\begin{DoxyCompactList}\small\item\em Get point of camera\+Factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1CameraFactory_a853fe9e847faae5caa3981f87a9ab7c8}\label{classcamodocal_1_1CameraFactory_a853fe9e847faae5caa3981f87a9ab7c8}} 
+\index{camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}!generate\+Camera@{generate\+Camera}}
+\index{generate\+Camera@{generate\+Camera}!camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}}
+\subsubsection{\texorpdfstring{generate\+Camera()}{generateCamera()}}
+{\footnotesize\ttfamily \hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{Camera\+Ptr} camodocal\+::\+Camera\+Factory\+::generate\+Camera (\begin{DoxyParamCaption}\item[{\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type}}]{model\+Type,  }\item[{const std\+::string \&}]{camera\+Name,  }\item[{cv\+::\+Size}]{image\+Size }\end{DoxyParamCaption}) const}
+
+
+
+generate \hyperlink{classcamodocal_1_1Camera}{Camera} object according to model\+Type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Type} & camera model \\
+\hline
+{\em camera\+Name} & camera name \\
+\hline
+{\em image\+Size} & image Size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: shared\+\_\+ptr of camera 
+\end{DoxyReturn}
+
+
+References camodocal\+::\+Camera\+::\+Parameters\+::camera\+Name(), camodocal\+::\+Camera\+::\+Parameters\+::image\+Height(), and camodocal\+::\+Camera\+::\+Parameters\+::image\+Width().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CameraFactory_a853fe9e847faae5caa3981f87a9ab7c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CameraFactory_a8362492960d68a4ae43c40a1952df3a5}\label{classcamodocal_1_1CameraFactory_a8362492960d68a4ae43c40a1952df3a5}} 
+\index{camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}!generate\+Camera\+From\+Yaml\+File@{generate\+Camera\+From\+Yaml\+File}}
+\index{generate\+Camera\+From\+Yaml\+File@{generate\+Camera\+From\+Yaml\+File}!camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}}
+\subsubsection{\texorpdfstring{generate\+Camera\+From\+Yaml\+File()}{generateCameraFromYamlFile()}}
+{\footnotesize\ttfamily \hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{Camera\+Ptr} camodocal\+::\+Camera\+Factory\+::generate\+Camera\+From\+Yaml\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+generate camera object according to Y\+A\+ML file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of Y\+A\+ML file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: shared\+\_\+ptr of camera 
+\end{DoxyReturn}
+
+
+References camodocal\+::\+Pinhole\+Camera\+::\+Parameters\+::read\+From\+Yaml\+File(), camodocal\+::\+Equidistant\+Camera\+::\+Parameters\+::read\+From\+Yaml\+File(), camodocal\+::\+O\+C\+A\+M\+Camera\+::\+Parameters\+::read\+From\+Yaml\+File(), and camodocal\+::\+Cata\+Camera\+::\+Parameters\+::read\+From\+Yaml\+File().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CameraFactory_a8362492960d68a4ae43c40a1952df3a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CameraFactory_a64645e95b821303ea4b550cb18f2641c}\label{classcamodocal_1_1CameraFactory_a64645e95b821303ea4b550cb18f2641c}} 
+\index{camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}!instance@{instance}}
+\index{instance@{instance}!camodocal\+::\+Camera\+Factory@{camodocal\+::\+Camera\+Factory}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily boost\+::shared\+\_\+ptr$<$ \hyperlink{classcamodocal_1_1CameraFactory}{Camera\+Factory} $>$ camodocal\+::\+Camera\+Factory\+::instance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get point of camera\+Factory. 
+
+\begin{DoxyReturn}{Returns}
+\+: shared\+\_\+ptr of \hyperlink{classcamodocal_1_1CameraFactory}{Camera\+Factory} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Camera\+Factory.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Camera\+Factory.\+cc\end{DoxyCompactItemize}

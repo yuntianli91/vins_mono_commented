@@ -1,0 +1,40 @@
+\hypertarget{classcamodocal_1_1ReprojectionError3}{}\section{camodocal\+:\+:Reprojection\+Error3$<$ CameraT $>$ Class Template Reference}
+\label{classcamodocal_1_1ReprojectionError3}\index{camodocal\+::\+Reprojection\+Error3$<$ Camera\+T $>$@{camodocal\+::\+Reprojection\+Error3$<$ Camera\+T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_aa5f0d2d2552de6d15fa8464f7b82504e}\label{classcamodocal_1_1ReprojectionError3_aa5f0d2d2552de6d15fa8464f7b82504e}} 
+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW {\bfseries Reprojection\+Error3} (const Eigen\+::\+Vector2d \&observed\+\_\+p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_a6a6cfba224d6ffe08eb9c0e10a98b9b7}\label{classcamodocal_1_1ReprojectionError3_a6a6cfba224d6ffe08eb9c0e10a98b9b7}} 
+{\bfseries Reprojection\+Error3} (const Eigen\+::\+Vector2d \&observed\+\_\+p, const Eigen\+::\+Matrix2d \&sqrt\+Precision\+Mat)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_ab1d8c265911e32f3625ba66edee9fe7b}\label{classcamodocal_1_1ReprojectionError3_ab1d8c265911e32f3625ba66edee9fe7b}} 
+{\bfseries Reprojection\+Error3} (const std\+::vector$<$ double $>$ \&intrinsic\+\_\+params, const Eigen\+::\+Vector2d \&observed\+\_\+p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_ad193918239d0167d9754d003d9fef868}\label{classcamodocal_1_1ReprojectionError3_ad193918239d0167d9754d003d9fef868}} 
+{\bfseries Reprojection\+Error3} (const std\+::vector$<$ double $>$ \&intrinsic\+\_\+params, const Eigen\+::\+Vector2d \&observed\+\_\+p, const Eigen\+::\+Matrix2d \&sqrt\+Precision\+Mat)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_a6c76345d2c4793fdaa863f5e5121d298}\label{classcamodocal_1_1ReprojectionError3_a6c76345d2c4793fdaa863f5e5121d298}} 
+{\bfseries Reprojection\+Error3} (const std\+::vector$<$ double $>$ \&intrinsic\+\_\+params, const Eigen\+::\+Vector3d \&odo\+\_\+pos, const Eigen\+::\+Vector3d \&odo\+\_\+att, const Eigen\+::\+Vector2d \&observed\+\_\+p, bool optimize\+\_\+cam\+\_\+odo\+\_\+z)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_ab3aec67c62b64e92fa23a9b3897261e5}\label{classcamodocal_1_1ReprojectionError3_ab3aec67c62b64e92fa23a9b3897261e5}} 
+{\bfseries Reprojection\+Error3} (const std\+::vector$<$ double $>$ \&intrinsic\+\_\+params, const Eigen\+::\+Quaterniond \&cam\+\_\+odo\+\_\+q, const Eigen\+::\+Vector3d \&cam\+\_\+odo\+\_\+t, const Eigen\+::\+Vector3d \&odo\+\_\+pos, const Eigen\+::\+Vector3d \&odo\+\_\+att, const Eigen\+::\+Vector2d \&observed\+\_\+p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_a6d2dce3dd857ce6238ae0c19bdd56ca9}\label{classcamodocal_1_1ReprojectionError3_a6d2dce3dd857ce6238ae0c19bdd56ca9}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const intrinsic\+\_\+params, const T $\ast$const q\+\_\+cam\+\_\+odo, const T $\ast$const t\+\_\+cam\+\_\+odo, const T $\ast$const p\+\_\+odo, const T $\ast$const att\+\_\+odo, const T $\ast$const point, T $\ast$residuals) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_a2de354fcca86a2daa443637d6a012e66}\label{classcamodocal_1_1ReprojectionError3_a2de354fcca86a2daa443637d6a012e66}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const q\+\_\+cam\+\_\+odo, const T $\ast$const t\+\_\+cam\+\_\+odo, const T $\ast$const point, T $\ast$residuals) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_af24e180b9b7c18010d24d5de374daa82}\label{classcamodocal_1_1ReprojectionError3_af24e180b9b7c18010d24d5de374daa82}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const q\+\_\+cam\+\_\+odo, const T $\ast$const t\+\_\+cam\+\_\+odo, const T $\ast$const p\+\_\+odo, const T $\ast$const att\+\_\+odo, const T $\ast$const point, T $\ast$residuals) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1ReprojectionError3_aba0b51235cde51aa8b4cf20a57d44b44}\label{classcamodocal_1_1ReprojectionError3_aba0b51235cde51aa8b4cf20a57d44b44}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries operator()} (const T $\ast$const point, T $\ast$residuals) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/src/camera\+\_\+models/Cost\+Function\+Factory.\+cc\end{DoxyCompactItemize}

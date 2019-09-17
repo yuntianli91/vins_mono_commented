@@ -1,0 +1,5 @@
+<map id="camodocal::EquidistantCamera::undistToPlane" name="camodocal::EquidistantCamera::undistToPlane">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera_1_1Parameters.html#a2dcff4a5472ebc79d5d72762681220a3" title="return image height of current camera object " alt="" coords="274,5,445,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1Camera_1_1Parameters.html#a92c11d296cb64c91a0c15528a8a7b813" title="return image width of current camera object " alt="" coords="276,71,443,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1EquidistantCamera.html#a04de4daf1568c2425eabdbade499f927" title="Project a 3D point (x,y,z) to the image plane in (u,v) " alt="" coords="257,136,461,177"/>
+</map>

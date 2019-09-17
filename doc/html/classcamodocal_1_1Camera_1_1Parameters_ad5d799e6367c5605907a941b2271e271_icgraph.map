@@ -1,0 +1,10 @@
+<map id="camodocal::Camera::Parameters::cameraName" name="camodocal::Camera::Parameters::cameraName">
+<area shape="rect" id="node2" href="$classcamodocal_1_1OCAMCamera.html#aff01e3fda8f1572771cc5ebd02dca383" title="virtual type of funtion cameraName " alt="" coords="241,5,419,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1PinholeCamera.html#a7ae231baab11bf3d6567333e524743ac" title="virtual type of funtion cameraName " alt="" coords="239,71,421,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1EquidistantCamera.html#a985ec4cd98fed18f5201551b24cf1d8b" title="virtual type of funtion cameraName " alt="" coords="228,136,432,177"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1CataCamera.html#a0d7729df53b75f8c616a8fc43b7aba13" title="virtual type of funtion cameraName " alt="" coords="247,201,413,243"/>
+<area shape="rect" id="node6" href="$classcamodocal_1_1EquidistantCamera.html#a07be015f3740cb23c1cdd87f3a4ba505" title="virtual function of camera intrinsics " alt="" coords="228,267,432,308"/>
+<area shape="rect" id="node7" href="$classcamodocal_1_1CataCamera.html#a1dae6c4e661280dfaa3674df02f76e9c" title="virtual function of camera intrinsics " alt="" coords="247,332,413,373"/>
+<area shape="rect" id="node8" href="$classcamodocal_1_1CameraFactory.html#a853fe9e847faae5caa3981f87a9ab7c8" title="generate Camera object according to modelType " alt="" coords="239,397,421,439"/>
+<area shape="rect" id="node9" href="$classcamodocal_1_1PinholeCamera_1_1Parameters.html#af5e1b14771df89124a16de2181790f99" title="Construct a new Pinhole Camera:: Parameters:: Parameters object. " alt="" coords="239,463,421,504"/>
+</map>

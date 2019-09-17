@@ -1,0 +1,374 @@
+\hypertarget{classcamodocal_1_1PinholeCamera}{}\section{camodocal\+:\+:Pinhole\+Camera Class Reference}
+\label{classcamodocal_1_1PinholeCamera}\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+
+
+Inheritance diagram for camodocal\+:\+:Pinhole\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcamodocal_1_1PinholeCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camodocal\+:\+:Pinhole\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcamodocal_1_1PinholeCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a28240fc319cf7202d41fc7d4438e0644}\label{classcamodocal_1_1PinholeCamera_a28240fc319cf7202d41fc7d4438e0644}} 
+\hyperlink{classcamodocal_1_1PinholeCamera_a28240fc319cf7202d41fc7d4438e0644}{Pinhole\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera}\+:\+: Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera} object. \end{DoxyCompactList}\item 
+\hyperlink{classcamodocal_1_1PinholeCamera_a0c9a5b62bd0e40adfa76585ab1fa3e9e}{Pinhole\+Camera} (const std\+::string \&\hyperlink{classcamodocal_1_1PinholeCamera_a7ae231baab11bf3d6567333e524743ac}{camera\+Name}, int \hyperlink{classcamodocal_1_1PinholeCamera_ae7db15be608e87b2445ed9fff6c0d9f7}{image\+Width}, int \hyperlink{classcamodocal_1_1PinholeCamera_a4a4df33440bc1c8b013523b8b289ac2d}{image\+Height}, double k1, double k2, double p1, double p2, double fx, double fy, double cx, double cy)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\hyperlink{classcamodocal_1_1PinholeCamera_ac4f4bd1a6899d44fef60e645ba09eabb}{Pinhole\+Camera} (const \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Parameters} \&params)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_aa740972c7a7bcd335f2c02d2558dbf3d}\label{classcamodocal_1_1PinholeCamera_aa740972c7a7bcd335f2c02d2558dbf3d}} 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} \hyperlink{classcamodocal_1_1PinholeCamera_aa740972c7a7bcd335f2c02d2558dbf3d}{model\+Type} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function model\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a7ae231baab11bf3d6567333e524743ac}\label{classcamodocal_1_1PinholeCamera_a7ae231baab11bf3d6567333e524743ac}} 
+const std\+::string \& \hyperlink{classcamodocal_1_1PinholeCamera_a7ae231baab11bf3d6567333e524743ac}{camera\+Name} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of funtion camera\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_ae7db15be608e87b2445ed9fff6c0d9f7}\label{classcamodocal_1_1PinholeCamera_ae7db15be608e87b2445ed9fff6c0d9f7}} 
+int \hyperlink{classcamodocal_1_1PinholeCamera_ae7db15be608e87b2445ed9fff6c0d9f7}{image\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a4a4df33440bc1c8b013523b8b289ac2d}\label{classcamodocal_1_1PinholeCamera_a4a4df33440bc1c8b013523b8b289ac2d}} 
+int \hyperlink{classcamodocal_1_1PinholeCamera_a4a4df33440bc1c8b013523b8b289ac2d}{image\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a09e4a9f75bfe47383163f4035047592a}\label{classcamodocal_1_1PinholeCamera_a09e4a9f75bfe47383163f4035047592a}} 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a09e4a9f75bfe47383163f4035047592a}{estimate\+Intrinsics} (const cv\+::\+Size \&board\+Size, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points)
+\begin{DoxyCompactList}\small\item\em virtual function of camera intrinsics \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcamodocal_1_1PinholeCamera_a0a4191ba420ee40355d8eb0f5cf587a7}{lift\+Sphere} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to the unit sphere. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a8a557882a34c5269f6254df6e1d9bb4f}{lift\+Projective} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to its projective ray. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a27e7b78d07e19f11d1ca0d3dc2c48b73}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a5cb4ec3347a9718ff963587c4f07515a}\label{classcamodocal_1_1PinholeCamera_a5cb4ec3347a9718ff963587c4f07515a}} 
+void {\bfseries space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p, Eigen\+::\+Matrix$<$ double, 2, 3 $>$ \&J) const
+\item 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a70cc5acd48df30c2f7a2f84b35369a39}{undist\+To\+Plane} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Projects an undistorted 2D point p\+\_\+u to the image plane. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a0e667305df17c681a6550cd0addfcaab}{distortion} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&d\+\_\+u) const
+\begin{DoxyCompactList}\small\item\em Apply distortion to input point (from the normalised plane) \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a36fbf4d157d3dafd87dc52c8f664bcbc}{distortion} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&d\+\_\+u, Eigen\+::\+Matrix2d \&J) const
+\begin{DoxyCompactList}\small\item\em Apply distortion to input point (from the normalised plane) and calculate Jacobian. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a8553c07cf81d005a24b335b3da9ceed4}\label{classcamodocal_1_1PinholeCamera_a8553c07cf81d005a24b335b3da9ceed4}} 
+void {\bfseries init\+Undistort\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, double f\+Scale=1.\+0) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a693831534ad3140dd83f18371e761fbb}\label{classcamodocal_1_1PinholeCamera_a693831534ad3140dd83f18371e761fbb}} 
+cv\+::\+Mat {\bfseries init\+Undistort\+Rectify\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, float fx=-\/1.\+0f, float fy=-\/1.\+0f, cv\+::\+Size image\+Size=cv\+::\+Size(0, 0), float cx=-\/1.\+0f, float cy=-\/1.\+0f, cv\+::\+Mat rmat=cv\+::\+Mat\+::eye(3, 3, C\+V\+\_\+32\+F)) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_af1b4715f8d9a6a7ba3e866d5bf2721d2}\label{classcamodocal_1_1PinholeCamera_af1b4715f8d9a6a7ba3e866d5bf2721d2}} 
+int \hyperlink{classcamodocal_1_1PinholeCamera_af1b4715f8d9a6a7ba3e866d5bf2721d2}{parameter\+Count} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of parameter count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a8aae0528cc081d881b3052fde80b1d24}\label{classcamodocal_1_1PinholeCamera_a8aae0528cc081d881b3052fde80b1d24}} 
+const \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Parameters} \& {\bfseries get\+Parameters} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_ae3b36f6c08d76b4abe2b00c34f3ef58b}\label{classcamodocal_1_1PinholeCamera_ae3b36f6c08d76b4abe2b00c34f3ef58b}} 
+void {\bfseries set\+Parameters} (const \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Parameters} \&parameters)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a6014010b2fb08fbef76fa5ef2f4b5d80}\label{classcamodocal_1_1PinholeCamera_a6014010b2fb08fbef76fa5ef2f4b5d80}} 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a6014010b2fb08fbef76fa5ef2f4b5d80}{read\+Parameters} (const std\+::vector$<$ double $>$ \&parameter\+Vec)
+\begin{DoxyCompactList}\small\item\em pure virtual function of reading parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a87f00320069f054a1dff89e23d65fa0b}\label{classcamodocal_1_1PinholeCamera_a87f00320069f054a1dff89e23d65fa0b}} 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a87f00320069f054a1dff89e23d65fa0b}{write\+Parameters} (std\+::vector$<$ double $>$ \&parameter\+Vec) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a364713cbd54cb444e0e853081c83a3ae}\label{classcamodocal_1_1PinholeCamera_a364713cbd54cb444e0e853081c83a3ae}} 
+void \hyperlink{classcamodocal_1_1PinholeCamera_a364713cbd54cb444e0e853081c83a3ae}{write\+Parameters\+To\+Yaml\+File} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters to Y\+A\+ML file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_ab9381cdc2ec2d4248093d1ddf7d92dad}\label{classcamodocal_1_1PinholeCamera_ab9381cdc2ec2d4248093d1ddf7d92dad}} 
+std\+::string \hyperlink{classcamodocal_1_1PinholeCamera_ab9381cdc2ec2d4248093d1ddf7d92dad}{parameters\+To\+String} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual of converting parameters to string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a7b6f96c5b924d7ab0f98bc24410edee3}\label{classcamodocal_1_1PinholeCamera_a7b6f96c5b924d7ab0f98bc24410edee3}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries space\+To\+Plane} (const T $\ast$const params, const T $\ast$const q, const T $\ast$const t, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a0c9a5b62bd0e40adfa76585ab1fa3e9e}\label{classcamodocal_1_1PinholeCamera_a0c9a5b62bd0e40adfa76585ab1fa3e9e}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!Pinhole\+Camera@{Pinhole\+Camera}}
+\index{Pinhole\+Camera@{Pinhole\+Camera}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{Pinhole\+Camera()}{PinholeCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily camodocal\+::\+Pinhole\+Camera\+::\+Pinhole\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Name,  }\item[{int}]{image\+Width,  }\item[{int}]{image\+Height,  }\item[{double}]{k1,  }\item[{double}]{k2,  }\item[{double}]{p1,  }\item[{double}]{p2,  }\item[{double}]{fx,  }\item[{double}]{fy,  }\item[{double}]{cx,  }\item[{double}]{cy }\end{DoxyParamCaption})}
+
+
+
+Constructor from the projection model parameters. 
+
+Construct a new Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera}\+:\+: Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Name} & name of camera \\
+\hline
+{\em image\+Width} & width of current image \\
+\hline
+{\em image\+Height} & height of current image \\
+\hline
+{\em k1} & distortion parameter \\
+\hline
+{\em k2} & distortion parameter \\
+\hline
+{\em p1} & distortion parameter \\
+\hline
+{\em p2} & distortion parameter \\
+\hline
+{\em fx} & projection parameter \\
+\hline
+{\em fy} & projection parameter \\
+\hline
+{\em cx} & projection parameter \\
+\hline
+{\em cy} & projection parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_ac4f4bd1a6899d44fef60e645ba09eabb}\label{classcamodocal_1_1PinholeCamera_ac4f4bd1a6899d44fef60e645ba09eabb}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!Pinhole\+Camera@{Pinhole\+Camera}}
+\index{Pinhole\+Camera@{Pinhole\+Camera}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{Pinhole\+Camera()}{PinholeCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily camodocal\+::\+Pinhole\+Camera\+::\+Pinhole\+Camera (\begin{DoxyParamCaption}\item[{const \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Parameters} \&}]{params }\end{DoxyParamCaption})}
+
+
+
+Constructor from the projection model parameters. 
+
+Construct a new Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera}\+:\+: Pinhole \hyperlink{classcamodocal_1_1Camera}{Camera} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters}{Pinhole\+Camera\+::\+Parameters} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a0e667305df17c681a6550cd0addfcaab}\label{classcamodocal_1_1PinholeCamera_a0e667305df17c681a6550cd0addfcaab}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!distortion@{distortion}}
+\index{distortion@{distortion}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{distortion()}{distortion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::distortion (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{d\+\_\+u }\end{DoxyParamCaption}) const}
+
+
+
+Apply distortion to input point (from the normalised plane) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & undistorted coordinates of point on the normalised plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+to obtain the distorted point\+: p\+\_\+d = p\+\_\+u + d\+\_\+u 
+\end{DoxyReturn}
+
+
+Referenced by lift\+Projective(), space\+To\+Plane(), and undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a0e667305df17c681a6550cd0addfcaab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a36fbf4d157d3dafd87dc52c8f664bcbc}\label{classcamodocal_1_1PinholeCamera_a36fbf4d157d3dafd87dc52c8f664bcbc}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!distortion@{distortion}}
+\index{distortion@{distortion}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{distortion()}{distortion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::distortion (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{d\+\_\+u,  }\item[{Eigen\+::\+Matrix2d \&}]{J }\end{DoxyParamCaption}) const}
+
+
+
+Apply distortion to input point (from the normalised plane) and calculate Jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & undistorted coordinates of point on the normalised plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+to obtain the distorted point\+: p\+\_\+d = p\+\_\+u + d\+\_\+u 
+\end{DoxyReturn}
+
+
+References camodocal\+::\+Camera\+::\+Parameters\+::image\+Height(), camodocal\+::\+Camera\+::\+Parameters\+::image\+Width(), and space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a36fbf4d157d3dafd87dc52c8f664bcbc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a8a557882a34c5269f6254df6e1d9bb4f}\label{classcamodocal_1_1PinholeCamera_a8a557882a34c5269f6254df6e1d9bb4f}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!lift\+Projective@{lift\+Projective}}
+\index{lift\+Projective@{lift\+Projective}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Projective()}{liftProjective()}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::lift\+Projective (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to its projective ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the projective ray \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+
+
+Referenced by lift\+Sphere().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a8a557882a34c5269f6254df6e1d9bb4f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a8a557882a34c5269f6254df6e1d9bb4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a0a4191ba420ee40355d8eb0f5cf587a7}\label{classcamodocal_1_1PinholeCamera_a0a4191ba420ee40355d8eb0f5cf587a7}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!lift\+Sphere@{lift\+Sphere}}
+\index{lift\+Sphere@{lift\+Sphere}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Sphere()}{liftSphere()}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::lift\+Sphere (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to the unit sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the point on the sphere \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}{camodocal\+::\+Camera}.
+
+
+
+References lift\+Projective().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a0a4191ba420ee40355d8eb0f5cf587a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a27e7b78d07e19f11d1ca0d3dc2c48b73}\label{classcamodocal_1_1PinholeCamera_a27e7b78d07e19f11d1ca0d3dc2c48b73}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!space\+To\+Plane@{space\+To\+Plane}}
+\index{space\+To\+Plane@{space\+To\+Plane}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{space\+To\+Plane()}{spaceToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::space\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D point coordinates \\
+\hline
+{\em p} & return value, contains the image point coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+
+
+Referenced by distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a27e7b78d07e19f11d1ca0d3dc2c48b73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a27e7b78d07e19f11d1ca0d3dc2c48b73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1PinholeCamera_a70cc5acd48df30c2f7a2f84b35369a39}\label{classcamodocal_1_1PinholeCamera_a70cc5acd48df30c2f7a2f84b35369a39}} 
+\index{camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}!undist\+To\+Plane@{undist\+To\+Plane}}
+\index{undist\+To\+Plane@{undist\+To\+Plane}!camodocal\+::\+Pinhole\+Camera@{camodocal\+::\+Pinhole\+Camera}}
+\subsubsection{\texorpdfstring{undist\+To\+Plane()}{undistToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+Pinhole\+Camera\+::undist\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Projects an undistorted 2D point p\+\_\+u to the image plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & 2D point coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image point coordinates 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1PinholeCamera_a70cc5acd48df30c2f7a2f84b35369a39_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Pinhole\+Camera.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Pinhole\+Camera.\+cc\end{DoxyCompactItemize}

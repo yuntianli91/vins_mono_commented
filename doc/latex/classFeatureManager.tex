@@ -1,0 +1,68 @@
+\hypertarget{classFeatureManager}{}\section{Feature\+Manager Class Reference}
+\label{classFeatureManager}\index{Feature\+Manager@{Feature\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFeatureManager_a6d4c8865fc3748e58692bd24d43ccfa2}\label{classFeatureManager_a6d4c8865fc3748e58692bd24d43ccfa2}} 
+{\bfseries Feature\+Manager} (Matrix3d \+\_\+\+Rs\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{classFeatureManager_a39e86bfd72cdac813a10618d71504f5f}\label{classFeatureManager_a39e86bfd72cdac813a10618d71504f5f}} 
+void {\bfseries set\+Ric} (Matrix3d \+\_\+ric\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{classFeatureManager_a9fcd13083275808900edd01bd854d74c}\label{classFeatureManager_a9fcd13083275808900edd01bd854d74c}} 
+void {\bfseries clear\+State} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_af7714129ee3c9fd9b93e813217fbe2c0}\label{classFeatureManager_af7714129ee3c9fd9b93e813217fbe2c0}} 
+int {\bfseries get\+Feature\+Count} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_a20b92daab4176151bc4314c269c1be61}\label{classFeatureManager_a20b92daab4176151bc4314c269c1be61}} 
+bool {\bfseries add\+Feature\+Check\+Parallax} (int frame\+\_\+count, const map$<$ int, vector$<$ pair$<$ int, Eigen\+::\+Matrix$<$ double, 7, 1 $>$$>$$>$$>$ \&image, double td)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a9c843caa5dd8831548a80b847904f801}\label{classFeatureManager_a9c843caa5dd8831548a80b847904f801}} 
+void {\bfseries debug\+Show} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_aa8a8ce48602b74b99e58688415352f48}\label{classFeatureManager_aa8a8ce48602b74b99e58688415352f48}} 
+vector$<$ pair$<$ Vector3d, Vector3d $>$ $>$ {\bfseries get\+Corresponding} (int frame\+\_\+count\+\_\+l, int frame\+\_\+count\+\_\+r)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a7db4309f2ba5b8132f24cbe1dbeed9e8}\label{classFeatureManager_a7db4309f2ba5b8132f24cbe1dbeed9e8}} 
+void {\bfseries set\+Depth} (const Vector\+Xd \&x)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a9b0f5f182766c95c2a9d0787ed92b3b0}\label{classFeatureManager_a9b0f5f182766c95c2a9d0787ed92b3b0}} 
+void {\bfseries remove\+Failures} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_a35bfb1b09499bb6dd3868f8f9c2092e3}\label{classFeatureManager_a35bfb1b09499bb6dd3868f8f9c2092e3}} 
+void {\bfseries clear\+Depth} (const Vector\+Xd \&x)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a9462e97b9d3fdac9d74ffd950489ff63}\label{classFeatureManager_a9462e97b9d3fdac9d74ffd950489ff63}} 
+Vector\+Xd {\bfseries get\+Depth\+Vector} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_a0ac7d44ce1dab007fb680a08aaf9abd3}\label{classFeatureManager_a0ac7d44ce1dab007fb680a08aaf9abd3}} 
+void {\bfseries triangulate} (Vector3d Ps\mbox{[}$\,$\mbox{]}, Vector3d tic\mbox{[}$\,$\mbox{]}, Matrix3d ric\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{classFeatureManager_a63093b325eaa85741f0daf461af1db88}\label{classFeatureManager_a63093b325eaa85741f0daf461af1db88}} 
+void {\bfseries remove\+Back\+Shift\+Depth} (Eigen\+::\+Matrix3d marg\+\_\+R, Eigen\+::\+Vector3d marg\+\_\+P, Eigen\+::\+Matrix3d new\+\_\+R, Eigen\+::\+Vector3d new\+\_\+P)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a4d692afbbc6e96ec790158947a5ada27}\label{classFeatureManager_a4d692afbbc6e96ec790158947a5ada27}} 
+void {\bfseries remove\+Back} ()
+\item 
+\mbox{\Hypertarget{classFeatureManager_a347ce1b5274f11a66869ed751f943062}\label{classFeatureManager_a347ce1b5274f11a66869ed751f943062}} 
+void {\bfseries remove\+Front} (int frame\+\_\+count)
+\item 
+\mbox{\Hypertarget{classFeatureManager_a19cc345f7563a54f38c1de37f3f9f65d}\label{classFeatureManager_a19cc345f7563a54f38c1de37f3f9f65d}} 
+void {\bfseries remove\+Outlier} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFeatureManager_afbcc06fdac935e74d18169525c2733ff}\label{classFeatureManager_afbcc06fdac935e74d18169525c2733ff}} 
+list$<$ \hyperlink{classFeaturePerId}{Feature\+Per\+Id} $>$ {\bfseries feature}
+\item 
+\mbox{\Hypertarget{classFeatureManager_a23f77dccc92660a67947a54e4e0e7806}\label{classFeatureManager_a23f77dccc92660a67947a54e4e0e7806}} 
+int {\bfseries last\+\_\+track\+\_\+num}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/feature\+\_\+manager.\+h\item 
+vins\+\_\+estimator/src/feature\+\_\+manager.\+cpp\end{DoxyCompactItemize}

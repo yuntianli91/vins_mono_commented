@@ -1,0 +1,74 @@
+\hypertarget{classPoseGraph}{}\section{Pose\+Graph Class Reference}
+\label{classPoseGraph}\index{Pose\+Graph@{Pose\+Graph}}
+
+
+Collaboration diagram for Pose\+Graph\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classPoseGraph__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoseGraph_ab19bd20611f26a9abc083b24920eb9d5}\label{classPoseGraph_ab19bd20611f26a9abc083b24920eb9d5}} 
+void {\bfseries register\+Pub} (ros\+::\+Node\+Handle \&n)
+\item 
+\mbox{\Hypertarget{classPoseGraph_ab3fa75350f64624f0c2db3df60bcf030}\label{classPoseGraph_ab3fa75350f64624f0c2db3df60bcf030}} 
+void {\bfseries add\+Key\+Frame} (\hyperlink{classKeyFrame}{Key\+Frame} $\ast$cur\+\_\+kf, bool flag\+\_\+detect\+\_\+loop)
+\item 
+\mbox{\Hypertarget{classPoseGraph_a81b17a724cfe45217f9c9cb5b4a01ac6}\label{classPoseGraph_a81b17a724cfe45217f9c9cb5b4a01ac6}} 
+void {\bfseries load\+Key\+Frame} (\hyperlink{classKeyFrame}{Key\+Frame} $\ast$cur\+\_\+kf, bool flag\+\_\+detect\+\_\+loop)
+\item 
+\mbox{\Hypertarget{classPoseGraph_a49be4623be0d9dfbf4d6eff6a5c69f58}\label{classPoseGraph_a49be4623be0d9dfbf4d6eff6a5c69f58}} 
+void {\bfseries load\+Vocabulary} (std\+::string voc\+\_\+path)
+\item 
+\mbox{\Hypertarget{classPoseGraph_aaa3442ef8c4db9ab67dd9f6e1d0ff679}\label{classPoseGraph_aaa3442ef8c4db9ab67dd9f6e1d0ff679}} 
+void {\bfseries update\+Key\+Frame\+Loop} (int index, Eigen\+::\+Matrix$<$ double, 8, 1 $>$ \&\+\_\+loop\+\_\+info)
+\item 
+\mbox{\Hypertarget{classPoseGraph_a5189aca4fec528b807f4bb5887ce284e}\label{classPoseGraph_a5189aca4fec528b807f4bb5887ce284e}} 
+\hyperlink{classKeyFrame}{Key\+Frame} $\ast$ {\bfseries get\+Key\+Frame} (int index)
+\item 
+\mbox{\Hypertarget{classPoseGraph_ad1496be8f0f5583244b64568726493ad}\label{classPoseGraph_ad1496be8f0f5583244b64568726493ad}} 
+void {\bfseries save\+Pose\+Graph} ()
+\item 
+\mbox{\Hypertarget{classPoseGraph_afb4cdc21d3edbe53873d98dd22b5987f}\label{classPoseGraph_afb4cdc21d3edbe53873d98dd22b5987f}} 
+void {\bfseries load\+Pose\+Graph} ()
+\item 
+\mbox{\Hypertarget{classPoseGraph_a6340f4e3d29447bbae2b44cfeedf0a27}\label{classPoseGraph_a6340f4e3d29447bbae2b44cfeedf0a27}} 
+void {\bfseries publish} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoseGraph_aa0fe230204d1bee342c11c97e862ded8}\label{classPoseGraph_aa0fe230204d1bee342c11c97e862ded8}} 
+nav\+\_\+msgs\+::\+Path {\bfseries path} \mbox{[}10\mbox{]}
+\item 
+\mbox{\Hypertarget{classPoseGraph_af3676c60afffc3d5657a8985d3c10561}\label{classPoseGraph_af3676c60afffc3d5657a8985d3c10561}} 
+nav\+\_\+msgs\+::\+Path {\bfseries base\+\_\+path}
+\item 
+\mbox{\Hypertarget{classPoseGraph_aa7957c0701f146581d52ac3b8bd9d6a5}\label{classPoseGraph_aa7957c0701f146581d52ac3b8bd9d6a5}} 
+\hyperlink{classCameraPoseVisualization}{Camera\+Pose\+Visualization} $\ast$ {\bfseries posegraph\+\_\+visualization}
+\item 
+\mbox{\Hypertarget{classPoseGraph_a76db8fd2b01de81d3cbfcceb03d6537a}\label{classPoseGraph_a76db8fd2b01de81d3cbfcceb03d6537a}} 
+Vector3d {\bfseries t\+\_\+drift}
+\item 
+\mbox{\Hypertarget{classPoseGraph_a0ad9e7974ba52f8d95eda4b8bf7f6c78}\label{classPoseGraph_a0ad9e7974ba52f8d95eda4b8bf7f6c78}} 
+double {\bfseries yaw\+\_\+drift}
+\item 
+\mbox{\Hypertarget{classPoseGraph_afb4dbf8941a56e13370cddfae7e3cf89}\label{classPoseGraph_afb4dbf8941a56e13370cddfae7e3cf89}} 
+Matrix3d {\bfseries r\+\_\+drift}
+\item 
+\mbox{\Hypertarget{classPoseGraph_a02bf859d80338c578f8591908557cd80}\label{classPoseGraph_a02bf859d80338c578f8591908557cd80}} 
+Vector3d {\bfseries w\+\_\+t\+\_\+vio}
+\item 
+\mbox{\Hypertarget{classPoseGraph_aa6057203e6acea4a5e889e72be39d24f}\label{classPoseGraph_aa6057203e6acea4a5e889e72be39d24f}} 
+Matrix3d {\bfseries w\+\_\+r\+\_\+vio}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/pose\+\_\+graph.\+h\item 
+pose\+\_\+graph/src/pose\+\_\+graph.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{structReprojectionError3D}{}\section{Reprojection\+Error3D Struct Reference}
+\label{structReprojectionError3D}\index{Reprojection\+Error3D@{Reprojection\+Error3D}}
+
+
+structure of repeojection error  
+
+
+
+
+{\ttfamily \#include $<$initial\+\_\+sfm.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structReprojectionError3D_abb8446263a017ee34afc29be2e1c4c09}\label{structReprojectionError3D_abb8446263a017ee34afc29be2e1c4c09}} 
+{\bfseries Reprojection\+Error3D} (double observed\+\_\+u, double observed\+\_\+v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{structReprojectionError3D_a7cbde2912c71ddefcf084788ce649e9a}{operator()} (const T $\ast$const camera\+\_\+R, const T $\ast$const camera\+\_\+T, const T $\ast$point, T $\ast$residuals) const
+\begin{DoxyCompactList}\small\item\em functor for residual calculation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static ceres\+::\+Cost\+Function $\ast$ \hyperlink{structReprojectionError3D_adb37d081c013ea177b2fb3a26d9e7aab}{Create} (const double observed\+\_\+u, const double observed\+\_\+v)
+\begin{DoxyCompactList}\small\item\em factory function to create Cost\+Function object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structReprojectionError3D_a152397137c2f3919d9e030a671e0534d}\label{structReprojectionError3D_a152397137c2f3919d9e030a671e0534d}} 
+double {\bfseries observed\+\_\+u\+\_\+}
+\item 
+\mbox{\Hypertarget{structReprojectionError3D_a3e41c8b9db195ac3961ca785b3ea4c06}\label{structReprojectionError3D_a3e41c8b9db195ac3961ca785b3ea4c06}} 
+double {\bfseries observed\+\_\+v\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+structure of repeojection error 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structReprojectionError3D_adb37d081c013ea177b2fb3a26d9e7aab}\label{structReprojectionError3D_adb37d081c013ea177b2fb3a26d9e7aab}} 
+\index{Reprojection\+Error3D@{Reprojection\+Error3D}!Create@{Create}}
+\index{Create@{Create}!Reprojection\+Error3D@{Reprojection\+Error3D}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static ceres\+::\+Cost\+Function$\ast$ Reprojection\+Error3\+D\+::\+Create (\begin{DoxyParamCaption}\item[{const double}]{observed\+\_\+u,  }\item[{const double}]{observed\+\_\+v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+factory function to create Cost\+Function object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observed\+\_\+u\+\_\+：} & observed pixel coordinate \\
+\hline
+{\em observed\+\_\+v\+\_\+} & observed pixel coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ceres\+::\+Cost\+Function$\ast$ 
+\end{DoxyReturn}
+
+
+Referenced by Global\+S\+F\+M\+::construct().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structReprojectionError3D_adb37d081c013ea177b2fb3a26d9e7aab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structReprojectionError3D_a7cbde2912c71ddefcf084788ce649e9a}\label{structReprojectionError3D_a7cbde2912c71ddefcf084788ce649e9a}} 
+\index{Reprojection\+Error3D@{Reprojection\+Error3D}!operator()@{operator()}}
+\index{operator()@{operator()}!Reprojection\+Error3D@{Reprojection\+Error3D}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Reprojection\+Error3\+D\+::operator() (\begin{DoxyParamCaption}\item[{const T $\ast$const}]{camera\+\_\+R,  }\item[{const T $\ast$const}]{camera\+\_\+T,  }\item[{const T $\ast$}]{point,  }\item[{T $\ast$}]{residuals }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+functor for residual calculation 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+\_\+R} & \+: array of quaternion q\+\_\+c$^\wedge$w(R\+\_\+w$^\wedge$c) \\
+\hline
+{\em camera\+\_\+T} & \+: array of translation t\+\_\+w$^\wedge$c \\
+\hline
+{\em point} & \+: array of point coordinates in world frame \\
+\hline
+{\em residuals} & \+: reprojection error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true \+: succeed 
+
+false \+:failed 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/initial/initial\+\_\+sfm.\+h\end{DoxyCompactItemize}

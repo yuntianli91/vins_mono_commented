@@ -1,0 +1,255 @@
+\hypertarget{classcamodocal_1_1EquidistantCamera}{}\section{camodocal\+:\+:Equidistant\+Camera Class Reference}
+\label{classcamodocal_1_1EquidistantCamera}\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+
+
+{\ttfamily \#include $<$Equidistant\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for camodocal\+:\+:Equidistant\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classcamodocal_1_1EquidistantCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camodocal\+:\+:Equidistant\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classcamodocal_1_1EquidistantCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters}{Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_ad00dbcd6ff79c1a86009fdb168e8f912}\label{classcamodocal_1_1EquidistantCamera_ad00dbcd6ff79c1a86009fdb168e8f912}} 
+\hyperlink{classcamodocal_1_1EquidistantCamera_ad00dbcd6ff79c1a86009fdb168e8f912}{Equidistant\+Camera} (const std\+::string \&\hyperlink{classcamodocal_1_1EquidistantCamera_a985ec4cd98fed18f5201551b24cf1d8b}{camera\+Name}, int \hyperlink{classcamodocal_1_1EquidistantCamera_a90ff17672aca7c81cd56d8541cbb3190}{image\+Width}, int \hyperlink{classcamodocal_1_1EquidistantCamera_a7db0d67a1c27897c04e3ae1635207433}{image\+Height}, double k2, double k3, double k4, double k5, double mu, double mv, double u0, double v0)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a9f83afd3d68f9cde56e669b62498133f}\label{classcamodocal_1_1EquidistantCamera_a9f83afd3d68f9cde56e669b62498133f}} 
+\hyperlink{classcamodocal_1_1EquidistantCamera_a9f83afd3d68f9cde56e669b62498133f}{Equidistant\+Camera} (const \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters}{Parameters} \&params)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a5fbae9e11f1bfdc4f8c221b3525c34a6}\label{classcamodocal_1_1EquidistantCamera_a5fbae9e11f1bfdc4f8c221b3525c34a6}} 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} \hyperlink{classcamodocal_1_1EquidistantCamera_a5fbae9e11f1bfdc4f8c221b3525c34a6}{model\+Type} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function model\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a985ec4cd98fed18f5201551b24cf1d8b}\label{classcamodocal_1_1EquidistantCamera_a985ec4cd98fed18f5201551b24cf1d8b}} 
+const std\+::string \& \hyperlink{classcamodocal_1_1EquidistantCamera_a985ec4cd98fed18f5201551b24cf1d8b}{camera\+Name} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of funtion camera\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a90ff17672aca7c81cd56d8541cbb3190}\label{classcamodocal_1_1EquidistantCamera_a90ff17672aca7c81cd56d8541cbb3190}} 
+int \hyperlink{classcamodocal_1_1EquidistantCamera_a90ff17672aca7c81cd56d8541cbb3190}{image\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a7db0d67a1c27897c04e3ae1635207433}\label{classcamodocal_1_1EquidistantCamera_a7db0d67a1c27897c04e3ae1635207433}} 
+int \hyperlink{classcamodocal_1_1EquidistantCamera_a7db0d67a1c27897c04e3ae1635207433}{image\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a07be015f3740cb23c1cdd87f3a4ba505}\label{classcamodocal_1_1EquidistantCamera_a07be015f3740cb23c1cdd87f3a4ba505}} 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_a07be015f3740cb23c1cdd87f3a4ba505}{estimate\+Intrinsics} (const cv\+::\+Size \&board\+Size, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points)
+\begin{DoxyCompactList}\small\item\em virtual function of camera intrinsics \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcamodocal_1_1EquidistantCamera_ac86c8527e09b6df4eea4fd3c1322ba00}{lift\+Sphere} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to the unit sphere. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_accd38ebf90227cc221d91dad7dd57dbb}{lift\+Projective} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to its projective ray. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_a04de4daf1568c2425eabdbade499f927}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_af24c481afa7e454a687fcdc7726d443f}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p, Eigen\+::\+Matrix$<$ double, 2, 3 $>$ \&J) const
+\begin{DoxyCompactList}\small\item\em Project a 3D point to the image plane and calculate Jacobian. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_ac0aae0a472fac59ad5fc22079eb5560d}{undist\+To\+Plane} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Projects an undistorted 2D point p\+\_\+u to the image plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a192665c52e98f0428a5a466565222f39}\label{classcamodocal_1_1EquidistantCamera_a192665c52e98f0428a5a466565222f39}} 
+void {\bfseries init\+Undistort\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, double f\+Scale=1.\+0) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a45135c8a95721c66c2f61b57b14adf07}\label{classcamodocal_1_1EquidistantCamera_a45135c8a95721c66c2f61b57b14adf07}} 
+cv\+::\+Mat {\bfseries init\+Undistort\+Rectify\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, float fx=-\/1.\+0f, float fy=-\/1.\+0f, cv\+::\+Size image\+Size=cv\+::\+Size(0, 0), float cx=-\/1.\+0f, float cy=-\/1.\+0f, cv\+::\+Mat rmat=cv\+::\+Mat\+::eye(3, 3, C\+V\+\_\+32\+F)) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a6ada44a337fe2a7de4ec34486820c037}\label{classcamodocal_1_1EquidistantCamera_a6ada44a337fe2a7de4ec34486820c037}} 
+int \hyperlink{classcamodocal_1_1EquidistantCamera_a6ada44a337fe2a7de4ec34486820c037}{parameter\+Count} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of parameter count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_afda61fe601caf9b18f4c20ff506cb8fa}\label{classcamodocal_1_1EquidistantCamera_afda61fe601caf9b18f4c20ff506cb8fa}} 
+const \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters}{Parameters} \& {\bfseries get\+Parameters} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_af29941b207019fe3e3dc85362839de50}\label{classcamodocal_1_1EquidistantCamera_af29941b207019fe3e3dc85362839de50}} 
+void {\bfseries set\+Parameters} (const \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters}{Parameters} \&parameters)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_af91f10cf9a5ceb2da0ebefda2eccd358}\label{classcamodocal_1_1EquidistantCamera_af91f10cf9a5ceb2da0ebefda2eccd358}} 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_af91f10cf9a5ceb2da0ebefda2eccd358}{read\+Parameters} (const std\+::vector$<$ double $>$ \&parameter\+Vec)
+\begin{DoxyCompactList}\small\item\em pure virtual function of reading parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a5006b40521b778fd5d02bf5a0f83b2e1}\label{classcamodocal_1_1EquidistantCamera_a5006b40521b778fd5d02bf5a0f83b2e1}} 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_a5006b40521b778fd5d02bf5a0f83b2e1}{write\+Parameters} (std\+::vector$<$ double $>$ \&parameter\+Vec) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_ae3142aaa34373807d929de2750e28f7a}\label{classcamodocal_1_1EquidistantCamera_ae3142aaa34373807d929de2750e28f7a}} 
+void \hyperlink{classcamodocal_1_1EquidistantCamera_ae3142aaa34373807d929de2750e28f7a}{write\+Parameters\+To\+Yaml\+File} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters to Y\+A\+ML file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_ab78b5a61b2e68bbde6b863f4538f544e}\label{classcamodocal_1_1EquidistantCamera_ab78b5a61b2e68bbde6b863f4538f544e}} 
+std\+::string \hyperlink{classcamodocal_1_1EquidistantCamera_ab78b5a61b2e68bbde6b863f4538f544e}{parameters\+To\+String} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual of converting parameters to string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_aafd0587cb4f994cb26a10b025802f377}\label{classcamodocal_1_1EquidistantCamera_aafd0587cb4f994cb26a10b025802f377}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries space\+To\+Plane} (const T $\ast$const params, const T $\ast$const q, const T $\ast$const t, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+J. Kannala, and S. Brandt, A Generic \hyperlink{classcamodocal_1_1Camera}{Camera} Model and Calibration Method for Conventional, Wide-\/\+Angle, and Fish-\/\+Eye Lenses, P\+A\+MI 2006 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_accd38ebf90227cc221d91dad7dd57dbb}\label{classcamodocal_1_1EquidistantCamera_accd38ebf90227cc221d91dad7dd57dbb}} 
+\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}!lift\+Projective@{lift\+Projective}}
+\index{lift\+Projective@{lift\+Projective}!camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Projective()}{liftProjective()}}
+{\footnotesize\ttfamily void camodocal\+::\+Equidistant\+Camera\+::lift\+Projective (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to its projective ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the projective ray \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}{camodocal\+::\+Camera}.
+
+
+
+Referenced by lift\+Sphere().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1EquidistantCamera_accd38ebf90227cc221d91dad7dd57dbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_ac86c8527e09b6df4eea4fd3c1322ba00}\label{classcamodocal_1_1EquidistantCamera_ac86c8527e09b6df4eea4fd3c1322ba00}} 
+\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}!lift\+Sphere@{lift\+Sphere}}
+\index{lift\+Sphere@{lift\+Sphere}!camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Sphere()}{liftSphere()}}
+{\footnotesize\ttfamily void camodocal\+::\+Equidistant\+Camera\+::lift\+Sphere (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to the unit sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the point on the sphere \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}{camodocal\+::\+Camera}.
+
+
+
+References lift\+Projective().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1EquidistantCamera_ac86c8527e09b6df4eea4fd3c1322ba00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_a04de4daf1568c2425eabdbade499f927}\label{classcamodocal_1_1EquidistantCamera_a04de4daf1568c2425eabdbade499f927}} 
+\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}!space\+To\+Plane@{space\+To\+Plane}}
+\index{space\+To\+Plane@{space\+To\+Plane}!camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+\subsubsection{\texorpdfstring{space\+To\+Plane()}{spaceToPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Equidistant\+Camera\+::space\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D point coordinates \\
+\hline
+{\em p} & return value, contains the image point coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}{camodocal\+::\+Camera}.
+
+
+
+Referenced by undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1EquidistantCamera_a04de4daf1568c2425eabdbade499f927_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_af24c481afa7e454a687fcdc7726d443f}\label{classcamodocal_1_1EquidistantCamera_af24c481afa7e454a687fcdc7726d443f}} 
+\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}!space\+To\+Plane@{space\+To\+Plane}}
+\index{space\+To\+Plane@{space\+To\+Plane}!camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+\subsubsection{\texorpdfstring{space\+To\+Plane()}{spaceToPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Equidistant\+Camera\+::space\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Matrix$<$ double, 2, 3 $>$ \&}]{J }\end{DoxyParamCaption}) const}
+
+
+
+Project a 3D point to the image plane and calculate Jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D point coordinates \\
+\hline
+{\em p} & return value, contains the image point coordinates \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcamodocal_1_1EquidistantCamera_ac0aae0a472fac59ad5fc22079eb5560d}\label{classcamodocal_1_1EquidistantCamera_ac0aae0a472fac59ad5fc22079eb5560d}} 
+\index{camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}!undist\+To\+Plane@{undist\+To\+Plane}}
+\index{undist\+To\+Plane@{undist\+To\+Plane}!camodocal\+::\+Equidistant\+Camera@{camodocal\+::\+Equidistant\+Camera}}
+\subsubsection{\texorpdfstring{undist\+To\+Plane()}{undistToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+Equidistant\+Camera\+::undist\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Projects an undistorted 2D point p\+\_\+u to the image plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & 2D point coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image point coordinates 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera}{camodocal\+::\+Camera}.
+
+
+
+References camodocal\+::\+Camera\+::\+Parameters\+::image\+Height(), camodocal\+::\+Camera\+::\+Parameters\+::image\+Width(), and space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1EquidistantCamera_ac0aae0a472fac59ad5fc22079eb5560d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Equidistant\+Camera.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Equidistant\+Camera.\+cc\end{DoxyCompactItemize}

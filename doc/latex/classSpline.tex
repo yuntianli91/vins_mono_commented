@@ -1,0 +1,84 @@
+\hypertarget{classSpline}{}\section{Spline Class Reference}
+\label{classSpline}\index{Spline@{Spline}}
+
+
+Inheritance diagram for Spline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classSpline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classSpline__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSpline_a704c277763b2964f7f5f25182a899c67}\label{classSpline_a704c277763b2964f7f5f25182a899c67}} 
+enum {\bfseries B\+C\+\_\+type} \{ {\bfseries F\+I\+X\+E\+D\+\_\+1\+S\+T\+\_\+\+D\+E\+R\+I\+V\+\_\+\+BC}, 
+{\bfseries F\+I\+X\+E\+D\+\_\+2\+N\+D\+\_\+\+D\+E\+R\+I\+V\+\_\+\+BC}, 
+{\bfseries P\+A\+R\+A\+B\+O\+L\+I\+C\+\_\+\+R\+U\+N\+O\+U\+T\+\_\+\+BC}
+ \}
+\item 
+\mbox{\Hypertarget{classSpline_a3a0db96d6cbd6b8cba39d2af34430441}\label{classSpline_a3a0db96d6cbd6b8cba39d2af34430441}} 
+enum {\bfseries Spline\+\_\+type} \{ {\bfseries L\+I\+N\+E\+AR}, 
+{\bfseries C\+U\+B\+IC}
+ \}
+\item 
+\mbox{\Hypertarget{classSpline_acdb506f5777af7c0370d996f86dcbb60}\label{classSpline_acdb506f5777af7c0370d996f86dcbb60}} 
+typedef std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ {\bfseries base}
+\item 
+\mbox{\Hypertarget{classSpline_a43427ab2dd2ca375579742b6ef0afb31}\label{classSpline_a43427ab2dd2ca375579742b6ef0afb31}} 
+typedef base\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSpline_a7ea98a8b01f7b37a234e921ed7e773e4}\label{classSpline_a7ea98a8b01f7b37a234e921ed7e773e4}} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classSpline_ac9a6d30fad3fd258372af98f81f8dfe7}\label{classSpline_ac9a6d30fad3fd258372af98f81f8dfe7}} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classSpline_a02967f3eee8b1755eab0d7da55c3c621}\label{classSpline_a02967f3eee8b1755eab0d7da55c3c621}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classSpline_a310f72486a502500fdc73d2e4c0c0448}\label{classSpline_a310f72486a502500fdc73d2e4c0c0448}} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classSpline_a11f4aa0a503435c59af3299a76ee8c90}\label{classSpline_a11f4aa0a503435c59af3299a76ee8c90}} 
+size\+\_\+t {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classSpline_ad5f2ae88eacebcf2743aa9bf1a9d33c4}\label{classSpline_ad5f2ae88eacebcf2743aa9bf1a9d33c4}} 
+size\+\_\+t {\bfseries capacity} () const
+\item 
+\mbox{\Hypertarget{classSpline_a277d0cdddeec05a4966a1070babcdc91}\label{classSpline_a277d0cdddeec05a4966a1070babcdc91}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classSpline_a62f03bd865c88909cb10ef269d179b16}\label{classSpline_a62f03bd865c88909cb10ef269d179b16}} 
+void {\bfseries add\+Point} (double x, double y)
+\item 
+\mbox{\Hypertarget{classSpline_a2f8cf1e21489c05a47c1fccf37be1343}\label{classSpline_a2f8cf1e21489c05a47c1fccf37be1343}} 
+void {\bfseries set\+Low\+BC} (B\+C\+\_\+type BC, double val=0)
+\item 
+\mbox{\Hypertarget{classSpline_acdfce435ebfa4430a7109660a3380ea7}\label{classSpline_acdfce435ebfa4430a7109660a3380ea7}} 
+void {\bfseries set\+High\+BC} (B\+C\+\_\+type BC, double val=0)
+\item 
+\mbox{\Hypertarget{classSpline_a519ad69683decf4457b61fcabfcd7990}\label{classSpline_a519ad69683decf4457b61fcabfcd7990}} 
+void {\bfseries set\+Type} (Spline\+\_\+type type)
+\item 
+\mbox{\Hypertarget{classSpline_a947f6b5b7fef4bb5e7e692e0a59f893e}\label{classSpline_a947f6b5b7fef4bb5e7e692e0a59f893e}} 
+double {\bfseries operator()} (double xval)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/chessboard/Spline.\+h\end{DoxyCompactItemize}

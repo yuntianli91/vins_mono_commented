@@ -1,0 +1,410 @@
+\hypertarget{classcamodocal_1_1Camera_1_1Parameters}{}\section{camodocal\+:\+:Camera\+:\+:Parameters Class Reference}
+\label{classcamodocal_1_1Camera_1_1Parameters}\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+
+
+nested class for camera parameters  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Inheritance diagram for camodocal\+:\+:Camera\+:\+:Parameters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_1_1Parameters__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW \hyperlink{classcamodocal_1_1Camera_1_1Parameters_ab772f3921cda90a7860596b7495eb83c}{Parameters} (\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \hyperlink{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7}{model\+Type})
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classcamodocal_1_1Camera_1_1Parameters}{Parameters} object. \end{DoxyCompactList}\item 
+\hyperlink{classcamodocal_1_1Camera_1_1Parameters_ab729d4ad394ff16d115c6ce78ab77a95}{Parameters} (\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \hyperlink{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7}{model\+Type}, const std\+::string \&\hyperlink{classcamodocal_1_1Camera_1_1Parameters_ad5d799e6367c5605907a941b2271e271}{camera\+Name}, int w, int h)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classcamodocal_1_1Camera_1_1Parameters}{Parameters} object. \end{DoxyCompactList}\item 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \& \hyperlink{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7}{model\+Type} (void)
+\begin{DoxyCompactList}\small\item\em return model\+Type of current camera object \end{DoxyCompactList}\item 
+std\+::string \& \hyperlink{classcamodocal_1_1Camera_1_1Parameters_ad5d799e6367c5605907a941b2271e271}{camera\+Name} (void)
+\begin{DoxyCompactList}\small\item\em return name of current camera object \end{DoxyCompactList}\item 
+int \& \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a92c11d296cb64c91a0c15528a8a7b813}{image\+Width} (void)
+\begin{DoxyCompactList}\small\item\em return image width of current camera object \end{DoxyCompactList}\item 
+int \& \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a2dcff4a5472ebc79d5d72762681220a3}{image\+Height} (void)
+\begin{DoxyCompactList}\small\item\em return image height of current camera object \end{DoxyCompactList}\item 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a6e4cf944dfed64a4204ee7b7609af2f7}{model\+Type} (void) const
+\begin{DoxyCompactList}\small\item\em return model\+Type of current camera object (const data member) \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classcamodocal_1_1Camera_1_1Parameters_ab1ca64ed9b9555a802c2e25c7148744b}{camera\+Name} (void) const
+\begin{DoxyCompactList}\small\item\em return name of current camera object(const data member) \end{DoxyCompactList}\item 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_ad18cfb16816d1385f7e9494056bcb508}{image\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em return image width of current camera object(const data member) \end{DoxyCompactList}\item 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a2b41722deff54c1e34de59892ab604a2}{image\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em return image height of current camera object (const data member) \end{DoxyCompactList}\item 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_aa31b8ba0c96f14452fe61613ec8f50fa}{n\+Intrinsics} (void) const
+\begin{DoxyCompactList}\small\item\em return number of camera intrinsics(const data member) \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a7968503df2a99e022a0c52bf7dafe531}{read\+From\+Yaml\+File} (const std\+::string \&filename)=0
+\begin{DoxyCompactList}\small\item\em read parameters from Y\+A\+ML or X\+ML file, (pure virtual function which must be override in son classes, following virtual function with \textquotesingle{}=0\textquotesingle{} are all pure virtual function) \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a7da3e505d5b047c7bfa3cf94d6c97710}{write\+To\+Yaml\+File} (const std\+::string \&filename) const =0
+\begin{DoxyCompactList}\small\item\em write parameters to Y\+A\+ML or X\+ML file; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_aa30dcba5817719833bfa493df89b37d7}\label{classcamodocal_1_1Camera_1_1Parameters_aa30dcba5817719833bfa493df89b37d7}} 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} {\bfseries m\+\_\+model\+Type}
+\item 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a241588ca3be399d8baaeda6f663dd793}{m\+\_\+n\+Intrinsics}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a53e79587ce67111f984b50df4e32961f}\label{classcamodocal_1_1Camera_1_1Parameters_a53e79587ce67111f984b50df4e32961f}} 
+std\+::string \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a53e79587ce67111f984b50df4e32961f}{m\+\_\+camera\+Name}
+\begin{DoxyCompactList}\small\item\em camera name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a4b85aef06079a1a72f846f0555a370cd}\label{classcamodocal_1_1Camera_1_1Parameters_a4b85aef06079a1a72f846f0555a370cd}} 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a4b85aef06079a1a72f846f0555a370cd}{m\+\_\+image\+Width}
+\begin{DoxyCompactList}\small\item\em image width in pixels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a3add3d0cdc4fdaa3392f08e2f0c1dcb9}\label{classcamodocal_1_1Camera_1_1Parameters_a3add3d0cdc4fdaa3392f08e2f0c1dcb9}} 
+int \hyperlink{classcamodocal_1_1Camera_1_1Parameters_a3add3d0cdc4fdaa3392f08e2f0c1dcb9}{m\+\_\+image\+Height}
+\begin{DoxyCompactList}\small\item\em image height in pixels \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+nested class for camera parameters 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_ab772f3921cda90a7860596b7495eb83c}\label{classcamodocal_1_1Camera_1_1Parameters_ab772f3921cda90a7860596b7495eb83c}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{Parameters()}{Parameters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily camodocal\+::\+Camera\+::\+Parameters\+::\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type}}]{model\+Type }\end{DoxyParamCaption})}
+
+
+
+Construct a new \hyperlink{classcamodocal_1_1Camera_1_1Parameters}{Parameters} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Type} & model of current camera object \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+n\+Intrinsics.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_ab729d4ad394ff16d115c6ce78ab77a95}\label{classcamodocal_1_1Camera_1_1Parameters_ab729d4ad394ff16d115c6ce78ab77a95}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!Parameters@{Parameters}}
+\index{Parameters@{Parameters}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{Parameters()}{Parameters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily camodocal\+::\+Camera\+::\+Parameters\+::\+Parameters (\begin{DoxyParamCaption}\item[{\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type}}]{model\+Type,  }\item[{const std\+::string \&}]{camera\+Name,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Construct a new \hyperlink{classcamodocal_1_1Camera_1_1Parameters}{Parameters} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Type} & model of current camera object \\
+\hline
+{\em camera\+Name} & name of current camera object \\
+\hline
+{\em w} & image width of current camera object \\
+\hline
+{\em h} & image height of current camera object \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+n\+Intrinsics.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_ad5d799e6367c5605907a941b2271e271}\label{classcamodocal_1_1Camera_1_1Parameters_ad5d799e6367c5605907a941b2271e271}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!camera\+Name@{camera\+Name}}
+\index{camera\+Name@{camera\+Name}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{camera\+Name()}{cameraName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string \& camodocal\+::\+Camera\+::\+Parameters\+::camera\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+return name of current camera object 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em camera\+Name} & std\+::string type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+camera\+Name.
+
+
+
+Referenced by camodocal\+::\+O\+C\+A\+M\+Camera\+::camera\+Name(), camodocal\+::\+Pinhole\+Camera\+::camera\+Name(), camodocal\+::\+Equidistant\+Camera\+::camera\+Name(), camodocal\+::\+Cata\+Camera\+::camera\+Name(), camodocal\+::\+Equidistant\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Cata\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Camera\+Factory\+::generate\+Camera(), and camodocal\+::\+Pinhole\+Camera\+::\+Parameters\+::\+Parameters().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_1_1Parameters_ad5d799e6367c5605907a941b2271e271_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_ab1ca64ed9b9555a802c2e25c7148744b}\label{classcamodocal_1_1Camera_1_1Parameters_ab1ca64ed9b9555a802c2e25c7148744b}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!camera\+Name@{camera\+Name}}
+\index{camera\+Name@{camera\+Name}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{camera\+Name()}{cameraName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::string \& camodocal\+::\+Camera\+::\+Parameters\+::camera\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+return name of current camera object(const data member) 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em camera\+Name} & std\+::string type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+camera\+Name.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a2dcff4a5472ebc79d5d72762681220a3}\label{classcamodocal_1_1Camera_1_1Parameters_a2dcff4a5472ebc79d5d72762681220a3}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!image\+Height@{image\+Height}}
+\index{image\+Height@{image\+Height}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{image\+Height()}{imageHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int \& camodocal\+::\+Camera\+::\+Parameters\+::image\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+return image height of current camera object 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em image\+Height} & image height in pixels, int type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+image\+Height.
+
+
+
+Referenced by camodocal\+::\+Pinhole\+Camera\+::distortion(), camodocal\+::\+Cata\+Camera\+::distortion(), camodocal\+::\+O\+C\+A\+M\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Pinhole\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Cata\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Equidistant\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Camera\+Factory\+::generate\+Camera(), camodocal\+::\+O\+C\+A\+M\+Camera\+::image\+Height(), camodocal\+::\+Pinhole\+Camera\+::image\+Height(), camodocal\+::\+Equidistant\+Camera\+::image\+Height(), camodocal\+::\+Cata\+Camera\+::image\+Height(), camodocal\+::\+O\+C\+A\+M\+Camera\+::undist\+To\+Plane(), and camodocal\+::\+Equidistant\+Camera\+::undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcamodocal_1_1Camera_1_1Parameters_a2dcff4a5472ebc79d5d72762681220a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a2b41722deff54c1e34de59892ab604a2}\label{classcamodocal_1_1Camera_1_1Parameters_a2b41722deff54c1e34de59892ab604a2}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!image\+Height@{image\+Height}}
+\index{image\+Height@{image\+Height}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{image\+Height()}{imageHeight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int camodocal\+::\+Camera\+::\+Parameters\+::image\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+return image height of current camera object (const data member) 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em image\+Height} & image height in pixels, int type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+image\+Height.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a92c11d296cb64c91a0c15528a8a7b813}\label{classcamodocal_1_1Camera_1_1Parameters_a92c11d296cb64c91a0c15528a8a7b813}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!image\+Width@{image\+Width}}
+\index{image\+Width@{image\+Width}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{image\+Width()}{imageWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int \& camodocal\+::\+Camera\+::\+Parameters\+::image\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+return image width of current camera object 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em image\+Width} & image width in pixels, int type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+image\+Width.
+
+
+
+Referenced by camodocal\+::\+Pinhole\+Camera\+::distortion(), camodocal\+::\+Cata\+Camera\+::distortion(), camodocal\+::\+O\+C\+A\+M\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Pinhole\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Cata\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Equidistant\+Camera\+::estimate\+Intrinsics(), camodocal\+::\+Camera\+Factory\+::generate\+Camera(), camodocal\+::\+O\+C\+A\+M\+Camera\+::image\+Width(), camodocal\+::\+Pinhole\+Camera\+::image\+Width(), camodocal\+::\+Equidistant\+Camera\+::image\+Width(), camodocal\+::\+Cata\+Camera\+::image\+Width(), camodocal\+::\+O\+C\+A\+M\+Camera\+::undist\+To\+Plane(), and camodocal\+::\+Equidistant\+Camera\+::undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcamodocal_1_1Camera_1_1Parameters_a92c11d296cb64c91a0c15528a8a7b813_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_ad18cfb16816d1385f7e9494056bcb508}\label{classcamodocal_1_1Camera_1_1Parameters_ad18cfb16816d1385f7e9494056bcb508}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!image\+Width@{image\+Width}}
+\index{image\+Width@{image\+Width}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{image\+Width()}{imageWidth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int camodocal\+::\+Camera\+::\+Parameters\+::image\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+return image width of current camera object(const data member) 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em image\+Width} & image width in pixels, int type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+image\+Width.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7}\label{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!model\+Type@{model\+Type}}
+\index{model\+Type@{model\+Type}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{model\+Type()}{modelType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} \& camodocal\+::\+Camera\+::\+Parameters\+::model\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+return model\+Type of current camera object 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em model\+Type} & model\+Type of current camera object \\
+\hline
+\end{DoxyRetVals}
+
+
+Referenced by camodocal\+::\+O\+C\+A\+M\+Camera\+::model\+Type(), camodocal\+::\+Pinhole\+Camera\+::model\+Type(), camodocal\+::\+Cata\+Camera\+::model\+Type(), and camodocal\+::\+Equidistant\+Camera\+::model\+Type().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_1_1Parameters_aab8170228d7e26e10b231c5960d5ddf7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a6e4cf944dfed64a4204ee7b7609af2f7}\label{classcamodocal_1_1Camera_1_1Parameters_a6e4cf944dfed64a4204ee7b7609af2f7}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!model\+Type@{model\+Type}}
+\index{model\+Type@{model\+Type}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{model\+Type()}{modelType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} camodocal\+::\+Camera\+::\+Parameters\+::model\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+return model\+Type of current camera object (const data member) 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em model\+Type} & model\+Type of current camera object \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_aa31b8ba0c96f14452fe61613ec8f50fa}\label{classcamodocal_1_1Camera_1_1Parameters_aa31b8ba0c96f14452fe61613ec8f50fa}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!n\+Intrinsics@{n\+Intrinsics}}
+\index{n\+Intrinsics@{n\+Intrinsics}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{n\+Intrinsics()}{nIntrinsics()}}
+{\footnotesize\ttfamily int camodocal\+::\+Camera\+::\+Parameters\+::n\+Intrinsics (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+return number of camera intrinsics(const data member) 
+
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em n\+Intrinsics} & number of intrinsics, int type \\
+\hline
+\end{DoxyRetVals}
+
+
+References m\+\_\+n\+Intrinsics.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a7968503df2a99e022a0c52bf7dafe531}\label{classcamodocal_1_1Camera_1_1Parameters_a7968503df2a99e022a0c52bf7dafe531}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!read\+From\+Yaml\+File@{read\+From\+Yaml\+File}}
+\index{read\+From\+Yaml\+File@{read\+From\+Yaml\+File}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{read\+From\+Yaml\+File()}{readFromYamlFile()}}
+{\footnotesize\ttfamily virtual bool camodocal\+::\+Camera\+::\+Parameters\+::read\+From\+Yaml\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+read parameters from Y\+A\+ML or X\+ML file, (pure virtual function which must be override in son classes, following virtual function with \textquotesingle{}=0\textquotesingle{} are all pure virtual function) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & filename of Y\+A\+ML or X\+ML file \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters_a756399dd928f1a0a9b0eb7922361939f}{camodocal\+::\+Cata\+Camera\+::\+Parameters}, \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters_a4cf20a66d7f4e9daf84fec3a83a6c458}{camodocal\+::\+O\+C\+A\+M\+Camera\+::\+Parameters}, \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters_a66d75d7cc90bd65120ca10914b38b935}{camodocal\+::\+Equidistant\+Camera\+::\+Parameters}, and \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters_a89d5834203e80ca6c09f60c47627c9a7}{camodocal\+::\+Pinhole\+Camera\+::\+Parameters}.
+
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a7da3e505d5b047c7bfa3cf94d6c97710}\label{classcamodocal_1_1Camera_1_1Parameters_a7da3e505d5b047c7bfa3cf94d6c97710}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!write\+To\+Yaml\+File@{write\+To\+Yaml\+File}}
+\index{write\+To\+Yaml\+File@{write\+To\+Yaml\+File}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{write\+To\+Yaml\+File()}{writeToYamlFile()}}
+{\footnotesize\ttfamily virtual void camodocal\+::\+Camera\+::\+Parameters\+::write\+To\+Yaml\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+write parameters to Y\+A\+ML or X\+ML file; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & filename of Y\+A\+ML of X\+ML file \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters_a9bd3a31bc31a3f4e1becfbd2bbb43331}{camodocal\+::\+Cata\+Camera\+::\+Parameters}, \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters_a3244c89711d0195540042c3700992827}{camodocal\+::\+O\+C\+A\+M\+Camera\+::\+Parameters}, \hyperlink{classcamodocal_1_1EquidistantCamera_1_1Parameters_afb2ad6884187c2b5e9f70f3e54e30321}{camodocal\+::\+Equidistant\+Camera\+::\+Parameters}, and \hyperlink{classcamodocal_1_1PinholeCamera_1_1Parameters_ace74203c61ef30b57a2ba21184070bb5}{camodocal\+::\+Pinhole\+Camera\+::\+Parameters}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_1_1Parameters_a241588ca3be399d8baaeda6f663dd793}\label{classcamodocal_1_1Camera_1_1Parameters_a241588ca3be399d8baaeda6f663dd793}} 
+\index{camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}!m\+\_\+n\+Intrinsics@{m\+\_\+n\+Intrinsics}}
+\index{m\+\_\+n\+Intrinsics@{m\+\_\+n\+Intrinsics}!camodocal\+::\+Camera\+::\+Parameters@{camodocal\+::\+Camera\+::\+Parameters}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Intrinsics}{m\_nIntrinsics}}
+{\footnotesize\ttfamily int camodocal\+::\+Camera\+::\+Parameters\+::m\+\_\+n\+Intrinsics\hspace{0.3cm}{\ttfamily [protected]}}
+
+number of camera Intrinsics, for pinhole camera model are four distortion parameters\+: k1, k2, p1, p2 four projection parameters\+: fx, fy, cx, cy 
+
+Referenced by n\+Intrinsics(), and Parameters().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/\hyperlink{Camera_8h}{Camera.\+h}\item 
+camera\+\_\+model/src/camera\+\_\+models/\hyperlink{Camera_8cc}{Camera.\+cc}\end{DoxyCompactItemize}

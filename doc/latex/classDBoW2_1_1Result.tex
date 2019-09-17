@@ -1,0 +1,297 @@
+\hypertarget{classDBoW2_1_1Result}{}\section{D\+Bo\+W2\+:\+:Result Class Reference}
+\label{classDBoW2_1_1Result}\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+
+
+Single result of a query.  
+
+
+
+
+{\ttfamily \#include $<$Query\+Results.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1Result_a3cd1ea537745f0f76042d08033629f4a}{Result} ()
+\begin{DoxyCompactList}\small\item\em debug \end{DoxyCompactList}\item 
+\hyperlink{classDBoW2_1_1Result_a5ca2977e7a2646f886ef92cb7f64352a}{Result} (\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \+\_\+id, double \+\_\+score)
+\item 
+bool \hyperlink{classDBoW2_1_1Result_a9157d6fdd9be3dcf83a17376cc702fbf}{operator$<$} (const \hyperlink{classDBoW2_1_1Result}{Result} \&r) const
+\item 
+bool \hyperlink{classDBoW2_1_1Result_ac1cfd096bf01d496af84f56a8b98fce7}{operator$>$} (const \hyperlink{classDBoW2_1_1Result}{Result} \&r) const
+\item 
+bool \hyperlink{classDBoW2_1_1Result_ab5419fc64d70cb15becfd982703cbde8}{operator==} (\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} id) const
+\item 
+bool \hyperlink{classDBoW2_1_1Result_a930763f8645ee57a71835b7d9fa05ebc}{operator$<$} (double s) const
+\item 
+bool \hyperlink{classDBoW2_1_1Result_a8618ccee54d229acc47a419b1262f08f}{operator$>$} (double s) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classDBoW2_1_1Result_a6af72ce2de8c7e1707550520d9c7e422}{gt} (const \hyperlink{classDBoW2_1_1Result}{Result} \&a, const \hyperlink{classDBoW2_1_1Result}{Result} \&b)
+\item 
+static bool \hyperlink{classDBoW2_1_1Result_ab24992db21ed95d77fa5fc040d45940b}{ge} (const \hyperlink{classDBoW2_1_1Result}{Result} \&a, const \hyperlink{classDBoW2_1_1Result}{Result} \&b)
+\item 
+static bool \hyperlink{classDBoW2_1_1Result_afe1567c5a010ebf492a558f60e0f7275}{geq} (const \hyperlink{classDBoW2_1_1Result}{Result} \&a, const \hyperlink{classDBoW2_1_1Result}{Result} \&b)
+\item 
+static bool \hyperlink{classDBoW2_1_1Result_a2cb32089cbe5dffaa5b60fb1b410a713}{geqv} (const \hyperlink{classDBoW2_1_1Result}{Result} \&a, double s)
+\item 
+static bool \hyperlink{classDBoW2_1_1Result_ac8b4e2a21806b48a042168936c44e6bd}{lt\+Id} (const \hyperlink{classDBoW2_1_1Result}{Result} \&a, const \hyperlink{classDBoW2_1_1Result}{Result} \&b)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_a383272245ea89ff18858704dd6325510}\label{classDBoW2_1_1Result_a383272245ea89ff18858704dd6325510}} 
+\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id} \hyperlink{classDBoW2_1_1Result_a383272245ea89ff18858704dd6325510}{Id}
+\begin{DoxyCompactList}\small\item\em Entry id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_a3932f93c1494a43592b3cfee06e98f72}\label{classDBoW2_1_1Result_a3932f93c1494a43592b3cfee06e98f72}} 
+double \hyperlink{classDBoW2_1_1Result_a3932f93c1494a43592b3cfee06e98f72}{Score}
+\begin{DoxyCompactList}\small\item\em Score obtained. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_ad13eee018380c45ca2d69138f41607af}\label{classDBoW2_1_1Result_ad13eee018380c45ca2d69138f41607af}} 
+int \hyperlink{classDBoW2_1_1Result_ad13eee018380c45ca2d69138f41607af}{n\+Words}
+\begin{DoxyCompactList}\small\item\em debug \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_a4f0899d73cf5d974bc8b8fcf3319f361}\label{classDBoW2_1_1Result_a4f0899d73cf5d974bc8b8fcf3319f361}} 
+double {\bfseries bhat\+Score}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_aeb35c2fa851f84116a9f86f2c781e477}\label{classDBoW2_1_1Result_aeb35c2fa851f84116a9f86f2c781e477}} 
+double {\bfseries chi\+Score}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_a82985e53f548cd26044dc2d7281d6b36}\label{classDBoW2_1_1Result_a82985e53f548cd26044dc2d7281d6b36}} 
+double \hyperlink{classDBoW2_1_1Result_a82985e53f548cd26044dc2d7281d6b36}{sum\+Common\+Vi}
+\begin{DoxyCompactList}\small\item\em debug \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_a4183728220cab96c54148add56ba22bb}\label{classDBoW2_1_1Result_a4183728220cab96c54148add56ba22bb}} 
+double {\bfseries sum\+Common\+Wi}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1Result_aa7f2596437fd2361431444f15308dce5}\label{classDBoW2_1_1Result_aa7f2596437fd2361431444f15308dce5}} 
+double {\bfseries expected\+Chi\+Score}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classDBoW2_1_1Result_adcb074a444887749ca1ce08b25b73a48}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classDBoW2_1_1Result}{Result} \&ret)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Single result of a query. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1Result_a3cd1ea537745f0f76042d08033629f4a}\label{classDBoW2_1_1Result_a3cd1ea537745f0f76042d08033629f4a}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!Result@{Result}}
+\index{Result@{Result}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{Result()}{Result()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+Bo\+W2\+::\+Result\+::\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+debug 
+
+Empty constructors \mbox{\Hypertarget{classDBoW2_1_1Result_a5ca2977e7a2646f886ef92cb7f64352a}\label{classDBoW2_1_1Result_a5ca2977e7a2646f886ef92cb7f64352a}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!Result@{Result}}
+\index{Result@{Result}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{Result()}{Result()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+Bo\+W2\+::\+Result\+::\+Result (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id}}]{\+\_\+id,  }\item[{double}]{\+\_\+score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a result with the given data 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+id} & entry id \\
+\hline
+{\em \+\_\+score} & score \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1Result_ab24992db21ed95d77fa5fc040d45940b}\label{classDBoW2_1_1Result_ab24992db21ed95d77fa5fc040d45940b}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!ge@{ge}}
+\index{ge@{ge}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{ge()}{ge()}}
+{\footnotesize\ttfamily static bool D\+Bo\+W2\+::\+Result\+::ge (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{a,  }\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Compares the scores of two results \begin{DoxyReturn}{Returns}
+true iff a.\+Score $>$ b.\+Score 
+\end{DoxyReturn}
+
+
+References Score.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_afe1567c5a010ebf492a558f60e0f7275}\label{classDBoW2_1_1Result_afe1567c5a010ebf492a558f60e0f7275}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!geq@{geq}}
+\index{geq@{geq}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{geq()}{geq()}}
+{\footnotesize\ttfamily static bool D\+Bo\+W2\+::\+Result\+::geq (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{a,  }\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff a.\+Score $>$= b.\+Score 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a.\+Score $>$= b.\+Score 
+\end{DoxyReturn}
+
+
+References Score.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_a2cb32089cbe5dffaa5b60fb1b410a713}\label{classDBoW2_1_1Result_a2cb32089cbe5dffaa5b60fb1b410a713}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!geqv@{geqv}}
+\index{geqv@{geqv}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{geqv()}{geqv()}}
+{\footnotesize\ttfamily static bool D\+Bo\+W2\+::\+Result\+::geqv (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{a,  }\item[{double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff a.\+Score $>$= s 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a.\+Score $>$= s 
+\end{DoxyReturn}
+
+
+References Score.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_a6af72ce2de8c7e1707550520d9c7e422}\label{classDBoW2_1_1Result_a6af72ce2de8c7e1707550520d9c7e422}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!gt@{gt}}
+\index{gt@{gt}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{gt()}{gt()}}
+{\footnotesize\ttfamily static bool D\+Bo\+W2\+::\+Result\+::gt (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{a,  }\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Compares the score of two results 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a.\+Score $>$ b.\+Score 
+\end{DoxyReturn}
+
+
+References Score.
+
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::query\+Bhattacharyya(), and D\+Bo\+W2\+::\+Templated\+Database$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::query\+Dot\+Product().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1Result_a6af72ce2de8c7e1707550520d9c7e422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1Result_ac8b4e2a21806b48a042168936c44e6bd}\label{classDBoW2_1_1Result_ac8b4e2a21806b48a042168936c44e6bd}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!lt\+Id@{lt\+Id}}
+\index{lt\+Id@{lt\+Id}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{lt\+Id()}{ltId()}}
+{\footnotesize\ttfamily static bool D\+Bo\+W2\+::\+Result\+::lt\+Id (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{a,  }\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns true iff a.\+Id $<$ b.\+Id 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff a.\+Id $<$ b.\+Id 
+\end{DoxyReturn}
+
+
+References Id, and operator$<$$<$.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_a9157d6fdd9be3dcf83a17376cc702fbf}\label{classDBoW2_1_1Result_a9157d6fdd9be3dcf83a17376cc702fbf}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool D\+Bo\+W2\+::\+Result\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares the scores of two results \begin{DoxyReturn}{Returns}
+true iff this.\+score $<$ r.\+score 
+\end{DoxyReturn}
+
+
+References Score.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_a930763f8645ee57a71835b7d9fa05ebc}\label{classDBoW2_1_1Result_a930763f8645ee57a71835b7d9fa05ebc}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool D\+Bo\+W2\+::\+Result\+::operator$<$ (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares the score of this entry with a given one 
+\begin{DoxyParams}{Parameters}
+{\em s} & score to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff this score $<$ s 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDBoW2_1_1Result_ab5419fc64d70cb15becfd982703cbde8}\label{classDBoW2_1_1Result_ab5419fc64d70cb15becfd982703cbde8}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator==@{operator==}}
+\index{operator==@{operator==}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool D\+Bo\+W2\+::\+Result\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares the entry id of the result \begin{DoxyReturn}{Returns}
+true iff this.\+id == id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDBoW2_1_1Result_ac1cfd096bf01d496af84f56a8b98fce7}\label{classDBoW2_1_1Result_ac1cfd096bf01d496af84f56a8b98fce7}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool D\+Bo\+W2\+::\+Result\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares the scores of two results \begin{DoxyReturn}{Returns}
+true iff this.\+score $>$ r.\+score 
+\end{DoxyReturn}
+
+
+References Score.
+
+\mbox{\Hypertarget{classDBoW2_1_1Result_a8618ccee54d229acc47a419b1262f08f}\label{classDBoW2_1_1Result_a8618ccee54d229acc47a419b1262f08f}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool D\+Bo\+W2\+::\+Result\+::operator$>$ (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares the score of this entry with a given one 
+\begin{DoxyParams}{Parameters}
+{\em s} & score to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff this score $>$ s 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1Result_adcb074a444887749ca1ce08b25b73a48}\label{classDBoW2_1_1Result_adcb074a444887749ca1ce08b25b73a48}} 
+\index{D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2\+::\+Result@{D\+Bo\+W2\+::\+Result}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classDBoW2_1_1Result}{Result} \&}]{ret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Prints a string version of the result 
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream \\
+\hline
+{\em ret} & \hyperlink{classDBoW2_1_1Result}{Result} to print \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by lt\+Id().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Query\+Results.\+h\end{DoxyCompactItemize}

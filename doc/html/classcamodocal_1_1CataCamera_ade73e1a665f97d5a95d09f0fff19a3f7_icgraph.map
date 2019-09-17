@@ -1,0 +1,7 @@
+<map id="camodocal::CataCamera::distortion" name="camodocal::CataCamera::distortion">
+<area shape="rect" id="node2" href="$classcamodocal_1_1CataCamera.html#a8415dca7d06b730a0b7358745aaa4001" title="Lifts a point from the image plane to its projective ray. " alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1CataCamera.html#ad408a25dbeabac661788d16357b44504" title="Lifts a point from the image plane to the unit sphere. " alt="" coords="220,71,387,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1CataCamera.html#ab705d867d93d87c85d755bb7b1022a2c" title="Project a 3D point (x,y,z) to the image plane in (u,v) " alt="" coords="220,136,387,177"/>
+<area shape="rect" id="node6" href="$classcamodocal_1_1CataCamera.html#a9184557401622acaf2a00fd9b1295d13" title="Projects an undistorted 2D point p_u to the image plane. " alt="" coords="220,201,387,243"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1CataCamera.html#af9f94a9e9109ad71fcabb0f7bc77a18f" title="Apply distortion to input point (from the normalised plane) and calculate Jacobian. " alt="" coords="435,136,601,177"/>
+</map>

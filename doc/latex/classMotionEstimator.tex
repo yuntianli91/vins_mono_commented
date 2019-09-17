@@ -1,0 +1,40 @@
+\hypertarget{classMotionEstimator}{}\section{Motion\+Estimator Class Reference}
+\label{classMotionEstimator}\index{Motion\+Estimator@{Motion\+Estimator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classMotionEstimator_af5fadd33bdc7103154c3c1b14720feb3}{solve\+Relative\+RT} (const vector$<$ pair$<$ Vector3d, Vector3d $>$$>$ \&corres, Matrix3d \&R, Vector3d \&T)
+\begin{DoxyCompactList}\small\item\em calculate relative R and t \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMotionEstimator_af5fadd33bdc7103154c3c1b14720feb3}\label{classMotionEstimator_af5fadd33bdc7103154c3c1b14720feb3}} 
+\index{Motion\+Estimator@{Motion\+Estimator}!solve\+Relative\+RT@{solve\+Relative\+RT}}
+\index{solve\+Relative\+RT@{solve\+Relative\+RT}!Motion\+Estimator@{Motion\+Estimator}}
+\subsubsection{\texorpdfstring{solve\+Relative\+R\+T()}{solveRelativeRT()}}
+{\footnotesize\ttfamily bool Motion\+Estimator\+::solve\+Relative\+RT (\begin{DoxyParamCaption}\item[{const vector$<$ pair$<$ Vector3d, Vector3d $>$$>$ \&}]{corres,  }\item[{Matrix3d \&}]{R,  }\item[{Vector3d \&}]{T }\end{DoxyParamCaption})}
+
+
+
+calculate relative R and t 
+
+
+\begin{DoxyParams}{Parameters}
+{\em corres} & \+: correspoinding feature points pair$<$c\+\_\+k,c\+\_\+\{k+1\}$>$ \\
+\hline
+{\em R} & \+: relative R from c\+\_\+\{k+1\} to c\+\_\+k; \\
+\hline
+{\em T} & \+: relative t from c\+\_\+\{k+1\} to c\+\_\+k; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/initial/solve\+\_\+5pts.\+h\item 
+vins\+\_\+estimator/src/initial/solve\+\_\+5pts.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{structResidualBlockInfo}{}\section{Residual\+Block\+Info Struct Reference}
+\label{structResidualBlockInfo}\index{Residual\+Block\+Info@{Residual\+Block\+Info}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a18e8a25d3a530a2e7f12ea4fd9d26f0b}\label{structResidualBlockInfo_a18e8a25d3a530a2e7f12ea4fd9d26f0b}} 
+{\bfseries Residual\+Block\+Info} (ceres\+::\+Cost\+Function $\ast$\+\_\+cost\+\_\+function, ceres\+::\+Loss\+Function $\ast$\+\_\+loss\+\_\+function, std\+::vector$<$ double $\ast$$>$ \+\_\+parameter\+\_\+blocks, std\+::vector$<$ int $>$ \+\_\+drop\+\_\+set)
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_ae0baec87c89cefaaa5a64dec0ade08d0}\label{structResidualBlockInfo_ae0baec87c89cefaaa5a64dec0ade08d0}} 
+void {\bfseries Evaluate} ()
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a2dec1c6c1087c2355069f20e535e2bad}\label{structResidualBlockInfo_a2dec1c6c1087c2355069f20e535e2bad}} 
+int {\bfseries local\+Size} (int size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a489967fa38c4a2de5c647d5a02a484b5}\label{structResidualBlockInfo_a489967fa38c4a2de5c647d5a02a484b5}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries cost\+\_\+function}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a8782729bdb14584de4a98324f3e58db1}\label{structResidualBlockInfo_a8782729bdb14584de4a98324f3e58db1}} 
+ceres\+::\+Loss\+Function $\ast$ {\bfseries loss\+\_\+function}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a85a4ecd14c23fb2809a12e39eab3e68b}\label{structResidualBlockInfo_a85a4ecd14c23fb2809a12e39eab3e68b}} 
+std\+::vector$<$ double $\ast$ $>$ {\bfseries parameter\+\_\+blocks}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_abe83d95bd32e05dfccf3a68318c47d5b}\label{structResidualBlockInfo_abe83d95bd32e05dfccf3a68318c47d5b}} 
+std\+::vector$<$ int $>$ {\bfseries drop\+\_\+set}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_a7606a60924d7a3e76c3faaa5f4bfea3b}\label{structResidualBlockInfo_a7606a60924d7a3e76c3faaa5f4bfea3b}} 
+double $\ast$$\ast$ {\bfseries raw\+\_\+jacobians}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_acbc028b6c44f6ccd50c75b77f44b357b}\label{structResidualBlockInfo_acbc028b6c44f6ccd50c75b77f44b357b}} 
+std\+::vector$<$ Eigen\+::\+Matrix$<$ double, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic, Eigen\+::\+Row\+Major $>$ $>$ {\bfseries jacobians}
+\item 
+\mbox{\Hypertarget{structResidualBlockInfo_ae46cb3c6f4549dd39bad1f04b7d0b72a}\label{structResidualBlockInfo_ae46cb3c6f4549dd39bad1f04b7d0b72a}} 
+Eigen\+::\+Vector\+Xd {\bfseries residuals}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/factor/marginalization\+\_\+factor.\+h\item 
+vins\+\_\+estimator/src/factor/marginalization\+\_\+factor.\+cpp\end{DoxyCompactItemize}

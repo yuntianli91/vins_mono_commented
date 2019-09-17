@@ -1,0 +1,5 @@
+<map id="camodocal::Camera::projectPoints" name="camodocal::Camera::projectPoints">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera.html#ab162451505d8b9dfda0b96383d597a16" title="calculate average reprojection error of all points in all frames (total error divede by total points)..." alt="" coords="200,39,347,80"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1CataCamera.html#a1dae6c4e661280dfaa3674df02f76e9c" title="virtual function of camera intrinsics " alt="" coords="413,5,580,47"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1EquidistantCamera.html#a07be015f3740cb23c1cdd87f3a4ba505" title="virtual function of camera intrinsics " alt="" coords="395,71,599,112"/>
+</map>

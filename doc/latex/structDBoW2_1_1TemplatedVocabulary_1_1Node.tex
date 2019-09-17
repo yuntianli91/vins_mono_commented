@@ -1,0 +1,98 @@
+\hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node}{}\section{D\+Bo\+W2\+:\+:Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+:\+:Node Struct Reference}
+\label{structDBoW2_1_1TemplatedVocabulary_1_1Node}\index{D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::\+Node}}
+
+
+Tree node.  
+
+
+
+
+{\ttfamily \#include $<$Templated\+Vocabulary.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}{Node} ()
+\item 
+\hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}{Node} (\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id} \+\_\+id)
+\item 
+bool \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a050a0ee173dd58475dd2ab84e6f215e8}{is\+Leaf} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}} 
+\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a62fb0c85332741c114110463252c64e9}{id}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}} 
+\hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_ae1e261135cb7af400f1c4c4795cdba41}{weight}
+\begin{DoxyCompactList}\small\item\em Weight if the node is a word. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a54acc0958e378306cc03f20a186c1fdc}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a54acc0958e378306cc03f20a186c1fdc}} 
+std\+::vector$<$ \hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id} $>$ \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a54acc0958e378306cc03f20a186c1fdc}{children}
+\begin{DoxyCompactList}\small\item\em Children. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}} 
+\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_a082fba9dcf272b78354ffd5b1d58f5fa}{parent}
+\begin{DoxyCompactList}\small\item\em Parent node (undefined in case of root) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}} 
+T\+Descriptor \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_ab785e994eeae8e6c1d67ee45ad4c8450}{descriptor}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node}{Node} descriptor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}} 
+\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id} \hyperlink{structDBoW2_1_1TemplatedVocabulary_1_1Node_aa56418d848932be4583fac6b3021c708}{word\+\_\+id}
+\begin{DoxyCompactList}\small\item\em Word id if the node is a word. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T\+Descriptor, class F$>$\newline
+struct D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::\+Node}
+
+Tree node. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a1339ee00108c4c652cd1ca55a37c3fd3}} 
+\index{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedVocabulary}{D\+Bo\+W2\+::\+Templated\+Vocabulary}$<$ T\+Descriptor, F $>$\+::Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Empty constructor \mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a9f1fcb620025ba6103a47e5c2b169cd6}} 
+\index{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+\hyperlink{classDBoW2_1_1TemplatedVocabulary}{D\+Bo\+W2\+::\+Templated\+Vocabulary}$<$ T\+Descriptor, F $>$\+::Node\+::\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id}}]{\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+id} & node id \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structDBoW2_1_1TemplatedVocabulary_1_1Node_a050a0ee173dd58475dd2ab84e6f215e8}\label{structDBoW2_1_1TemplatedVocabulary_1_1Node_a050a0ee173dd58475dd2ab84e6f215e8}} 
+\index{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}!is\+Leaf@{is\+Leaf}}
+\index{is\+Leaf@{is\+Leaf}!D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node@{D\+Bo\+W2\+::\+Templated\+Vocabulary\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+Leaf()}{isLeaf()}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor, class F$>$ \\
+bool \hyperlink{classDBoW2_1_1TemplatedVocabulary}{D\+Bo\+W2\+::\+Templated\+Vocabulary}$<$ T\+Descriptor, F $>$\+::Node\+::is\+Leaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the node is a leaf node \begin{DoxyReturn}{Returns}
+true iff the node is a leaf 
+\end{DoxyReturn}
+
+
+References D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::create\+Scoring\+Object(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::create\+Words(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::get\+Features(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::\+H\+Kmeans\+Step(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::initiate\+Clusters(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::initiate\+Clusters\+K\+Mpp(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::set\+Node\+Weights(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::transform(), and D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::\+Node\+::weight.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structDBoW2_1_1TemplatedVocabulary_1_1Node_a050a0ee173dd58475dd2ab84e6f215e8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Templated\+Vocabulary.\+h\end{DoxyCompactItemize}

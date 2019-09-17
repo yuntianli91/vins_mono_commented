@@ -1,0 +1,6 @@
+<map id="camodocal::CameraFactory::generateCameraFromYamlFile" name="camodocal::CameraFactory::generateCameraFromYamlFile">
+<area shape="rect" id="node2" href="$classcamodocal_1_1PinholeCamera_1_1Parameters.html#a89d5834203e80ca6c09f60c47627c9a7" title="read parameters from YAML or XML file, (pure virtual function which must be override in son classes..." alt="" coords="260,5,471,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1EquidistantCamera_1_1Parameters.html#a66d75d7cc90bd65120ca10914b38b935" title="read parameters from YAML or XML file, (pure virtual function which must be override in son classes..." alt="" coords="260,71,471,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1OCAMCamera_1_1Parameters.html#a4cf20a66d7f4e9daf84fec3a83a6c458" title="read parameters from YAML or XML file, (pure virtual function which must be override in son classes..." alt="" coords="260,136,471,177"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1CataCamera_1_1Parameters.html#a756399dd928f1a0a9b0eb7922361939f" title="read parameters from YAML or XML file, (pure virtual function which must be override in son classes..." alt="" coords="260,201,471,243"/>
+</map>

@@ -1,0 +1,143 @@
+\hypertarget{classDBoW2_1_1FBrief}{}\section{D\+Bo\+W2\+:\+:F\+Brief Class Reference}
+\label{classDBoW2_1_1FBrief}\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+
+
+Functions to manipulate B\+R\+I\+EF descriptors.  
+
+
+
+
+{\ttfamily \#include $<$F\+Brief.\+h$>$}
+
+
+
+Inheritance diagram for D\+Bo\+W2\+:\+:F\+Brief\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classDBoW2_1_1FBrief__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+Bo\+W2\+:\+:F\+Brief\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classDBoW2_1_1FBrief__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_acd27683ebe8fa8f482bf49f006930981}\label{classDBoW2_1_1FBrief_acd27683ebe8fa8f482bf49f006930981}} 
+typedef \hyperlink{classDVision_1_1BRIEF_abc56a095174a93b0741099f35230b7c5}{D\+Vision\+::\+B\+R\+I\+E\+F\+::bitset} {\bfseries T\+Descriptor}
+\item 
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_af7752017bb05cdac90a31491d701bb43}\label{classDBoW2_1_1FBrief_af7752017bb05cdac90a31491d701bb43}} 
+typedef const T\+Descriptor $\ast$ {\bfseries p\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classDBoW2_1_1FBrief_a2808910daf6af046b47925715d71b564}{mean\+Value} (const std\+::vector$<$ p\+Descriptor $>$ \&descriptors, T\+Descriptor \&mean)
+\item 
+static double \hyperlink{classDBoW2_1_1FBrief_adc1c516cc0a2c9847853653956e8c35a}{distance} (const T\+Descriptor \&a, const T\+Descriptor \&b)
+\item 
+static std\+::string \hyperlink{classDBoW2_1_1FBrief_a271da94381cfb7a39664e5fc1d32a476}{to\+String} (const T\+Descriptor \&a)
+\item 
+static void \hyperlink{classDBoW2_1_1FBrief_a05bb35b06cc95b41edc80640ef2ea9f5}{from\+String} (T\+Descriptor \&a, const std\+::string \&s)
+\item 
+static void \hyperlink{classDBoW2_1_1FBrief_a626d885be78dfe839083b2ffb220150d}{to\+Mat32F} (const std\+::vector$<$ T\+Descriptor $>$ \&descriptors, cv\+::\+Mat \&mat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to manipulate B\+R\+I\+EF descriptors. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_adc1c516cc0a2c9847853653956e8c35a}\label{classDBoW2_1_1FBrief_adc1c516cc0a2c9847853653956e8c35a}} 
+\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}!distance@{distance}}
+\index{distance@{distance}!D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily double D\+Bo\+W2\+::\+F\+Brief\+::distance (\begin{DoxyParamCaption}\item[{const T\+Descriptor \&}]{a,  }\item[{const T\+Descriptor \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the distance between two descriptors 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+distance 
+\end{DoxyReturn}
+
+
+References D\+Vision\+::\+B\+R\+I\+E\+F\+::distance().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1FBrief_adc1c516cc0a2c9847853653956e8c35a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_a05bb35b06cc95b41edc80640ef2ea9f5}\label{classDBoW2_1_1FBrief_a05bb35b06cc95b41edc80640ef2ea9f5}} 
+\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}!from\+String@{from\+String}}
+\index{from\+String@{from\+String}!D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+\subsubsection{\texorpdfstring{from\+String()}{fromString()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+Brief\+::from\+String (\begin{DoxyParamCaption}\item[{F\+Brief\+::\+T\+Descriptor \&}]{a,  }\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a descriptor from a string 
+\begin{DoxyParams}{Parameters}
+{\em a} & descriptor \\
+\hline
+{\em s} & string version \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_a2808910daf6af046b47925715d71b564}\label{classDBoW2_1_1FBrief_a2808910daf6af046b47925715d71b564}} 
+\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}!mean\+Value@{mean\+Value}}
+\index{mean\+Value@{mean\+Value}!D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+\subsubsection{\texorpdfstring{mean\+Value()}{meanValue()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+Brief\+::mean\+Value (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ p\+Descriptor $>$ \&}]{descriptors,  }\item[{F\+Brief\+::\+T\+Descriptor \&}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the mean value of a set of descriptors 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & \\
+\hline
+{\em mean} & mean descriptor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_a626d885be78dfe839083b2ffb220150d}\label{classDBoW2_1_1FBrief_a626d885be78dfe839083b2ffb220150d}} 
+\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}!to\+Mat32F@{to\+Mat32F}}
+\index{to\+Mat32F@{to\+Mat32F}!D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+\subsubsection{\texorpdfstring{to\+Mat32\+F()}{toMat32F()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+F\+Brief\+::to\+Mat32F (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T\+Descriptor $>$ \&}]{descriptors,  }\item[{cv\+::\+Mat \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a mat with the descriptors in float format 
+\begin{DoxyParams}{Parameters}
+{\em descriptors} & \\
+\hline
+{\em mat} & (out) NxL 32F matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1FBrief_a271da94381cfb7a39664e5fc1d32a476}\label{classDBoW2_1_1FBrief_a271da94381cfb7a39664e5fc1d32a476}} 
+\index{D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!D\+Bo\+W2\+::\+F\+Brief@{D\+Bo\+W2\+::\+F\+Brief}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string D\+Bo\+W2\+::\+F\+Brief\+::to\+String (\begin{DoxyParamCaption}\item[{const T\+Descriptor \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a string version of the descriptor 
+\begin{DoxyParams}{Parameters}
+{\em a} & descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string version 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/F\+Brief.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/F\+Brief.\+cpp\end{DoxyCompactItemize}

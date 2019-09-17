@@ -1,0 +1,7 @@
+<map id="camodocal::PinholeCamera::distortion" name="camodocal::PinholeCamera::distortion">
+<area shape="rect" id="node2" href="$classcamodocal_1_1PinholeCamera.html#a8a557882a34c5269f6254df6e1d9bb4f" title="Lifts a point from the image plane to its projective ray. " alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1PinholeCamera.html#a27e7b78d07e19f11d1ca0d3dc2c48b73" title="Project a 3D point (x,y,z) to the image plane in (u,v) " alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node6" href="$classcamodocal_1_1PinholeCamera.html#a70cc5acd48df30c2f7a2f84b35369a39" title="Projects an undistorted 2D point p_u to the image plane. " alt="" coords="236,136,419,177"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1PinholeCamera.html#a0a4191ba420ee40355d8eb0f5cf587a7" title="Lifts a point from the image plane to the unit sphere. " alt="" coords="467,5,649,47"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1PinholeCamera.html#a36fbf4d157d3dafd87dc52c8f664bcbc" title="Apply distortion to input point (from the normalised plane) and calculate Jacobian. " alt="" coords="467,71,649,112"/>
+</map>

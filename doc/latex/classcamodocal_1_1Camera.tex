@@ -1,0 +1,335 @@
+\hypertarget{classcamodocal_1_1Camera}{}\section{camodocal\+:\+:Camera Class Reference}
+\label{classcamodocal_1_1Camera}\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+
+
+base class for all camera model  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Inheritance diagram for camodocal\+:\+:Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcamodocal_1_1Camera_1_1Parameters}{Parameters}
+\begin{DoxyCompactList}\small\item\em nested class for camera parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}\label{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}} 
+enum \hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \{ {\bfseries K\+A\+N\+N\+A\+L\+A\+\_\+\+B\+R\+A\+N\+DT}, 
+{\bfseries M\+EI}, 
+{\bfseries P\+I\+N\+H\+O\+LE}, 
+{\bfseries S\+C\+A\+R\+A\+M\+U\+Z\+ZA}
+ \}\begin{DoxyCompactList}\small\item\em enumerate variable of camera model \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_aa95c0a2dd8d36b4d5aa7013eb01d1227}\label{classcamodocal_1_1Camera_aa95c0a2dd8d36b4d5aa7013eb01d1227}} 
+virtual \hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Model\+Type} \hyperlink{classcamodocal_1_1Camera_aa95c0a2dd8d36b4d5aa7013eb01d1227}{model\+Type} (void) const =0
+\begin{DoxyCompactList}\small\item\em virtual type of function model\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ad0a7aafcfd19a6105f3b64f003f0f794}\label{classcamodocal_1_1Camera_ad0a7aafcfd19a6105f3b64f003f0f794}} 
+virtual const std\+::string \& \hyperlink{classcamodocal_1_1Camera_ad0a7aafcfd19a6105f3b64f003f0f794}{camera\+Name} (void) const =0
+\begin{DoxyCompactList}\small\item\em virtual type of funtion camera\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ad9e799c94b0fddad3f982c30820d7bab}\label{classcamodocal_1_1Camera_ad9e799c94b0fddad3f982c30820d7bab}} 
+virtual int \hyperlink{classcamodocal_1_1Camera_ad9e799c94b0fddad3f982c30820d7bab}{image\+Width} (void) const =0
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a2a829050957309327b163e460df32a3d}\label{classcamodocal_1_1Camera_a2a829050957309327b163e460df32a3d}} 
+virtual int \hyperlink{classcamodocal_1_1Camera_a2a829050957309327b163e460df32a3d}{image\+Height} (void) const =0
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a1c74aa165487ef4eea0d11ded7946ad1}\label{classcamodocal_1_1Camera_a1c74aa165487ef4eea0d11ded7946ad1}} 
+virtual cv\+::\+Mat \& \hyperlink{classcamodocal_1_1Camera_a1c74aa165487ef4eea0d11ded7946ad1}{mask} (void)
+\begin{DoxyCompactList}\small\item\em virtual function of image Mask \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ab2ef0e5f32fc81f9c568be1234da168b}\label{classcamodocal_1_1Camera_ab2ef0e5f32fc81f9c568be1234da168b}} 
+virtual const cv\+::\+Mat \& \hyperlink{classcamodocal_1_1Camera_ab2ef0e5f32fc81f9c568be1234da168b}{mask} (void) const
+\begin{DoxyCompactList}\small\item\em virtual function of image Mask \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a5b24bfc1b1c88642a99c8ddd8f74d085}\label{classcamodocal_1_1Camera_a5b24bfc1b1c88642a99c8ddd8f74d085}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_a5b24bfc1b1c88642a99c8ddd8f74d085}{estimate\+Intrinsics} (const cv\+::\+Size \&board\+Size, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points)=0
+\begin{DoxyCompactList}\small\item\em virtual function of camera intrinsics \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcamodocal_1_1Camera_a2a6d99ee0927e0336b4d77a9773900a4}{estimate\+Extrinsics} (const std\+::vector$<$ cv\+::\+Point3f $>$ \&object\+Points, const std\+::vector$<$ cv\+::\+Point2f $>$ \&image\+Points, cv\+::\+Mat \&rvec, cv\+::\+Mat \&tvec) const
+\begin{DoxyCompactList}\small\item\em calculate extrinsics with unit intrinsics \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}\label{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}{lift\+Sphere} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const =0
+\begin{DoxyCompactList}\small\item\em Lift points from the image plane to the sphere. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}\label{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}{lift\+Projective} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const =0
+\begin{DoxyCompactList}\small\item\em Lift points from the image plane to the projective space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}\label{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p) const =0
+\begin{DoxyCompactList}\small\item\em Projects 3D points to the image plane (Pi function) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_aa139629842798823cb38dce0019f7a49}\label{classcamodocal_1_1Camera_aa139629842798823cb38dce0019f7a49}} 
+virtual void {\bfseries undist\+To\+Plane} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&p) const =0
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a79dbf1282a9d4a4dc4a8f1e65cfc657a}\label{classcamodocal_1_1Camera_a79dbf1282a9d4a4dc4a8f1e65cfc657a}} 
+virtual cv\+::\+Mat {\bfseries init\+Undistort\+Rectify\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, float fx=-\/1.\+0f, float fy=-\/1.\+0f, cv\+::\+Size image\+Size=cv\+::\+Size(0, 0), float cx=-\/1.\+0f, float cy=-\/1.\+0f, cv\+::\+Mat rmat=cv\+::\+Mat\+::eye(3, 3, C\+V\+\_\+32\+F)) const =0
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a05ed9804daf6803907c716da2581204c}\label{classcamodocal_1_1Camera_a05ed9804daf6803907c716da2581204c}} 
+virtual int \hyperlink{classcamodocal_1_1Camera_a05ed9804daf6803907c716da2581204c}{parameter\+Count} (void) const =0
+\begin{DoxyCompactList}\small\item\em pure virtual function of parameter count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a40f385799b9ab055cf69b720835ad151}\label{classcamodocal_1_1Camera_a40f385799b9ab055cf69b720835ad151}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_a40f385799b9ab055cf69b720835ad151}{read\+Parameters} (const std\+::vector$<$ double $>$ \&parameters)=0
+\begin{DoxyCompactList}\small\item\em pure virtual function of reading parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_afb1d6e23e4918c0dd978ef9d3b57a3e2}\label{classcamodocal_1_1Camera_afb1d6e23e4918c0dd978ef9d3b57a3e2}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_afb1d6e23e4918c0dd978ef9d3b57a3e2}{write\+Parameters} (std\+::vector$<$ double $>$ \&parameters) const =0
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a8dc590b4552c389a079bb64179ac30d7}\label{classcamodocal_1_1Camera_a8dc590b4552c389a079bb64179ac30d7}} 
+virtual void \hyperlink{classcamodocal_1_1Camera_a8dc590b4552c389a079bb64179ac30d7}{write\+Parameters\+To\+Yaml\+File} (const std\+::string \&filename) const =0
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters to Y\+A\+ML file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a151059e8f00d9a5a9c5db19a128937a6}\label{classcamodocal_1_1Camera_a151059e8f00d9a5a9c5db19a128937a6}} 
+virtual std\+::string \hyperlink{classcamodocal_1_1Camera_a151059e8f00d9a5a9c5db19a128937a6}{parameters\+To\+String} (void) const =0
+\begin{DoxyCompactList}\small\item\em pure virtual of converting parameters to string \end{DoxyCompactList}\item 
+double \hyperlink{classcamodocal_1_1Camera_a544642f8170212af887350cff67d16b5}{reprojection\+Dist} (const Eigen\+::\+Vector3d \&P1, const Eigen\+::\+Vector3d \&P2) const
+\begin{DoxyCompactList}\small\item\em Calculates the reprojection distance between points. \end{DoxyCompactList}\item 
+double \hyperlink{classcamodocal_1_1Camera_ab162451505d8b9dfda0b96383d597a16}{reprojection\+Error} (const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points, const std\+::vector$<$ cv\+::\+Mat $>$ \&rvecs, const std\+::vector$<$ cv\+::\+Mat $>$ \&tvecs, cv\+::\+Output\+Array per\+View\+Errors=cv\+::no\+Array()) const
+\begin{DoxyCompactList}\small\item\em calculate average reprojection error of all points in all frames (total error divede by total points) with 3D points and 2D points \end{DoxyCompactList}\item 
+double \hyperlink{classcamodocal_1_1Camera_ab261e28c2d056b3149275c01407416a3}{reprojection\+Error} (const Eigen\+::\+Vector3d \&P, const Eigen\+::\+Quaterniond \&camera\+\_\+q, const Eigen\+::\+Vector3d \&camera\+\_\+t, const Eigen\+::\+Vector2d \&observed\+\_\+p) const
+\begin{DoxyCompactList}\small\item\em calculate reprojection error of one 3D point with camera pose P \& Q \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1Camera_ab8dfa1aa8a60c5569920939ba7d85440}{project\+Points} (const std\+::vector$<$ cv\+::\+Point3f $>$ \&object\+Points, const cv\+::\+Mat \&rvec, const cv\+::\+Mat \&tvec, std\+::vector$<$ cv\+::\+Point2f $>$ \&image\+Points) const
+\begin{DoxyCompactList}\small\item\em project 3D points to 2d plane \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a3c48cfb66f81f23bbce4cdbc02c64144}\label{classcamodocal_1_1Camera_a3c48cfb66f81f23bbce4cdbc02c64144}} 
+cv\+::\+Mat \hyperlink{classcamodocal_1_1Camera_a3c48cfb66f81f23bbce4cdbc02c64144}{m\+\_\+mask}
+\begin{DoxyCompactList}\small\item\em image mask \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+base class for all camera model 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a2a6d99ee0927e0336b4d77a9773900a4}\label{classcamodocal_1_1Camera_a2a6d99ee0927e0336b4d77a9773900a4}} 
+\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}!estimate\+Extrinsics@{estimate\+Extrinsics}}
+\index{estimate\+Extrinsics@{estimate\+Extrinsics}!camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+\subsubsection{\texorpdfstring{estimate\+Extrinsics()}{estimateExtrinsics()}}
+{\footnotesize\ttfamily void camodocal\+::\+Camera\+::estimate\+Extrinsics (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ cv\+::\+Point3f $>$ \&}]{object\+Points,  }\item[{const std\+::vector$<$ cv\+::\+Point2f $>$ \&}]{image\+Points,  }\item[{cv\+::\+Mat \&}]{rvec,  }\item[{cv\+::\+Mat \&}]{tvec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+calculate extrinsics with unit intrinsics 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Points} & 3D points on object \\
+\hline
+{\em image\+Points} & 2D point on image plane \\
+\hline
+{\em rvec} & rotation vector \\
+\hline
+{\em tvec} & transformation vector \\
+\hline
+\end{DoxyParams}
+
+
+References lift\+Projective().
+
+
+
+Referenced by camodocal\+::\+Cata\+Camera\+::estimate\+Intrinsics(), and camodocal\+::\+Equidistant\+Camera\+::estimate\+Intrinsics().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcamodocal_1_1Camera_a2a6d99ee0927e0336b4d77a9773900a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_a2a6d99ee0927e0336b4d77a9773900a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ab8dfa1aa8a60c5569920939ba7d85440}\label{classcamodocal_1_1Camera_ab8dfa1aa8a60c5569920939ba7d85440}} 
+\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}!project\+Points@{project\+Points}}
+\index{project\+Points@{project\+Points}!camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+\subsubsection{\texorpdfstring{project\+Points()}{projectPoints()}}
+{\footnotesize\ttfamily void camodocal\+::\+Camera\+::project\+Points (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ cv\+::\+Point3f $>$ \&}]{object\+Points,  }\item[{const cv\+::\+Mat \&}]{rvec,  }\item[{const cv\+::\+Mat \&}]{tvec,  }\item[{std\+::vector$<$ cv\+::\+Point2f $>$ \&}]{image\+Points }\end{DoxyParamCaption}) const}
+
+
+
+project 3D points to 2d plane 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Points} & \\
+\hline
+{\em rvec} & \\
+\hline
+{\em tvec} & \\
+\hline
+{\em image\+Points} & \\
+\hline
+\end{DoxyParams}
+reserve space for image\+Points according to object\+Points
+
+convert from rotation vector to rotation matrix 
+
+References space\+To\+Plane().
+
+
+
+Referenced by reprojection\+Error().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcamodocal_1_1Camera_ab8dfa1aa8a60c5569920939ba7d85440_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_ab8dfa1aa8a60c5569920939ba7d85440_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_a544642f8170212af887350cff67d16b5}\label{classcamodocal_1_1Camera_a544642f8170212af887350cff67d16b5}} 
+\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}!reprojection\+Dist@{reprojection\+Dist}}
+\index{reprojection\+Dist@{reprojection\+Dist}!camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+\subsubsection{\texorpdfstring{reprojection\+Dist()}{reprojectionDist()}}
+{\footnotesize\ttfamily double camodocal\+::\+Camera\+::reprojection\+Dist (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P1,  }\item[{const Eigen\+::\+Vector3d \&}]{P2 }\end{DoxyParamCaption}) const}
+
+
+
+Calculates the reprojection distance between points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P1} & first 3D point coordinates \\
+\hline
+{\em P2} & second 3D point coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+euclidean distance in the plane 
+\end{DoxyReturn}
+
+
+References space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcamodocal_1_1Camera_a544642f8170212af887350cff67d16b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ab162451505d8b9dfda0b96383d597a16}\label{classcamodocal_1_1Camera_ab162451505d8b9dfda0b96383d597a16}} 
+\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}!reprojection\+Error@{reprojection\+Error}}
+\index{reprojection\+Error@{reprojection\+Error}!camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+\subsubsection{\texorpdfstring{reprojection\+Error()}{reprojectionError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double camodocal\+::\+Camera\+::reprojection\+Error (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&}]{object\+Points,  }\item[{const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&}]{image\+Points,  }\item[{const std\+::vector$<$ cv\+::\+Mat $>$ \&}]{rvecs,  }\item[{const std\+::vector$<$ cv\+::\+Mat $>$ \&}]{tvecs,  }\item[{cv\+::\+Output\+Array}]{per\+View\+Errors = {\ttfamily cv\+:\+:noArray()} }\end{DoxyParamCaption}) const}
+
+
+
+calculate average reprojection error of all points in all frames (total error divede by total points) with 3D points and 2D points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Points} & 3D coordinates of object points \\
+\hline
+{\em image\+Points} & 2D coordinates of image points \\
+\hline
+{\em rvecs} & rotation vectors \\
+\hline
+{\em tvecs} & transformation vectors \\
+\hline
+{\em per\+View\+Errors} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+count of image frames
+
+current points in all image frames
+
+check whether pre\+Vire\+Error needed to be computed
+
+image\+Count $\ast$ 1
+
+using get\+Mat() to convert from cv\+::\+Output\+Array to cv\+::\+Mat
+
+project points of frame i to image plane
+
+calculate repeojection error of frame i()
+
+calculate average reprojection error of frame i
+
+return average reprojection error 
+
+References project\+Points().
+
+
+
+Referenced by camodocal\+::\+Cata\+Camera\+::estimate\+Intrinsics(), and camodocal\+::\+Equidistant\+Camera\+::estimate\+Intrinsics().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_ab162451505d8b9dfda0b96383d597a16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1Camera_ab162451505d8b9dfda0b96383d597a16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1Camera_ab261e28c2d056b3149275c01407416a3}\label{classcamodocal_1_1Camera_ab261e28c2d056b3149275c01407416a3}} 
+\index{camodocal\+::\+Camera@{camodocal\+::\+Camera}!reprojection\+Error@{reprojection\+Error}}
+\index{reprojection\+Error@{reprojection\+Error}!camodocal\+::\+Camera@{camodocal\+::\+Camera}}
+\subsubsection{\texorpdfstring{reprojection\+Error()}{reprojectionError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double camodocal\+::\+Camera\+::reprojection\+Error (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{const Eigen\+::\+Quaterniond \&}]{camera\+\_\+q,  }\item[{const Eigen\+::\+Vector3d \&}]{camera\+\_\+t,  }\item[{const Eigen\+::\+Vector2d \&}]{observed\+\_\+p }\end{DoxyParamCaption}) const}
+
+
+
+calculate reprojection error of one 3D point with camera pose P \& Q 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D coordinates of point \\
+\hline
+{\em camera\+\_\+q} & quaternion of camera pose \\
+\hline
+{\em camera\+\_\+t} & translation of camera pose \\
+\hline
+{\em observed\+\_\+p} & corresponding image point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+
+References space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcamodocal_1_1Camera_ab261e28c2d056b3149275c01407416a3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/\hyperlink{Camera_8h}{Camera.\+h}\item 
+camera\+\_\+model/src/camera\+\_\+models/\hyperlink{Camera_8cc}{Camera.\+cc}\end{DoxyCompactItemize}

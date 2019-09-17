@@ -1,0 +1,4 @@
+<map id="camodocal::PinholeCamera::liftSphere" name="camodocal::PinholeCamera::liftSphere">
+<area shape="rect" id="node2" href="$classcamodocal_1_1PinholeCamera.html#a8a557882a34c5269f6254df6e1d9bb4f" title="Lifts a point from the image plane to its projective ray. " alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1PinholeCamera.html#a0e667305df17c681a6550cd0addfcaab" title="Apply distortion to input point (from the normalised plane) " alt="" coords="467,5,649,47"/>
+</map>

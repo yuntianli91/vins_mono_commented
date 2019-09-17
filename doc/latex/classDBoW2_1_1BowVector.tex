@@ -1,0 +1,175 @@
+\hypertarget{classDBoW2_1_1BowVector}{}\section{D\+Bo\+W2\+:\+:Bow\+Vector Class Reference}
+\label{classDBoW2_1_1BowVector}\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+
+
+Vector of words to represent images.  
+
+
+
+
+{\ttfamily \#include $<$Bow\+Vector.\+h$>$}
+
+
+
+Inheritance diagram for D\+Bo\+W2\+:\+:Bow\+Vector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classDBoW2_1_1BowVector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+Bo\+W2\+:\+:Bow\+Vector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classDBoW2_1_1BowVector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}{Bow\+Vector} (void)
+\item 
+\hyperlink{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}{$\sim$\+Bow\+Vector} (void)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}{add\+Weight} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id} id, \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value} v)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}{add\+If\+Not\+Exist} (\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id} id, \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value} v)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}{normalize} (\hyperlink{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\+Norm} norm\+\_\+type)
+\item 
+void \hyperlink{classDBoW2_1_1BowVector_a0611e948f987574161c121231341537b}{saveM} (const std\+::string \&filename, size\+\_\+t W) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vector of words to represent images. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}\label{classDBoW2_1_1BowVector_ac4da23e700adc4ee083d66b23ce86e90}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!Bow\+Vector@{Bow\+Vector}}
+\index{Bow\+Vector@{Bow\+Vector}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{Bow\+Vector()}{BowVector()}}
+{\footnotesize\ttfamily D\+Bo\+W2\+::\+Bow\+Vector\+::\+Bow\+Vector (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}\label{classDBoW2_1_1BowVector_a7210cac6ce006c7232f4d097faa338d0}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!````~Bow\+Vector@{$\sim$\+Bow\+Vector}}
+\index{````~Bow\+Vector@{$\sim$\+Bow\+Vector}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{$\sim$\+Bow\+Vector()}{~BowVector()}}
+{\footnotesize\ttfamily D\+Bo\+W2\+::\+Bow\+Vector\+::$\sim$\+Bow\+Vector (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}\label{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!add\+If\+Not\+Exist@{add\+If\+Not\+Exist}}
+\index{add\+If\+Not\+Exist@{add\+If\+Not\+Exist}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{add\+If\+Not\+Exist()}{addIfNotExist()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Bow\+Vector\+::add\+If\+Not\+Exist (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id}}]{id,  }\item[{\hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value}}]{v }\end{DoxyParamCaption})}
+
+Adds a word with a value to the vector only if this does not exist yet 
+\begin{DoxyParams}{Parameters}
+{\em id} & word id to look for \\
+\hline
+{\em v} & value to give to the word if this does not exist \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::transform().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_a5ddf10e444d10425e5bd3568dc7ffe5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}\label{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!add\+Weight@{add\+Weight}}
+\index{add\+Weight@{add\+Weight}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{add\+Weight()}{addWeight()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Bow\+Vector\+::add\+Weight (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id}}]{id,  }\item[{\hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value}}]{v }\end{DoxyParamCaption})}
+
+Adds a value to a word value existing in the vector, or creates a new word with the given value 
+\begin{DoxyParams}{Parameters}
+{\em id} & word id to look for \\
+\hline
+{\em v} & value to create the word with, or to add to existing word \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::transform().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_a3ac92a805b252c93dc6535240d02df47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}\label{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!normalize@{normalize}}
+\index{normalize@{normalize}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Bow\+Vector\+::normalize (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\+Norm}}]{norm\+\_\+type }\end{DoxyParamCaption})}
+
+L1-\/\+Normalizes the values in the vector 
+\begin{DoxyParams}{Parameters}
+{\em norm\+\_\+type} & norm used \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ D\+Bo\+W2\+::\+F\+Brief\+::\+T\+Descriptor, D\+Bo\+W2\+::\+F\+Brief $>$\+::transform().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBoW2_1_1BowVector_acd2dd34023e3053a4cc75d70c8b6ac13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_a0611e948f987574161c121231341537b}\label{classDBoW2_1_1BowVector_a0611e948f987574161c121231341537b}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!saveM@{saveM}}
+\index{saveM@{saveM}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{save\+M()}{saveM()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Bow\+Vector\+::saveM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{size\+\_\+t}]{W }\end{DoxyParamCaption}) const}
+
+Saves the bow vector as a vector in a matlab file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+{\em W} & number of words in the vocabulary \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}\label{classDBoW2_1_1BowVector_a1a7d9ac0f9128538859adfea38453ae1}} 
+\index{D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2\+::\+Bow\+Vector@{D\+Bo\+W2\+::\+Bow\+Vector}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Prints the content of the bow vector 
+\begin{DoxyParams}{Parameters}
+{\em out} & stream \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Bow\+Vector.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Bow\+Vector.\+cpp\end{DoxyCompactItemize}

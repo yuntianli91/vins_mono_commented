@@ -1,0 +1,101 @@
+\hypertarget{classFeatureTracker}{}\section{Feature\+Tracker Class Reference}
+\label{classFeatureTracker}\index{Feature\+Tracker@{Feature\+Tracker}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_addbf26301fb0b3fbe799367c1f0df3ed}\label{classFeatureTracker_addbf26301fb0b3fbe799367c1f0df3ed}} 
+void {\bfseries read\+Image} (const cv\+::\+Mat \&\+\_\+img, double \+\_\+cur\+\_\+time)
+\item 
+\mbox{\Hypertarget{classFeatureTracker_af95c8b98f639c552a4a3b7aa014859e5}\label{classFeatureTracker_af95c8b98f639c552a4a3b7aa014859e5}} 
+void {\bfseries set\+Mask} ()
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a08eada83c5ceaec0aabda8e0956469d2}\label{classFeatureTracker_a08eada83c5ceaec0aabda8e0956469d2}} 
+void {\bfseries add\+Points} ()
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a14aaa0b69d96a18e2cec8ba71f1d6221}\label{classFeatureTracker_a14aaa0b69d96a18e2cec8ba71f1d6221}} 
+bool {\bfseries update\+ID} (unsigned int i)
+\item 
+\mbox{\Hypertarget{classFeatureTracker_ad8c8512382af4917a125770b24e3ab7a}\label{classFeatureTracker_ad8c8512382af4917a125770b24e3ab7a}} 
+void {\bfseries read\+Intrinsic\+Parameter} (const string \&calib\+\_\+file)
+\item 
+\mbox{\Hypertarget{classFeatureTracker_af76b1ddf67a3b0b5f3bf47132c112948}\label{classFeatureTracker_af76b1ddf67a3b0b5f3bf47132c112948}} 
+void {\bfseries show\+Undistortion} (const string \&name)
+\item 
+\mbox{\Hypertarget{classFeatureTracker_aa25fdfbb607824acbf431fa90036b4bd}\label{classFeatureTracker_aa25fdfbb607824acbf431fa90036b4bd}} 
+void {\bfseries reject\+WithF} ()
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a73884e00cbbfdbd69b7748706223377e}\label{classFeatureTracker_a73884e00cbbfdbd69b7748706223377e}} 
+void {\bfseries undistorted\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_aa498ea1d93ed35fcba00ee40f6d653ee}\label{classFeatureTracker_aa498ea1d93ed35fcba00ee40f6d653ee}} 
+cv\+::\+Mat {\bfseries mask}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_ae1f00a40e97af8ea9f16aa0a0c1ef614}\label{classFeatureTracker_ae1f00a40e97af8ea9f16aa0a0c1ef614}} 
+cv\+::\+Mat {\bfseries fisheye\+\_\+mask}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_af418c09b742405b22bf459ac56fe65a7}\label{classFeatureTracker_af418c09b742405b22bf459ac56fe65a7}} 
+cv\+::\+Mat {\bfseries prev\+\_\+img}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a8467a4503fbd44d5fef76c8c586bee0e}\label{classFeatureTracker_a8467a4503fbd44d5fef76c8c586bee0e}} 
+cv\+::\+Mat {\bfseries cur\+\_\+img}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a0fc6d38c9c617dadd9f8a48c0854b5c1}\label{classFeatureTracker_a0fc6d38c9c617dadd9f8a48c0854b5c1}} 
+cv\+::\+Mat {\bfseries forw\+\_\+img}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_ab26bf3c396369069a1a9c9fba76e1aee}\label{classFeatureTracker_ab26bf3c396369069a1a9c9fba76e1aee}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries n\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_ab6c950c1d6225a01c445ab4bbf5ecaa3}\label{classFeatureTracker_ab6c950c1d6225a01c445ab4bbf5ecaa3}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries prev\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a0a7518203319fd85e233b474f192da0c}\label{classFeatureTracker_a0a7518203319fd85e233b474f192da0c}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries cur\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a212a6957e2c370e3a84e587da785c55e}\label{classFeatureTracker_a212a6957e2c370e3a84e587da785c55e}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries forw\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a6daca5f88421f164cfa1285332a52c8a}\label{classFeatureTracker_a6daca5f88421f164cfa1285332a52c8a}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries prev\+\_\+un\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a5a2f5148e56b558c4dc037c6224883c1}\label{classFeatureTracker_a5a2f5148e56b558c4dc037c6224883c1}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries cur\+\_\+un\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a6fed7826b55d2efedd2344188968f63a}\label{classFeatureTracker_a6fed7826b55d2efedd2344188968f63a}} 
+vector$<$ cv\+::\+Point2f $>$ {\bfseries pts\+\_\+velocity}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a42f8e4630d7dd869dac8361b018ac762}\label{classFeatureTracker_a42f8e4630d7dd869dac8361b018ac762}} 
+vector$<$ int $>$ {\bfseries ids}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_af1b0e683ead4ca152f47993e1790d74b}\label{classFeatureTracker_af1b0e683ead4ca152f47993e1790d74b}} 
+vector$<$ int $>$ {\bfseries track\+\_\+cnt}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a7c093a57f302e31196553a9698bd4559}\label{classFeatureTracker_a7c093a57f302e31196553a9698bd4559}} 
+map$<$ int, cv\+::\+Point2f $>$ {\bfseries cur\+\_\+un\+\_\+pts\+\_\+map}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a2d2ad89dddeb249d850ea8e15150f49d}\label{classFeatureTracker_a2d2ad89dddeb249d850ea8e15150f49d}} 
+map$<$ int, cv\+::\+Point2f $>$ {\bfseries prev\+\_\+un\+\_\+pts\+\_\+map}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a69f9531fb56cf0cba822c3e89f5cdc60}\label{classFeatureTracker_a69f9531fb56cf0cba822c3e89f5cdc60}} 
+\hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{camodocal\+::\+Camera\+Ptr} {\bfseries m\+\_\+camera}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_aeac3cf97bbebda2f5e5131fc0aedf21e}\label{classFeatureTracker_aeac3cf97bbebda2f5e5131fc0aedf21e}} 
+double {\bfseries cur\+\_\+time}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_afe5d3e6234f232d9e448c93f6cdae606}\label{classFeatureTracker_afe5d3e6234f232d9e448c93f6cdae606}} 
+double {\bfseries prev\+\_\+time}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFeatureTracker_a7e05386422889ebf0faaa23078980a1f}\label{classFeatureTracker_a7e05386422889ebf0faaa23078980a1f}} 
+static int {\bfseries n\+\_\+id} = 0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+feature\+\_\+tracker/src/feature\+\_\+tracker.\+h\item 
+feature\+\_\+tracker/src/feature\+\_\+tracker.\+cpp\end{DoxyCompactItemize}

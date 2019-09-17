@@ -1,0 +1,283 @@
+\hypertarget{classUtility}{}\section{Utility Class Reference}
+\label{classUtility}\index{Utility@{Utility}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structUtility_1_1uint__}{uint\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtility_a98ec0cf249612a2107ff995ea7bf7b6c}\label{classUtility_a98ec0cf249612a2107ff995ea7bf7b6c}} 
+{\footnotesize template$<$size\+\_\+t N, typename Lambda , typename IterT $>$ }\\void {\bfseries unroller} (const Lambda \&f, const IterT \&iter, \hyperlink{structUtility_1_1uint__}{uint\+\_\+}$<$ N $>$)
+\item 
+\mbox{\Hypertarget{classUtility_a51a15b66637be38508b088202b41acb1}\label{classUtility_a51a15b66637be38508b088202b41acb1}} 
+{\footnotesize template$<$typename Lambda , typename IterT $>$ }\\void {\bfseries unroller} (const Lambda \&f, const IterT \&iter, \hyperlink{structUtility_1_1uint__}{uint\+\_\+}$<$ 0 $>$)
+\item 
+\mbox{\Hypertarget{classUtility_a98ec0cf249612a2107ff995ea7bf7b6c}\label{classUtility_a98ec0cf249612a2107ff995ea7bf7b6c}} 
+{\footnotesize template$<$size\+\_\+t N, typename Lambda , typename IterT $>$ }\\void {\bfseries unroller} (const Lambda \&f, const IterT \&iter, \hyperlink{structUtility_1_1uint__}{uint\+\_\+}$<$ N $>$)
+\item 
+\mbox{\Hypertarget{classUtility_a51a15b66637be38508b088202b41acb1}\label{classUtility_a51a15b66637be38508b088202b41acb1}} 
+{\footnotesize template$<$typename Lambda , typename IterT $>$ }\\void {\bfseries unroller} (const Lambda \&f, const IterT \&iter, \hyperlink{structUtility_1_1uint__}{uint\+\_\+}$<$ 0 $>$)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUtility_ad6db663af81d0dfb446f217a7032f28b}\label{classUtility_ad6db663af81d0dfb446f217a7032f28b}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Quaternion$<$ typename Derived\+::\+Scalar $>$ {\bfseries deltaQ} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&theta)
+\item 
+\mbox{\Hypertarget{classUtility_af2736e24a6c1dc11e62e7cffa9e9502e}\label{classUtility_af2736e24a6c1dc11e62e7cffa9e9502e}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 3, 3 $>$ {\bfseries skew\+Symmetric} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&q)
+\item 
+\mbox{\Hypertarget{classUtility_a686a533a24f020b66342708d5bf0730c}\label{classUtility_a686a533a24f020b66342708d5bf0730c}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Quaternion$<$ typename Derived\+::\+Scalar $>$ {\bfseries positify} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&q)
+\item 
+\mbox{\Hypertarget{classUtility_a1006727702d0894f4ffbd18081c080a3}\label{classUtility_a1006727702d0894f4ffbd18081c080a3}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 4, 4 $>$ {\bfseries Qleft} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&q)
+\item 
+\mbox{\Hypertarget{classUtility_a65053cec3b81ab32f5e55d1d81f3498a}\label{classUtility_a65053cec3b81ab32f5e55d1d81f3498a}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 4, 4 $>$ {\bfseries Qright} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&p)
+\item 
+\mbox{\Hypertarget{classUtility_a9a4d4e66c5288c4a8fb5d2e6a0faf840}\label{classUtility_a9a4d4e66c5288c4a8fb5d2e6a0faf840}} 
+static Eigen\+::\+Vector3d {\bfseries R2ypr} (const Eigen\+::\+Matrix3d \&R)
+\item 
+\mbox{\Hypertarget{classUtility_a2cf771f4b84aa9056e60119953f91917}\label{classUtility_a2cf771f4b84aa9056e60119953f91917}} 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 3, 3 $>$ {\bfseries ypr2R} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&ypr)
+\item 
+\mbox{\Hypertarget{classUtility_a93df577f51e519fd9e9f931b27b3d4ac}\label{classUtility_a93df577f51e519fd9e9f931b27b3d4ac}} 
+static Eigen\+::\+Matrix3d {\bfseries g2R} (const Eigen\+::\+Vector3d \&g)
+\item 
+\mbox{\Hypertarget{classUtility_af36ac46f69e5f6ecf45b9ea471e73cb1}\label{classUtility_af36ac46f69e5f6ecf45b9ea471e73cb1}} 
+{\footnotesize template$<$typename T $>$ }\\static T {\bfseries normalize\+Angle} (const T \&angle\+\_\+degrees)
+\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Quaternion$<$ typename Derived\+::\+Scalar $>$ \hyperlink{classUtility_ad6db663af81d0dfb446f217a7032f28b}{deltaQ} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&theta)
+\begin{DoxyCompactList}\small\item\em calculate delta quaternion with delta theta (one order Bicard algorithm) =$>$ dq = \mbox{[}1 theta\+\_\+x/2 theta\+\_\+y/2 theta\+\_\+z/2\mbox{]} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 3, 3 $>$ \hyperlink{classUtility_af2736e24a6c1dc11e62e7cffa9e9502e}{skew\+Symmetric} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&q)
+\begin{DoxyCompactList}\small\item\em calculate skew\+Symmetric matrix fron vector q \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Quaternion$<$ typename Derived\+::\+Scalar $>$ \hyperlink{classUtility_a686a533a24f020b66342708d5bf0730c}{positify} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&q)
+\begin{DoxyCompactList}\small\item\em not used. current just output = input \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 4, 4 $>$ \hyperlink{classUtility_a1006727702d0894f4ffbd18081c080a3}{Qleft} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&q)
+\begin{DoxyCompactList}\small\item\em calculate left quaternion q = \mbox{[}w\+\_\+a, x\+\_\+a, y\+\_\+a, z\+\_\+a\mbox{]} =$>$L(q)= $\vert$ w\+\_\+a -\/x\+\_\+a -\/y\+\_\+a -\/z\+\_\+a $\vert$ $\vert$ x\+\_\+a w\+\_\+a -\/z\+\_\+a y\+\_\+a $\vert$ $\vert$ y\+\_\+a z\+\_\+a w\+\_\+a -\/x\+\_\+a $\vert$ $\vert$ z\+\_\+a -\/y\+\_\+a x\+\_\+a w\+\_\+a $\vert$ \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 4, 4 $>$ \hyperlink{classUtility_a65053cec3b81ab32f5e55d1d81f3498a}{Qright} (const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&p)
+\begin{DoxyCompactList}\small\item\em calculate quaternion right multiplication q = \mbox{[}w\+\_\+a, x\+\_\+a, y\+\_\+a, z\+\_\+a\mbox{]} =$>$R(q)= $\vert$ w\+\_\+a -\/x\+\_\+a -\/y\+\_\+a -\/z\+\_\+a $\vert$ $\vert$ x\+\_\+a w\+\_\+a z\+\_\+a -\/y\+\_\+a $\vert$ $\vert$ y\+\_\+a -\/z\+\_\+a w\+\_\+a x\+\_\+a $\vert$ $\vert$ z\+\_\+a y\+\_\+a -\/x\+\_\+a w\+\_\+a $\vert$ \end{DoxyCompactList}\item 
+static Eigen\+::\+Vector3d \hyperlink{classUtility_a9a4d4e66c5288c4a8fb5d2e6a0faf840}{R2ypr} (const Eigen\+::\+Matrix3d \&R)
+\begin{DoxyCompactList}\small\item\em convert rotation matrix to Euler angles(\+Yaw, Pitch, Row) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Derived $>$ }\\static Eigen\+::\+Matrix$<$ typename Derived\+::\+Scalar, 3, 3 $>$ \hyperlink{classUtility_a2cf771f4b84aa9056e60119953f91917}{ypr2R} (const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&ypr)
+\begin{DoxyCompactList}\small\item\em convert Euler angled to rotation matrix, sequence Rz$\ast$\+Ry$\ast$\+Rx \end{DoxyCompactList}\item 
+static Eigen\+::\+Matrix3d \hyperlink{classUtility_a43109837bc1af099708bbf7c269deb79}{g2R} (const Eigen\+::\+Vector3d \&g)
+\begin{DoxyCompactList}\small\item\em calculation rotation matrix from gravity vector \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classUtility_af36ac46f69e5f6ecf45b9ea471e73cb1}{normalize\+Angle} (const T \&angle\+\_\+degrees)
+\begin{DoxyCompactList}\small\item\em normalize angle to \mbox{[}-\/180 180\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtility_ad6db663af81d0dfb446f217a7032f28b}\label{classUtility_ad6db663af81d0dfb446f217a7032f28b}} 
+\index{Utility@{Utility}!deltaQ@{deltaQ}}
+\index{deltaQ@{deltaQ}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{delta\+Q()}{deltaQ()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Quaternion$<$typename Derived\+::\+Scalar$>$ Utility\+::deltaQ (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculate delta quaternion with delta theta (one order Bicard algorithm) =$>$ dq = \mbox{[}1 theta\+\_\+x/2 theta\+\_\+y/2 theta\+\_\+z/2\mbox{]} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Quaternion$<$typename Derived\+::\+Scalar$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a43109837bc1af099708bbf7c269deb79}\label{classUtility_a43109837bc1af099708bbf7c269deb79}} 
+\index{Utility@{Utility}!g2R@{g2R}}
+\index{g2R@{g2R}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{g2\+R()}{g2R()}}
+{\footnotesize\ttfamily static Eigen\+::\+Matrix3d Utility\+::g2R (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+calculation rotation matrix from gravity vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix3d 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_af36ac46f69e5f6ecf45b9ea471e73cb1}\label{classUtility_af36ac46f69e5f6ecf45b9ea471e73cb1}} 
+\index{Utility@{Utility}!normalize\+Angle@{normalize\+Angle}}
+\index{normalize\+Angle@{normalize\+Angle}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{normalize\+Angle()}{normalizeAngle()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T Utility\+::normalize\+Angle (\begin{DoxyParamCaption}\item[{const T \&}]{angle\+\_\+degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+normalize angle to \mbox{[}-\/180 180\mbox{]} 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em angle\+\_\+degrees} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a686a533a24f020b66342708d5bf0730c}\label{classUtility_a686a533a24f020b66342708d5bf0730c}} 
+\index{Utility@{Utility}!positify@{positify}}
+\index{positify@{positify}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{positify()}{positify()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Quaternion$<$typename Derived\+::\+Scalar$>$ Utility\+::positify (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+not used. current just output = input 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Quaternion$<$typename Derived\+::\+Scalar$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a1006727702d0894f4ffbd18081c080a3}\label{classUtility_a1006727702d0894f4ffbd18081c080a3}} 
+\index{Utility@{Utility}!Qleft@{Qleft}}
+\index{Qleft@{Qleft}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Qleft()}{Qleft()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 4, 4$>$ Utility\+::\+Qleft (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculate left quaternion q = \mbox{[}w\+\_\+a, x\+\_\+a, y\+\_\+a, z\+\_\+a\mbox{]} =$>$L(q)= $\vert$ w\+\_\+a -\/x\+\_\+a -\/y\+\_\+a -\/z\+\_\+a $\vert$ $\vert$ x\+\_\+a w\+\_\+a -\/z\+\_\+a y\+\_\+a $\vert$ $\vert$ y\+\_\+a z\+\_\+a w\+\_\+a -\/x\+\_\+a $\vert$ $\vert$ z\+\_\+a -\/y\+\_\+a x\+\_\+a w\+\_\+a $\vert$ 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 4, 4$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a65053cec3b81ab32f5e55d1d81f3498a}\label{classUtility_a65053cec3b81ab32f5e55d1d81f3498a}} 
+\index{Utility@{Utility}!Qright@{Qright}}
+\index{Qright@{Qright}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Qright()}{Qright()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 4, 4$>$ Utility\+::\+Qright (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Quaternion\+Base$<$ Derived $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculate quaternion right multiplication q = \mbox{[}w\+\_\+a, x\+\_\+a, y\+\_\+a, z\+\_\+a\mbox{]} =$>$R(q)= $\vert$ w\+\_\+a -\/x\+\_\+a -\/y\+\_\+a -\/z\+\_\+a $\vert$ $\vert$ x\+\_\+a w\+\_\+a z\+\_\+a -\/y\+\_\+a $\vert$ $\vert$ y\+\_\+a -\/z\+\_\+a w\+\_\+a x\+\_\+a $\vert$ $\vert$ z\+\_\+a y\+\_\+a -\/x\+\_\+a w\+\_\+a $\vert$ 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 4, 4$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a9a4d4e66c5288c4a8fb5d2e6a0faf840}\label{classUtility_a9a4d4e66c5288c4a8fb5d2e6a0faf840}} 
+\index{Utility@{Utility}!R2ypr@{R2ypr}}
+\index{R2ypr@{R2ypr}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{R2ypr()}{R2ypr()}}
+{\footnotesize\ttfamily static Eigen\+::\+Vector3d Utility\+::\+R2ypr (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix3d \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+convert rotation matrix to Euler angles(\+Yaw, Pitch, Row) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Vector3d 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_af2736e24a6c1dc11e62e7cffa9e9502e}\label{classUtility_af2736e24a6c1dc11e62e7cffa9e9502e}} 
+\index{Utility@{Utility}!skew\+Symmetric@{skew\+Symmetric}}
+\index{skew\+Symmetric@{skew\+Symmetric}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{skew\+Symmetric()}{skewSymmetric()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 3, 3$>$ Utility\+::skew\+Symmetric (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+calculate skew\+Symmetric matrix fron vector q 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em q} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 3, 3$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtility_a2cf771f4b84aa9056e60119953f91917}\label{classUtility_a2cf771f4b84aa9056e60119953f91917}} 
+\index{Utility@{Utility}!ypr2R@{ypr2R}}
+\index{ypr2R@{ypr2R}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{ypr2\+R()}{ypr2R()}}
+{\footnotesize\ttfamily template$<$typename Derived $>$ \\
+static Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 3, 3$>$ Utility\+::ypr2R (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Base$<$ Derived $>$ \&}]{ypr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+convert Euler angled to rotation matrix, sequence Rz$\ast$\+Ry$\ast$\+Rx 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Derived} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ypr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eigen\+::\+Matrix$<$typename Derived\+::\+Scalar, 3, 3$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/utility/utility.\+h\item 
+pose\+\_\+graph/src/utility/utility.\+cpp\end{DoxyCompactItemize}

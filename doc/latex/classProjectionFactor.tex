@@ -1,0 +1,59 @@
+\hypertarget{classProjectionFactor}{}\section{Projection\+Factor Class Reference}
+\label{classProjectionFactor}\index{Projection\+Factor@{Projection\+Factor}}
+
+
+Inheritance diagram for Projection\+Factor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classProjectionFactor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Projection\+Factor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classProjectionFactor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a4731f66e4a4181bdf9bc2038bb86703e}\label{classProjectionFactor_a4731f66e4a4181bdf9bc2038bb86703e}} 
+{\bfseries Projection\+Factor} (const Eigen\+::\+Vector3d \&\+\_\+pts\+\_\+i, const Eigen\+::\+Vector3d \&\+\_\+pts\+\_\+j)
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a1217f02344d410154d049354107eebf8}\label{classProjectionFactor_a1217f02344d410154d049354107eebf8}} 
+virtual bool {\bfseries Evaluate} (double const $\ast$const $\ast$parameters, double $\ast$residuals, double $\ast$$\ast$jacobians) const
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a1d18cd3fe4bebcb17861b99e93d32b83}\label{classProjectionFactor_a1d18cd3fe4bebcb17861b99e93d32b83}} 
+void {\bfseries check} (double $\ast$$\ast$parameters)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_af9daf9298e68b8ffbc91dd4d84ba862b}\label{classProjectionFactor_af9daf9298e68b8ffbc91dd4d84ba862b}} 
+Eigen\+::\+Vector3d {\bfseries pts\+\_\+i}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_ad04498c0a75a9b83056e940c274b6cf0}\label{classProjectionFactor_ad04498c0a75a9b83056e940c274b6cf0}} 
+Eigen\+::\+Vector3d {\bfseries pts\+\_\+j}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a85c10b6ee61e7398fe61194bf32c334e}\label{classProjectionFactor_a85c10b6ee61e7398fe61194bf32c334e}} 
+Eigen\+::\+Matrix$<$ double, 2, 3 $>$ {\bfseries tangent\+\_\+base}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a353dd2dbdc926b92bda598b981d8c2d2}\label{classProjectionFactor_a353dd2dbdc926b92bda598b981d8c2d2}} 
+static Eigen\+::\+Matrix2d {\bfseries sqrt\+\_\+info}
+\item 
+\mbox{\Hypertarget{classProjectionFactor_a9b20fb227c3675dc4b70d54e11cb4fd4}\label{classProjectionFactor_a9b20fb227c3675dc4b70d54e11cb4fd4}} 
+static double {\bfseries sum\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/factor/projection\+\_\+factor.\+h\item 
+vins\+\_\+estimator/src/factor/projection\+\_\+factor.\+cpp\end{DoxyCompactItemize}

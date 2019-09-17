@@ -1,0 +1,312 @@
+\hypertarget{classcamodocal_1_1CataCamera}{}\section{camodocal\+:\+:Cata\+Camera Class Reference}
+\label{classcamodocal_1_1CataCamera}\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+
+
+{\ttfamily \#include $<$Cata\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for camodocal\+:\+:Cata\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classcamodocal_1_1CataCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camodocal\+:\+:Cata\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classcamodocal_1_1CataCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters}{Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a648e788b11ea6037f95e3d7fb52c319b}\label{classcamodocal_1_1CataCamera_a648e788b11ea6037f95e3d7fb52c319b}} 
+\hyperlink{classcamodocal_1_1CataCamera_a648e788b11ea6037f95e3d7fb52c319b}{Cata\+Camera} (const std\+::string \&\hyperlink{classcamodocal_1_1CataCamera_a0d7729df53b75f8c616a8fc43b7aba13}{camera\+Name}, int \hyperlink{classcamodocal_1_1CataCamera_a12efd82807e3f3baa13c3d5e344ac6a4}{image\+Width}, int \hyperlink{classcamodocal_1_1CataCamera_a858e474daed69f8bbe3aa6d6a1e7d3cc}{image\+Height}, double xi, double k1, double k2, double p1, double p2, double gamma1, double gamma2, double u0, double v0)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_aa5b09599be0386cf19099b11e23e51eb}\label{classcamodocal_1_1CataCamera_aa5b09599be0386cf19099b11e23e51eb}} 
+\hyperlink{classcamodocal_1_1CataCamera_aa5b09599be0386cf19099b11e23e51eb}{Cata\+Camera} (const \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters}{Parameters} \&params)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a35b52f562558905b13f51a2a5879ebb1}\label{classcamodocal_1_1CataCamera_a35b52f562558905b13f51a2a5879ebb1}} 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} \hyperlink{classcamodocal_1_1CataCamera_a35b52f562558905b13f51a2a5879ebb1}{model\+Type} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function model\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a0d7729df53b75f8c616a8fc43b7aba13}\label{classcamodocal_1_1CataCamera_a0d7729df53b75f8c616a8fc43b7aba13}} 
+const std\+::string \& \hyperlink{classcamodocal_1_1CataCamera_a0d7729df53b75f8c616a8fc43b7aba13}{camera\+Name} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of funtion camera\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a12efd82807e3f3baa13c3d5e344ac6a4}\label{classcamodocal_1_1CataCamera_a12efd82807e3f3baa13c3d5e344ac6a4}} 
+int \hyperlink{classcamodocal_1_1CataCamera_a12efd82807e3f3baa13c3d5e344ac6a4}{image\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a858e474daed69f8bbe3aa6d6a1e7d3cc}\label{classcamodocal_1_1CataCamera_a858e474daed69f8bbe3aa6d6a1e7d3cc}} 
+int \hyperlink{classcamodocal_1_1CataCamera_a858e474daed69f8bbe3aa6d6a1e7d3cc}{image\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a1dae6c4e661280dfaa3674df02f76e9c}\label{classcamodocal_1_1CataCamera_a1dae6c4e661280dfaa3674df02f76e9c}} 
+void \hyperlink{classcamodocal_1_1CataCamera_a1dae6c4e661280dfaa3674df02f76e9c}{estimate\+Intrinsics} (const cv\+::\+Size \&board\+Size, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points)
+\begin{DoxyCompactList}\small\item\em virtual function of camera intrinsics \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1CataCamera_ad408a25dbeabac661788d16357b44504}{lift\+Sphere} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to the unit sphere. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1CataCamera_a8415dca7d06b730a0b7358745aaa4001}{lift\+Projective} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to its projective ray. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1CataCamera_ab705d867d93d87c85d755bb7b1022a2c}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ad368a23e9e1b2e2a1202a021703861c8}\label{classcamodocal_1_1CataCamera_ad368a23e9e1b2e2a1202a021703861c8}} 
+void {\bfseries space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p, Eigen\+::\+Matrix$<$ double, 2, 3 $>$ \&J) const
+\item 
+void \hyperlink{classcamodocal_1_1CataCamera_a9184557401622acaf2a00fd9b1295d13}{undist\+To\+Plane} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Projects an undistorted 2D point p\+\_\+u to the image plane. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1CataCamera_ade73e1a665f97d5a95d09f0fff19a3f7}{distortion} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&d\+\_\+u) const
+\begin{DoxyCompactList}\small\item\em Apply distortion to input point (from the normalised plane) \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1CataCamera_af9f94a9e9109ad71fcabb0f7bc77a18f}{distortion} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&d\+\_\+u, Eigen\+::\+Matrix2d \&J) const
+\begin{DoxyCompactList}\small\item\em Apply distortion to input point (from the normalised plane) and calculate Jacobian. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a0ffe9fca3e985252da979c4bad701d70}\label{classcamodocal_1_1CataCamera_a0ffe9fca3e985252da979c4bad701d70}} 
+void {\bfseries init\+Undistort\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, double f\+Scale=1.\+0) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a6abe3cbd2aed5ac4ae55aab16b12b3df}\label{classcamodocal_1_1CataCamera_a6abe3cbd2aed5ac4ae55aab16b12b3df}} 
+cv\+::\+Mat {\bfseries init\+Undistort\+Rectify\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, float fx=-\/1.\+0f, float fy=-\/1.\+0f, cv\+::\+Size image\+Size=cv\+::\+Size(0, 0), float cx=-\/1.\+0f, float cy=-\/1.\+0f, cv\+::\+Mat rmat=cv\+::\+Mat\+::eye(3, 3, C\+V\+\_\+32\+F)) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a144359c9ce8f66639beeb95f3dda0822}\label{classcamodocal_1_1CataCamera_a144359c9ce8f66639beeb95f3dda0822}} 
+int \hyperlink{classcamodocal_1_1CataCamera_a144359c9ce8f66639beeb95f3dda0822}{parameter\+Count} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of parameter count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a59a3f33f2ba25ca6c774d55225a0d83f}\label{classcamodocal_1_1CataCamera_a59a3f33f2ba25ca6c774d55225a0d83f}} 
+const \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters}{Parameters} \& {\bfseries get\+Parameters} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ace8b0e5a4860516f4d78b2380b996da3}\label{classcamodocal_1_1CataCamera_ace8b0e5a4860516f4d78b2380b996da3}} 
+void {\bfseries set\+Parameters} (const \hyperlink{classcamodocal_1_1CataCamera_1_1Parameters}{Parameters} \&parameters)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ad2a147b0fce61b1ddb79c4a4cbd2e00e}\label{classcamodocal_1_1CataCamera_ad2a147b0fce61b1ddb79c4a4cbd2e00e}} 
+void \hyperlink{classcamodocal_1_1CataCamera_ad2a147b0fce61b1ddb79c4a4cbd2e00e}{read\+Parameters} (const std\+::vector$<$ double $>$ \&parameter\+Vec)
+\begin{DoxyCompactList}\small\item\em pure virtual function of reading parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a29622f8eb5dd441e790c245d435a3287}\label{classcamodocal_1_1CataCamera_a29622f8eb5dd441e790c245d435a3287}} 
+void \hyperlink{classcamodocal_1_1CataCamera_a29622f8eb5dd441e790c245d435a3287}{write\+Parameters} (std\+::vector$<$ double $>$ \&parameter\+Vec) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a25c2751e920c24922c0681119afe9924}\label{classcamodocal_1_1CataCamera_a25c2751e920c24922c0681119afe9924}} 
+void \hyperlink{classcamodocal_1_1CataCamera_a25c2751e920c24922c0681119afe9924}{write\+Parameters\+To\+Yaml\+File} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters to Y\+A\+ML file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a0c54d518ef4eddcfd9fb878c26bb2685}\label{classcamodocal_1_1CataCamera_a0c54d518ef4eddcfd9fb878c26bb2685}} 
+std\+::string \hyperlink{classcamodocal_1_1CataCamera_a0c54d518ef4eddcfd9fb878c26bb2685}{parameters\+To\+String} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual of converting parameters to string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a1c87fe2e89b19c9fd23d048d1650039c}\label{classcamodocal_1_1CataCamera_a1c87fe2e89b19c9fd23d048d1650039c}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries space\+To\+Plane} (const T $\ast$const params, const T $\ast$const q, const T $\ast$const t, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+C. Mei, and P. Rives, Single View Point Omnidirectional \hyperlink{classcamodocal_1_1Camera}{Camera} Calibration from Planar Grids, I\+C\+RA 2007 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ade73e1a665f97d5a95d09f0fff19a3f7}\label{classcamodocal_1_1CataCamera_ade73e1a665f97d5a95d09f0fff19a3f7}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!distortion@{distortion}}
+\index{distortion@{distortion}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{distortion()}{distortion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::distortion (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{d\+\_\+u }\end{DoxyParamCaption}) const}
+
+
+
+Apply distortion to input point (from the normalised plane) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & undistorted coordinates of point on the normalised plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+to obtain the distorted point\+: p\+\_\+d = p\+\_\+u + d\+\_\+u 
+\end{DoxyReturn}
+
+
+Referenced by lift\+Projective(), lift\+Sphere(), space\+To\+Plane(), and undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_ade73e1a665f97d5a95d09f0fff19a3f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_af9f94a9e9109ad71fcabb0f7bc77a18f}\label{classcamodocal_1_1CataCamera_af9f94a9e9109ad71fcabb0f7bc77a18f}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!distortion@{distortion}}
+\index{distortion@{distortion}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{distortion()}{distortion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::distortion (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{d\+\_\+u,  }\item[{Eigen\+::\+Matrix2d \&}]{J }\end{DoxyParamCaption}) const}
+
+
+
+Apply distortion to input point (from the normalised plane) and calculate Jacobian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & undistorted coordinates of point on the normalised plane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+to obtain the distorted point\+: p\+\_\+d = p\+\_\+u + d\+\_\+u 
+\end{DoxyReturn}
+
+
+References camodocal\+::\+Camera\+::\+Parameters\+::image\+Height(), camodocal\+::\+Camera\+::\+Parameters\+::image\+Width(), and space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_af9f94a9e9109ad71fcabb0f7bc77a18f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a8415dca7d06b730a0b7358745aaa4001}\label{classcamodocal_1_1CataCamera_a8415dca7d06b730a0b7358745aaa4001}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!lift\+Projective@{lift\+Projective}}
+\index{lift\+Projective@{lift\+Projective}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Projective()}{liftProjective()}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::lift\+Projective (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to its projective ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the projective ray \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_a8415dca7d06b730a0b7358745aaa4001_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ad408a25dbeabac661788d16357b44504}\label{classcamodocal_1_1CataCamera_ad408a25dbeabac661788d16357b44504}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!lift\+Sphere@{lift\+Sphere}}
+\index{lift\+Sphere@{lift\+Sphere}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Sphere()}{liftSphere()}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::lift\+Sphere (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to the unit sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the point on the sphere \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_ad408a25dbeabac661788d16357b44504_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_ab705d867d93d87c85d755bb7b1022a2c}\label{classcamodocal_1_1CataCamera_ab705d867d93d87c85d755bb7b1022a2c}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!space\+To\+Plane@{space\+To\+Plane}}
+\index{space\+To\+Plane@{space\+To\+Plane}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{space\+To\+Plane()}{spaceToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::space\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D point coordinates \\
+\hline
+{\em p} & return value, contains the image point coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+
+
+Referenced by distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_ab705d867d93d87c85d755bb7b1022a2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_ab705d867d93d87c85d755bb7b1022a2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1CataCamera_a9184557401622acaf2a00fd9b1295d13}\label{classcamodocal_1_1CataCamera_a9184557401622acaf2a00fd9b1295d13}} 
+\index{camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}!undist\+To\+Plane@{undist\+To\+Plane}}
+\index{undist\+To\+Plane@{undist\+To\+Plane}!camodocal\+::\+Cata\+Camera@{camodocal\+::\+Cata\+Camera}}
+\subsubsection{\texorpdfstring{undist\+To\+Plane()}{undistToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+Cata\+Camera\+::undist\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Projects an undistorted 2D point p\+\_\+u to the image plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & 2D point coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image point coordinates 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera}{camodocal\+::\+Camera}.
+
+
+
+References distortion().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1CataCamera_a9184557401622acaf2a00fd9b1295d13_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Cata\+Camera.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Cata\+Camera.\+cc\end{DoxyCompactItemize}

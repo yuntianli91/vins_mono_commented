@@ -1,0 +1,73 @@
+\hypertarget{classGlobalSFM}{}\section{Global\+S\+FM Class Reference}
+\label{classGlobalSFM}\index{Global\+S\+FM@{Global\+S\+FM}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGlobalSFM_a221ce592c227dad2eb64d92a39b029be}\label{classGlobalSFM_a221ce592c227dad2eb64d92a39b029be}} 
+\hyperlink{classGlobalSFM_a221ce592c227dad2eb64d92a39b029be}{Global\+S\+FM} ()
+\begin{DoxyCompactList}\small\item\em default constructor, construct a new empty \hyperlink{classGlobalSFM}{Global\+S\+FM} object \end{DoxyCompactList}\item 
+bool \hyperlink{classGlobalSFM_a74db5ddeae54cef949e68a4a6bde3844}{construct} (int frame\+\_\+num, Quaterniond $\ast$q, Vector3d $\ast$T, int l, const Matrix3d relative\+\_\+R, const Vector3d relative\+\_\+T, vector$<$ \hyperlink{structSFMFeature}{S\+F\+M\+Feature} $>$ \&sfm\+\_\+f, map$<$ int, Vector3d $>$ \&sfm\+\_\+tracked\+\_\+points)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGlobalSFM_a74db5ddeae54cef949e68a4a6bde3844}\label{classGlobalSFM_a74db5ddeae54cef949e68a4a6bde3844}} 
+\index{Global\+S\+FM@{Global\+S\+FM}!construct@{construct}}
+\index{construct@{construct}!Global\+S\+FM@{Global\+S\+FM}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily bool Global\+S\+F\+M\+::construct (\begin{DoxyParamCaption}\item[{int}]{frame\+\_\+num,  }\item[{Quaterniond $\ast$}]{q,  }\item[{Vector3d $\ast$}]{T,  }\item[{int}]{l,  }\item[{const Matrix3d}]{relative\+\_\+R,  }\item[{const Vector3d}]{relative\+\_\+T,  }\item[{vector$<$ \hyperlink{structSFMFeature}{S\+F\+M\+Feature} $>$ \&}]{sfm\+\_\+f,  }\item[{map$<$ int, Vector3d $>$ \&}]{sfm\+\_\+tracked\+\_\+points }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+num} & num of all frames in sliding window \\
+\hline
+{\em q} & rotation quaternion from world to camera \\
+\hline
+{\em T} & translation from world to camera \\
+\hline
+{\em l} & index of first frame in sliding window \\
+\hline
+{\em relative\+\_\+R} & initial guess of R from last frame to frst frame in sliding window \\
+\hline
+{\em relative\+\_\+T} & initial guess of t from last frame to first frame in sliding window \\
+\hline
+{\em sfm\+\_\+f} & vector contains all feature points \\
+\hline
+{\em sfm\+\_\+tracked\+\_\+points} & vector contains tracked feature points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+References Reprojection\+Error3\+D\+::\+Create().
+
+
+
+Referenced by Estimator\+::process\+Image().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classGlobalSFM_a74db5ddeae54cef949e68a4a6bde3844_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGlobalSFM_a74db5ddeae54cef949e68a4a6bde3844_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/initial/initial\+\_\+sfm.\+h\item 
+vins\+\_\+estimator/src/initial/initial\+\_\+sfm.\+cpp\end{DoxyCompactItemize}

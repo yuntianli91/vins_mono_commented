@@ -1,0 +1,91 @@
+\hypertarget{classDBoW2_1_1QueryResults}{}\section{D\+Bo\+W2\+:\+:Query\+Results Class Reference}
+\label{classDBoW2_1_1QueryResults}\index{D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}}
+
+
+Multiple results from a query.  
+
+
+
+
+{\ttfamily \#include $<$Query\+Results.\+h$>$}
+
+
+
+Inheritance diagram for D\+Bo\+W2\+:\+:Query\+Results\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classDBoW2_1_1QueryResults__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+Bo\+W2\+:\+:Query\+Results\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classDBoW2_1_1QueryResults__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDBoW2_1_1QueryResults_aa47048267696191c070545c935e28b47}{scale\+Scores} (double factor)
+\item 
+void \hyperlink{classDBoW2_1_1QueryResults_adb484d12c8bf6d3428213fddcb65e699}{saveM} (const std\+::string \&filename) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classDBoW2_1_1QueryResults_aa03bed8e3c1357b52ce23ec7b9d3a149}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Multiple results from a query. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1QueryResults_adb484d12c8bf6d3428213fddcb65e699}\label{classDBoW2_1_1QueryResults_adb484d12c8bf6d3428213fddcb65e699}} 
+\index{D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}!saveM@{saveM}}
+\index{saveM@{saveM}!D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}}
+\subsubsection{\texorpdfstring{save\+M()}{saveM()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Query\+Results\+::saveM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+Saves a matlab file with the results 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDBoW2_1_1QueryResults_aa47048267696191c070545c935e28b47}\label{classDBoW2_1_1QueryResults_aa47048267696191c070545c935e28b47}} 
+\index{D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}!scale\+Scores@{scale\+Scores}}
+\index{scale\+Scores@{scale\+Scores}!D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}}
+\subsubsection{\texorpdfstring{scale\+Scores()}{scaleScores()}}
+{\footnotesize\ttfamily void D\+Bo\+W2\+::\+Query\+Results\+::scale\+Scores (\begin{DoxyParamCaption}\item[{double}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplies all the scores in the vector by factor 
+\begin{DoxyParams}{Parameters}
+{\em factor} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classDBoW2_1_1QueryResults_aa03bed8e3c1357b52ce23ec7b9d3a149}\label{classDBoW2_1_1QueryResults_aa03bed8e3c1357b52ce23ec7b9d3a149}} 
+\index{D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2\+::\+Query\+Results@{D\+Bo\+W2\+::\+Query\+Results}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&}]{ret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Prints a string version of the results 
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream \\
+\hline
+{\em ret} & \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} to print \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Query\+Results.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Bo\+W/Query\+Results.\+cpp\end{DoxyCompactItemize}

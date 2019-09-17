@@ -1,0 +1,15 @@
+<map id="camodocal::Camera::Parameters::imageWidth" name="camodocal::Camera::Parameters::imageWidth">
+<area shape="rect" id="node2" href="$classcamodocal_1_1PinholeCamera.html#a36fbf4d157d3dafd87dc52c8f664bcbc" title="Apply distortion to input point (from the normalised plane) and calculate Jacobian. " alt="" coords="231,5,413,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1CataCamera.html#af9f94a9e9109ad71fcabb0f7bc77a18f" title="Apply distortion to input point (from the normalised plane) and calculate Jacobian. " alt="" coords="239,71,405,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1OCAMCamera.html#a4bfd88fd1871f77d56f5528455315b2d" title="virtual function of camera intrinsics " alt="" coords="233,136,411,177"/>
+<area shape="rect" id="node5" href="$classcamodocal_1_1PinholeCamera.html#a09e4a9f75bfe47383163f4035047592a" title="virtual function of camera intrinsics " alt="" coords="231,201,413,243"/>
+<area shape="rect" id="node6" href="$classcamodocal_1_1CataCamera.html#a1dae6c4e661280dfaa3674df02f76e9c" title="virtual function of camera intrinsics " alt="" coords="239,267,405,308"/>
+<area shape="rect" id="node7" href="$classcamodocal_1_1EquidistantCamera.html#a07be015f3740cb23c1cdd87f3a4ba505" title="virtual function of camera intrinsics " alt="" coords="220,332,424,373"/>
+<area shape="rect" id="node8" href="$classcamodocal_1_1CameraFactory.html#a853fe9e847faae5caa3981f87a9ab7c8" title="generate Camera object according to modelType " alt="" coords="231,397,413,439"/>
+<area shape="rect" id="node9" href="$classcamodocal_1_1OCAMCamera.html#ae1fc6c03b577465a270bd986f3408acd" title="virtual type of function imageWidth " alt="" coords="233,463,411,504"/>
+<area shape="rect" id="node10" href="$classcamodocal_1_1PinholeCamera.html#ae7db15be608e87b2445ed9fff6c0d9f7" title="virtual type of function imageWidth " alt="" coords="231,528,413,569"/>
+<area shape="rect" id="node11" href="$classcamodocal_1_1EquidistantCamera.html#a90ff17672aca7c81cd56d8541cbb3190" title="virtual type of function imageWidth " alt="" coords="220,593,424,635"/>
+<area shape="rect" id="node12" href="$classcamodocal_1_1CataCamera.html#a12efd82807e3f3baa13c3d5e344ac6a4" title="virtual type of function imageWidth " alt="" coords="239,659,405,700"/>
+<area shape="rect" id="node13" href="$classcamodocal_1_1OCAMCamera.html#a804d705efdb76aa606f8cf4feddb2d7a" title="Projects an undistorted 2D point p_u to the image plane. " alt="" coords="233,724,411,765"/>
+<area shape="rect" id="node14" href="$classcamodocal_1_1EquidistantCamera.html#ac0aae0a472fac59ad5fc22079eb5560d" title="Projects an undistorted 2D point p_u to the image plane. " alt="" coords="220,789,424,831"/>
+</map>

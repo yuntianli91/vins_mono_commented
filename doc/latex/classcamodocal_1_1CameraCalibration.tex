@@ -1,0 +1,71 @@
+\hypertarget{classcamodocal_1_1CameraCalibration}{}\section{camodocal\+:\+:Camera\+Calibration Class Reference}
+\label{classcamodocal_1_1CameraCalibration}\index{camodocal\+::\+Camera\+Calibration@{camodocal\+::\+Camera\+Calibration}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_aeadd443792485a4d6590ea02e4ce3557}\label{classcamodocal_1_1CameraCalibration_aeadd443792485a4d6590ea02e4ce3557}} 
+{\bfseries Camera\+Calibration} (\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} model\+Type, const std\+::string \&camera\+Name, const cv\+::\+Size \&image\+Size, const cv\+::\+Size \&board\+Size, float square\+Size)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a07e5e523c16159536c92cade483a64bd}\label{classcamodocal_1_1CameraCalibration_a07e5e523c16159536c92cade483a64bd}} 
+void {\bfseries clear} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a41ab885dc75b4c23e8bef62af89573b2}\label{classcamodocal_1_1CameraCalibration_a41ab885dc75b4c23e8bef62af89573b2}} 
+void {\bfseries add\+Chessboard\+Data} (const std\+::vector$<$ cv\+::\+Point2f $>$ \&corners)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_af0638fb51c1e633814403a6be89f45fe}\label{classcamodocal_1_1CameraCalibration_af0638fb51c1e633814403a6be89f45fe}} 
+bool {\bfseries calibrate} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_ab840e8335fc0e281b75269a14321c2df}\label{classcamodocal_1_1CameraCalibration_ab840e8335fc0e281b75269a14321c2df}} 
+int {\bfseries sample\+Count} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a1559248803a3d8fe4bfefb34d209e77e}\label{classcamodocal_1_1CameraCalibration_a1559248803a3d8fe4bfefb34d209e77e}} 
+std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \& {\bfseries image\+Points} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a7b89b69c893486fda5f3f0cd75c1d053}\label{classcamodocal_1_1CameraCalibration_a7b89b69c893486fda5f3f0cd75c1d053}} 
+const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \& {\bfseries image\+Points} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a6f850b6c713b5a822a0b6e4310017a0c}\label{classcamodocal_1_1CameraCalibration_a6f850b6c713b5a822a0b6e4310017a0c}} 
+std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \& {\bfseries scene\+Points} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a34f423299c758173cf2fd2ec5080fd42}\label{classcamodocal_1_1CameraCalibration_a34f423299c758173cf2fd2ec5080fd42}} 
+const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \& {\bfseries scene\+Points} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a36314a8ff7d13853ec2fa572f6230588}\label{classcamodocal_1_1CameraCalibration_a36314a8ff7d13853ec2fa572f6230588}} 
+\hyperlink{Camera_8h_a9f66c7d396fa23ffb2a4512670a78b84}{Camera\+Ptr} \& {\bfseries camera} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_ad0851d9b65acfe775d75d5973b5f754a}\label{classcamodocal_1_1CameraCalibration_ad0851d9b65acfe775d75d5973b5f754a}} 
+const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} {\bfseries camera} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a45df9fe3fa2cf4ab9d3002eb0636bb72}\label{classcamodocal_1_1CameraCalibration_a45df9fe3fa2cf4ab9d3002eb0636bb72}} 
+Eigen\+::\+Matrix2d \& {\bfseries measurement\+Covariance} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a8fe3e53a6ad83a0c28d196ae6114014c}\label{classcamodocal_1_1CameraCalibration_a8fe3e53a6ad83a0c28d196ae6114014c}} 
+const Eigen\+::\+Matrix2d \& {\bfseries measurement\+Covariance} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_afaa75cf84619b2660e0e2adb1ec7f7d0}\label{classcamodocal_1_1CameraCalibration_afaa75cf84619b2660e0e2adb1ec7f7d0}} 
+cv\+::\+Mat \& {\bfseries camera\+Poses} (void)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a5406b15c8ce833a38c960cb54b405c1c}\label{classcamodocal_1_1CameraCalibration_a5406b15c8ce833a38c960cb54b405c1c}} 
+const cv\+::\+Mat \& {\bfseries camera\+Poses} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_af6da01f9e5aab14beabbbec5bb3c4e69}\label{classcamodocal_1_1CameraCalibration_af6da01f9e5aab14beabbbec5bb3c4e69}} 
+void {\bfseries draw\+Results} (std\+::vector$<$ cv\+::\+Mat $>$ \&images) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a65a11eafa17db001f81daa1440f25ae2}\label{classcamodocal_1_1CameraCalibration_a65a11eafa17db001f81daa1440f25ae2}} 
+void {\bfseries write\+Params} (const std\+::string \&filename) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_af4d5a4fb78fb44fa7486b97cce5a9ddb}\label{classcamodocal_1_1CameraCalibration_af4d5a4fb78fb44fa7486b97cce5a9ddb}} 
+bool {\bfseries write\+Chessboard\+Data} (const std\+::string \&filename) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_a32e882640042a6684d0b772c4f27c977}\label{classcamodocal_1_1CameraCalibration_a32e882640042a6684d0b772c4f27c977}} 
+bool {\bfseries read\+Chessboard\+Data} (const std\+::string \&filename)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CameraCalibration_add7f51ba49bc48088568377259cc7201}\label{classcamodocal_1_1CameraCalibration_add7f51ba49bc48088568377259cc7201}} 
+void {\bfseries set\+Verbose} (bool verbose)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/calib/Camera\+Calibration.\+h\item 
+camera\+\_\+model/src/calib/Camera\+Calibration.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="DBoW2::TemplatedVocabulary::createScoringObject" name="DBoW2::TemplatedVocabulary::createScoringObject">
+<area shape="rect" id="node2" href="$structDBoW2_1_1TemplatedVocabulary_1_1Node.html#a050a0ee173dd58475dd2ab84e6f215e8" title="DBoW2::TemplatedVocabulary\l::Node::isLeaf" alt="" coords="285,5,488,47"/>
+<area shape="rect" id="node3" href="$classDBoW2_1_1TemplatedVocabulary.html#a05a6c2f46184618c9ea8368f53e6980c" title="DBoW2::TemplatedVocabulary\l\&lt; DBoW2::FBrief::TDescriptor,\l DBoW2::FBrief \&gt;::setScoringType" alt="" coords="273,71,500,127"/>
+<area shape="rect" id="node4" href="$classDBoW2_1_1TemplatedVocabulary.html#a0dbbcb6bf766b09f08d945a2af0dbea8" title="DBoW2::TemplatedVocabulary\l\&lt; DBoW2::FBrief::TDescriptor,\l DBoW2::FBrief \&gt;::TemplatedVocabulary" alt="" coords="256,151,517,207"/>
+</map>

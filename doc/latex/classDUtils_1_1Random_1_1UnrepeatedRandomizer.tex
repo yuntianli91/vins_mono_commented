@@ -1,0 +1,149 @@
+\hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{}\section{D\+Utils\+:\+:Random\+:\+:Unrepeated\+Randomizer Class Reference}
+\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer}\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+
+
+Provides pseudo-\/random numbers with no repetitions.  
+
+
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae073cba77da776dae607f22fd289b220}{Unrepeated\+Randomizer} (int min, int max)
+\item 
+\hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_af4d4b9621cb9a55ec59fb311798a3a5b}{Unrepeated\+Randomizer} (const \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer} \&rnd)
+\item 
+\hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer} \& \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a18f74b44fe6747fa3498bdbe6422648e}{operator=} (const \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer} \&rnd)
+\item 
+int \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae1bf6a140e322962f65b2c98dc07a3ac}{get} ()
+\item 
+bool \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a4f93a3ab99e3e801d0c1d2599917a37a}{empty} () const
+\item 
+unsigned int \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a8ba0925ac2e14881505a9575466ddc4f}{left} () const
+\item 
+void \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a315e00744de8bb3794d154797d02ec1f}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a583497053acec6991b9a872f924e8ccb}{create\+Values} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a7b59cc2afb7d7db20aa048ea95365134}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a7b59cc2afb7d7db20aa048ea95365134}} 
+int \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a7b59cc2afb7d7db20aa048ea95365134}{m\+\_\+min}
+\begin{DoxyCompactList}\small\item\em Min of range of values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a5c2d23ba34589d23ac131e37feac6f6b}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a5c2d23ba34589d23ac131e37feac6f6b}} 
+int \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a5c2d23ba34589d23ac131e37feac6f6b}{m\+\_\+max}
+\begin{DoxyCompactList}\small\item\em Max of range of values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_adbe23146bfc61994e361d356282ce6c4}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_adbe23146bfc61994e361d356282ce6c4}} 
+std\+::vector$<$ int $>$ \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_adbe23146bfc61994e361d356282ce6c4}{m\+\_\+values}
+\begin{DoxyCompactList}\small\item\em Available values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides pseudo-\/random numbers with no repetitions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae073cba77da776dae607f22fd289b220}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae073cba77da776dae607f22fd289b220}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!Unrepeated\+Randomizer@{Unrepeated\+Randomizer}}
+\index{Unrepeated\+Randomizer@{Unrepeated\+Randomizer}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{Unrepeated\+Randomizer()}{UnrepeatedRandomizer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::\+Unrepeated\+Randomizer (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+Creates a randomizer that returns numbers in the range \mbox{[}min, max\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_af4d4b9621cb9a55ec59fb311798a3a5b}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_af4d4b9621cb9a55ec59fb311798a3a5b}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!Unrepeated\+Randomizer@{Unrepeated\+Randomizer}}
+\index{Unrepeated\+Randomizer@{Unrepeated\+Randomizer}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{Unrepeated\+Randomizer()}{UnrepeatedRandomizer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::\+Unrepeated\+Randomizer (\begin{DoxyParamCaption}\item[{const \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer} \&}]{rnd }\end{DoxyParamCaption})}
+
+Copies a randomizer 
+\begin{DoxyParams}{Parameters}
+{\em rnd} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a583497053acec6991b9a872f924e8ccb}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a583497053acec6991b9a872f924e8ccb}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!create\+Values@{create\+Values}}
+\index{create\+Values@{create\+Values}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{create\+Values()}{createValues()}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::create\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the vector with available values \mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a4f93a3ab99e3e801d0c1d2599917a37a}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a4f93a3ab99e3e801d0c1d2599917a37a}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!empty@{empty}}
+\index{empty@{empty}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether all the possible values between min and max were already given. If \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae1bf6a140e322962f65b2c98dc07a3ac}{get()} is called when \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a4f93a3ab99e3e801d0c1d2599917a37a}{empty()} is true, the behaviour is the same than after creating the randomizer \begin{DoxyReturn}{Returns}
+true iff all the values were returned 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae1bf6a140e322962f65b2c98dc07a3ac}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae1bf6a140e322962f65b2c98dc07a3ac}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!get@{get}}
+\index{get@{get}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a random number not given before. If all the possible values were already given, the process starts again \begin{DoxyReturn}{Returns}
+unrepeated random number 
+\end{DoxyReturn}
+
+
+References D\+Utils\+::\+Random\+::\+Random\+Int(), and D\+Utils\+::\+Random\+::\+Seed\+Rand\+Once().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDUtils_1_1Random_1_1UnrepeatedRandomizer_ae1bf6a140e322962f65b2c98dc07a3ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a8ba0925ac2e14881505a9575466ddc4f}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a8ba0925ac2e14881505a9575466ddc4f}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!left@{left}}
+\index{left@{left}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily unsigned int D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of values still to be returned \begin{DoxyReturn}{Returns}
+amount of values to return 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a18f74b44fe6747fa3498bdbe6422648e}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a18f74b44fe6747fa3498bdbe6422648e}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!operator=@{operator=}}
+\index{operator=@{operator=}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer} \& D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classDUtils_1_1Random_1_1UnrepeatedRandomizer}{Unrepeated\+Randomizer} \&}]{rnd }\end{DoxyParamCaption})}
+
+Copies a randomizer 
+\begin{DoxyParams}{Parameters}
+{\em rnd} & \\
+\hline
+\end{DoxyParams}
+
+
+References m\+\_\+max, m\+\_\+min, and m\+\_\+values.
+
+\mbox{\Hypertarget{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a315e00744de8bb3794d154797d02ec1f}\label{classDUtils_1_1Random_1_1UnrepeatedRandomizer_a315e00744de8bb3794d154797d02ec1f}} 
+\index{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}!reset@{reset}}
+\index{reset@{reset}!D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer@{D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void D\+Utils\+::\+Random\+::\+Unrepeated\+Randomizer\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the randomizer as it were just created 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Utils/Random.\+h\item 
+pose\+\_\+graph/src/\+Third\+Party/\+D\+Utils/Random.\+cpp\end{DoxyCompactItemize}

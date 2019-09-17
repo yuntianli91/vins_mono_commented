@@ -1,0 +1,119 @@
+\hypertarget{classIntegrationBase}{}\section{Integration\+Base Class Reference}
+\label{classIntegrationBase}\index{Integration\+Base@{Integration\+Base}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIntegrationBase_af4961daa1b4e999cf1edbaa4c9f81444}{Integration\+Base} (const Eigen\+::\+Vector3d \&\+\_\+acc\+\_\+0, const Eigen\+::\+Vector3d \&\+\_\+gyr\+\_\+0, const Eigen\+::\+Vector3d \&\+\_\+linearized\+\_\+ba, const Eigen\+::\+Vector3d \&\+\_\+linearized\+\_\+bg)
+\begin{DoxyCompactList}\small\item\em \char`\"{}delete\char`\"{} default constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntegrationBase_a4e34c978c8471851d86bf3921dc18454}\label{classIntegrationBase_a4e34c978c8471851d86bf3921dc18454}} 
+void {\bfseries push\+\_\+back} (double dt, const Eigen\+::\+Vector3d \&acc, const Eigen\+::\+Vector3d \&gyr)
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a85b741abe55b7012a6302620388fa99b}\label{classIntegrationBase_a85b741abe55b7012a6302620388fa99b}} 
+void {\bfseries repropagate} (const Eigen\+::\+Vector3d \&\+\_\+linearized\+\_\+ba, const Eigen\+::\+Vector3d \&\+\_\+linearized\+\_\+bg)
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a918e7979d66c5779c7d71914c56e59cf}\label{classIntegrationBase_a918e7979d66c5779c7d71914c56e59cf}} 
+void {\bfseries mid\+Point\+Integration} (double \+\_\+dt, const Eigen\+::\+Vector3d \&\+\_\+acc\+\_\+0, const Eigen\+::\+Vector3d \&\+\_\+gyr\+\_\+0, const Eigen\+::\+Vector3d \&\+\_\+acc\+\_\+1, const Eigen\+::\+Vector3d \&\+\_\+gyr\+\_\+1, const Eigen\+::\+Vector3d \&delta\+\_\+p, const Eigen\+::\+Quaterniond \&delta\+\_\+q, const Eigen\+::\+Vector3d \&delta\+\_\+v, const Eigen\+::\+Vector3d \&linearized\+\_\+ba, const Eigen\+::\+Vector3d \&linearized\+\_\+bg, Eigen\+::\+Vector3d \&result\+\_\+delta\+\_\+p, Eigen\+::\+Quaterniond \&result\+\_\+delta\+\_\+q, Eigen\+::\+Vector3d \&result\+\_\+delta\+\_\+v, Eigen\+::\+Vector3d \&result\+\_\+linearized\+\_\+ba, Eigen\+::\+Vector3d \&result\+\_\+linearized\+\_\+bg, bool update\+\_\+jacobian)
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a1ece8568e196472e7e415e6ae1be8ee4}\label{classIntegrationBase_a1ece8568e196472e7e415e6ae1be8ee4}} 
+void {\bfseries propagate} (double \+\_\+dt, const Eigen\+::\+Vector3d \&\+\_\+acc\+\_\+1, const Eigen\+::\+Vector3d \&\+\_\+gyr\+\_\+1)
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a7283223c55fb934e702b012618c6c6ea}\label{classIntegrationBase_a7283223c55fb934e702b012618c6c6ea}} 
+Eigen\+::\+Matrix$<$ double, 15, 1 $>$ {\bfseries evaluate} (const Eigen\+::\+Vector3d \&Pi, const Eigen\+::\+Quaterniond \&Qi, const Eigen\+::\+Vector3d \&Vi, const Eigen\+::\+Vector3d \&Bai, const Eigen\+::\+Vector3d \&Bgi, const Eigen\+::\+Vector3d \&Pj, const Eigen\+::\+Quaterniond \&Qj, const Eigen\+::\+Vector3d \&Vj, const Eigen\+::\+Vector3d \&Baj, const Eigen\+::\+Vector3d \&Bgj)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a705255b7e649f626550f152fef777480}\label{classIntegrationBase_a705255b7e649f626550f152fef777480}} 
+double {\bfseries dt}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a735e7b2e81b96a2358cb777055b39484}\label{classIntegrationBase_a735e7b2e81b96a2358cb777055b39484}} 
+Eigen\+::\+Vector3d {\bfseries acc\+\_\+0}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_ad4db133c1c376d857b11425fa2aab4f2}\label{classIntegrationBase_ad4db133c1c376d857b11425fa2aab4f2}} 
+Eigen\+::\+Vector3d {\bfseries gyr\+\_\+0}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a0344f0a9b5542322c00591da0d532f36}\label{classIntegrationBase_a0344f0a9b5542322c00591da0d532f36}} 
+Eigen\+::\+Vector3d {\bfseries acc\+\_\+1}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a7f724ac3c12b898af409a5c6c9a693be}\label{classIntegrationBase_a7f724ac3c12b898af409a5c6c9a693be}} 
+Eigen\+::\+Vector3d {\bfseries gyr\+\_\+1}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a4c508e358e96a2b68c76b10e420e8dba}\label{classIntegrationBase_a4c508e358e96a2b68c76b10e420e8dba}} 
+const Eigen\+::\+Vector3d {\bfseries linearized\+\_\+acc}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_abf39f037f7da4c59cdde350a1d49949a}\label{classIntegrationBase_abf39f037f7da4c59cdde350a1d49949a}} 
+const Eigen\+::\+Vector3d {\bfseries linearized\+\_\+gyr}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_abd22ce8246e736e9acee1a6a8cb6a440}\label{classIntegrationBase_abd22ce8246e736e9acee1a6a8cb6a440}} 
+Eigen\+::\+Vector3d {\bfseries linearized\+\_\+ba}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a0a3d687eaed9f9e6027fe86d26b5ed24}\label{classIntegrationBase_a0a3d687eaed9f9e6027fe86d26b5ed24}} 
+Eigen\+::\+Vector3d {\bfseries linearized\+\_\+bg}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_af5e1a822a273149873ea6fae9ca0c904}\label{classIntegrationBase_af5e1a822a273149873ea6fae9ca0c904}} 
+Eigen\+::\+Matrix$<$ double, 15, 15 $>$ {\bfseries jacobian}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a7d6a1c1a360e42ea157d27b0e1ff125b}\label{classIntegrationBase_a7d6a1c1a360e42ea157d27b0e1ff125b}} 
+Eigen\+::\+Matrix$<$ double, 15, 15 $>$ {\bfseries covariance}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a6a92785c4b9feee9f9fed868a1144a3e}\label{classIntegrationBase_a6a92785c4b9feee9f9fed868a1144a3e}} 
+Eigen\+::\+Matrix$<$ double, 15, 15 $>$ {\bfseries step\+\_\+jacobian}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a26c1b9b880e6f7df4e3031d14b6914c4}\label{classIntegrationBase_a26c1b9b880e6f7df4e3031d14b6914c4}} 
+Eigen\+::\+Matrix$<$ double, 15, 18 $>$ {\bfseries step\+\_\+V}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_aed84dc41be21b6bc1b5d5a68b8009ca2}\label{classIntegrationBase_aed84dc41be21b6bc1b5d5a68b8009ca2}} 
+Eigen\+::\+Matrix$<$ double, 18, 18 $>$ {\bfseries noise}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a1492ef505eea7b9be146af3797ca0cbc}\label{classIntegrationBase_a1492ef505eea7b9be146af3797ca0cbc}} 
+double {\bfseries sum\+\_\+dt}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a7bbab36013cbdfa69214c3a9d807bb0a}\label{classIntegrationBase_a7bbab36013cbdfa69214c3a9d807bb0a}} 
+Eigen\+::\+Vector3d {\bfseries delta\+\_\+p}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a0dcd9520d1fba9a9d76c451d66e74834}\label{classIntegrationBase_a0dcd9520d1fba9a9d76c451d66e74834}} 
+Eigen\+::\+Quaterniond {\bfseries delta\+\_\+q}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a99b821d71ee410e0c33594079a994ff5}\label{classIntegrationBase_a99b821d71ee410e0c33594079a994ff5}} 
+Eigen\+::\+Vector3d {\bfseries delta\+\_\+v}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_a074615b1712edd7aa6a2d7feafcf8ac3}\label{classIntegrationBase_a074615b1712edd7aa6a2d7feafcf8ac3}} 
+std\+::vector$<$ double $>$ {\bfseries dt\+\_\+buf}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_ac87931ca76365a8b306ad5997152f7a8}\label{classIntegrationBase_ac87931ca76365a8b306ad5997152f7a8}} 
+std\+::vector$<$ Eigen\+::\+Vector3d $>$ {\bfseries acc\+\_\+buf}
+\item 
+\mbox{\Hypertarget{classIntegrationBase_aade8c7e58d35adba9646eb40f8388d28}\label{classIntegrationBase_aade8c7e58d35adba9646eb40f8388d28}} 
+std\+::vector$<$ Eigen\+::\+Vector3d $>$ {\bfseries gyr\+\_\+buf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIntegrationBase_af4961daa1b4e999cf1edbaa4c9f81444}\label{classIntegrationBase_af4961daa1b4e999cf1edbaa4c9f81444}} 
+\index{Integration\+Base@{Integration\+Base}!Integration\+Base@{Integration\+Base}}
+\index{Integration\+Base@{Integration\+Base}!Integration\+Base@{Integration\+Base}}
+\subsubsection{\texorpdfstring{Integration\+Base()}{IntegrationBase()}}
+{\footnotesize\ttfamily Integration\+Base\+::\+Integration\+Base (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{\+\_\+acc\+\_\+0,  }\item[{const Eigen\+::\+Vector3d \&}]{\+\_\+gyr\+\_\+0,  }\item[{const Eigen\+::\+Vector3d \&}]{\+\_\+linearized\+\_\+ba,  }\item[{const Eigen\+::\+Vector3d \&}]{\+\_\+linearized\+\_\+bg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\char`\"{}delete\char`\"{} default constructor 
+
+Construct a new Integration Base object
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+acc\+\_\+0} & \\
+\hline
+{\em \+\_\+gyr\+\_\+0} & \\
+\hline
+{\em \+\_\+linearized\+\_\+ba} & \\
+\hline
+{\em \+\_\+linearized\+\_\+bg} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vins\+\_\+estimator/src/factor/integration\+\_\+base.\+h\end{DoxyCompactItemize}

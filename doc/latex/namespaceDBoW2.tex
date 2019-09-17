@@ -1,0 +1,206 @@
+\hypertarget{namespaceDBoW2}{}\section{D\+Bo\+W2 Namespace Reference}
+\label{namespaceDBoW2}\index{D\+Bo\+W2@{D\+Bo\+W2}}
+
+
+Includes all the data structures to manage vocabularies and image databases.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector}
+\begin{DoxyCompactList}\small\item\em Vector of words to represent images. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1FBrief}{F\+Brief}
+\begin{DoxyCompactList}\small\item\em Functions to manipulate B\+R\+I\+EF descriptors. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1FClass}{F\+Class}
+\begin{DoxyCompactList}\small\item\em Generic class to encapsulate functions to manage descriptors. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector}
+\begin{DoxyCompactList}\small\item\em Vector of nodes with indexes of local features. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1GeneralScoring}{General\+Scoring}
+\begin{DoxyCompactList}\small\item\em Base class of scoring functions. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results}
+\begin{DoxyCompactList}\small\item\em Multiple results from a query. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1Result}{Result}
+\begin{DoxyCompactList}\small\item\em Single result of a query. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}
+\begin{DoxyCompactList}\small\item\em Generic Database. \end{DoxyCompactList}\item 
+class \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}
+\begin{DoxyCompactList}\small\item\em Generic Vocabulary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}\label{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}} 
+typedef unsigned int \hyperlink{namespaceDBoW2_ab1a0d3283b2d4690a383372ed20bfeb5}{Word\+Id}
+\begin{DoxyCompactList}\small\item\em Id of words. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}\label{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}} 
+typedef double \hyperlink{namespaceDBoW2_a55fcd7333e591a38e96b91f41bc182f6}{Word\+Value}
+\begin{DoxyCompactList}\small\item\em Value of a word. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}\label{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}} 
+typedef unsigned int \hyperlink{namespaceDBoW2_a3a0fa9c50c0df508759362d6204566f2}{Node\+Id}
+\begin{DoxyCompactList}\small\item\em Id of nodes in the vocabulary treee. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}\label{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}} 
+typedef unsigned int \hyperlink{namespaceDBoW2_a060a36cf320e6e831ee98915c19c1623}{Entry\+Id}
+\begin{DoxyCompactList}\small\item\em Id of entries of the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}\label{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}} 
+enum \hyperlink{namespaceDBoW2_a53e9e0bcfc25c861815e413a7cf3fa51}{L\+Norm} \{ {\bfseries L1}, 
+{\bfseries L2}
+ \}\begin{DoxyCompactList}\small\item\em L-\/norms for normalization. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}\label{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}} 
+enum \hyperlink{namespaceDBoW2_a5de5c8a307aca9a84ffefda2a9bc467a}{Weighting\+Type} \{ {\bfseries T\+F\+\_\+\+I\+DF}, 
+{\bfseries TF}, 
+{\bfseries I\+DF}, 
+{\bfseries B\+I\+N\+A\+RY}
+ \}\begin{DoxyCompactList}\small\item\em Weighting type. \end{DoxyCompactList}
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}\label{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}} 
+enum \hyperlink{namespaceDBoW2_aa252a592dd607c6e60dede06ceef2722}{Scoring\+Type} \{ \newline
+{\bfseries L1\+\_\+\+N\+O\+RM}, 
+{\bfseries L2\+\_\+\+N\+O\+RM}, 
+{\bfseries C\+H\+I\+\_\+\+S\+Q\+U\+A\+RE}, 
+{\bfseries KL}, 
+\newline
+{\bfseries B\+H\+A\+T\+T\+A\+C\+H\+A\+R\+Y\+YA}, 
+{\bfseries D\+O\+T\+\_\+\+P\+R\+O\+D\+U\+CT}
+ \}\begin{DoxyCompactList}\small\item\em Scoring type. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{namespaceDBoW2_a06d2058b1bde1cdc49f277fec62073e2}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&v)
+\item 
+std\+::ostream \& \hyperlink{namespaceDBoW2_ac65e2bfb945a77c5294d0300a4fed49c}{operator$<$$<$} (std\+::ostream \&out, const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \&v)
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_a844104f9efe003ab6ac6a87f11b59b62}\label{namespaceDBoW2_a844104f9efe003ab6ac6a87f11b59b62}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \hyperlink{classDBoW2_1_1Result}{Result} \&ret)
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_ac7e2118649f868c5dd79ced3c03a362e}\label{namespaceDBoW2_ac7e2118649f868c5dd79ced3c03a362e}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \hyperlink{classDBoW2_1_1QueryResults}{Query\+Results} \&ret)
+\item 
+\mbox{\Hypertarget{namespaceDBoW2_a75539718457109a0efbd4778f7fa7369}\label{namespaceDBoW2_a75539718457109a0efbd4778f7fa7369}} 
+class \hyperlink{namespaceDBoW2_a75539718457109a0efbd4778f7fa7369}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (L1\+Scoring, true, L1)
+\begin{DoxyCompactList}\small\item\em L1 Scoring object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_ac7a02f9992dcadb8af97192765c6d9d3}\label{namespaceDBoW2_ac7a02f9992dcadb8af97192765c6d9d3}} 
+class \hyperlink{namespaceDBoW2_ac7a02f9992dcadb8af97192765c6d9d3}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (L2\+Scoring, true, L2)
+\begin{DoxyCompactList}\small\item\em L2 Scoring object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_a6f9c1118526ece0dc3ed4054266fbdda}\label{namespaceDBoW2_a6f9c1118526ece0dc3ed4054266fbdda}} 
+class \hyperlink{namespaceDBoW2_a6f9c1118526ece0dc3ed4054266fbdda}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (Chi\+Square\+Scoring, true, L1)
+\begin{DoxyCompactList}\small\item\em Chi square Scoring object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_ae19b56aa4101670a2f019358dc621693}\label{namespaceDBoW2_ae19b56aa4101670a2f019358dc621693}} 
+class \hyperlink{namespaceDBoW2_ae19b56aa4101670a2f019358dc621693}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (K\+L\+Scoring, true, L1)
+\begin{DoxyCompactList}\small\item\em KL divergence Scoring object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_a8b204afc23807ec9a07127d36e88e07f}\label{namespaceDBoW2_a8b204afc23807ec9a07127d36e88e07f}} 
+class \hyperlink{namespaceDBoW2_a8b204afc23807ec9a07127d36e88e07f}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (Bhattacharyya\+Scoring, true, L1)
+\begin{DoxyCompactList}\small\item\em Bhattacharyya Scoring object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceDBoW2_ae07d9b48e6fefc0f0c01df371c17b3ca}\label{namespaceDBoW2_ae07d9b48e6fefc0f0c01df371c17b3ca}} 
+class \hyperlink{namespaceDBoW2_ae07d9b48e6fefc0f0c01df371c17b3ca}{\+\_\+\+\_\+\+S\+C\+O\+R\+I\+N\+G\+\_\+\+C\+L\+A\+SS} (Dot\+Product\+Scoring, false, L1)
+\begin{DoxyCompactList}\small\item\em Dot product Scoring object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T\+Descriptor , class F $>$ }\\std\+::ostream \& \hyperlink{namespaceDBoW2_ac1f00f5484f61d6ab3b1f650955210d8}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&db)
+\item 
+{\footnotesize template$<$class T\+Descriptor , class F $>$ }\\std\+::ostream \& \hyperlink{namespaceDBoW2_aecdf616fe16d2cf09f521a603b9d43f1}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}$<$ T\+Descriptor, F $>$ \&voc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Includes all the data structures to manage vocabularies and image databases. 
+
+File\+: Bow\+Vector.\+cpp Date\+: March 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: bag of words vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{BowVector_8h_source}{Bow\+Vector.\+h} Date\+: March 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: bag of words vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{FBrief_8h_source}{F\+Brief.\+h} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: functions for B\+R\+I\+EF descriptors License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{FClass_8h_source}{F\+Class.\+h} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: generic \hyperlink{classDBoW2_1_1FClass}{F\+Class} to instantiate templated classes License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: Feature\+Vector.\+cpp Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: feature vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{FeatureVector_8h_source}{Feature\+Vector.\+h} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: feature vector License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{QueryResults_8h_source}{Query\+Results.\+h} Date\+: March, November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: structure to store results of database queries License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{ScoringObject_8h_source}{Scoring\+Object.\+h} Date\+: November 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: functions to compute bow scores License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{TemplatedDatabase_8h_source}{Templated\+Database.\+h} Date\+: March 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: templated database of images License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file
+
+File\+: \hyperlink{TemplatedVocabulary_8h_source}{Templated\+Vocabulary.\+h} Date\+: February 2011 Author\+: Dorian Galvez-\/\+Lopez Description\+: templated vocabulary License\+: see the L\+I\+C\+E\+N\+S\+E.\+txt file 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceDBoW2_ac65e2bfb945a77c5294d0300a4fed49c}\label{namespaceDBoW2_ac65e2bfb945a77c5294d0300a4fed49c}} 
+\index{D\+Bo\+W2@{D\+Bo\+W2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2@{D\+Bo\+W2}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \hyperlink{classDBoW2_1_1FeatureVector}{Feature\+Vector} \&}]{v }\end{DoxyParamCaption})}
+
+Sends a string versions of the feature vector through the stream 
+\begin{DoxyParams}{Parameters}
+{\em out} & stream \\
+\hline
+{\em v} & feature vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceDBoW2_a06d2058b1bde1cdc49f277fec62073e2}\label{namespaceDBoW2_a06d2058b1bde1cdc49f277fec62073e2}} 
+\index{D\+Bo\+W2@{D\+Bo\+W2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2@{D\+Bo\+W2}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \hyperlink{classDBoW2_1_1BowVector}{Bow\+Vector} \&}]{v }\end{DoxyParamCaption})}
+
+Prints the content of the bow vector 
+\begin{DoxyParams}{Parameters}
+{\em out} & stream \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceDBoW2_ac1f00f5484f61d6ab3b1f650955210d8}\label{namespaceDBoW2_ac1f00f5484f61d6ab3b1f650955210d8}} 
+\index{D\+Bo\+W2@{D\+Bo\+W2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2@{D\+Bo\+W2}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classDBoW2_1_1TemplatedDatabase}{Templated\+Database}$<$ T\+Descriptor, F $>$ \&}]{db }\end{DoxyParamCaption})}
+
+Writes printable information of the database 
+\begin{DoxyParams}{Parameters}
+{\em os} & stream to write to \\
+\hline
+{\em db} & \\
+\hline
+\end{DoxyParams}
+
+
+References D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$\+::get\+Direct\+Index\+Levels(), D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$\+::get\+Vocabulary(), D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$\+::size(), and D\+Bo\+W2\+::\+Templated\+Database$<$ T\+Descriptor, F $>$\+::using\+Direct\+Index().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceDBoW2_ac1f00f5484f61d6ab3b1f650955210d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceDBoW2_aecdf616fe16d2cf09f521a603b9d43f1}\label{namespaceDBoW2_aecdf616fe16d2cf09f521a603b9d43f1}} 
+\index{D\+Bo\+W2@{D\+Bo\+W2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!D\+Bo\+W2@{D\+Bo\+W2}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class T\+Descriptor , class F $>$ \\
+std\+::ostream\& D\+Bo\+W2\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classDBoW2_1_1TemplatedVocabulary}{Templated\+Vocabulary}$<$ T\+Descriptor, F $>$ \&}]{voc }\end{DoxyParamCaption})}
+
+Writes printable information of the vocabulary 
+\begin{DoxyParams}{Parameters}
+{\em os} & stream to write to \\
+\hline
+{\em voc} & \\
+\hline
+\end{DoxyParams}
+
+
+References D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::get\+Branching\+Factor(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::get\+Depth\+Levels(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::get\+Scoring\+Type(), D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::get\+Weighting\+Type(), and D\+Bo\+W2\+::\+Templated\+Vocabulary$<$ T\+Descriptor, F $>$\+::size().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceDBoW2_aecdf616fe16d2cf09f521a603b9d43f1_cgraph}
+\end{center}
+\end{figure}

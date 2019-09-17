@@ -1,0 +1,242 @@
+\hypertarget{classcamodocal_1_1OCAMCamera}{}\section{camodocal\+:\+:O\+C\+A\+M\+Camera Class Reference}
+\label{classcamodocal_1_1OCAMCamera}\index{camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}}
+
+
+{\ttfamily \#include $<$Scaramuzza\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for camodocal\+:\+:O\+C\+A\+M\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcamodocal_1_1OCAMCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camodocal\+:\+:O\+C\+A\+M\+Camera\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcamodocal_1_1OCAMCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters}{Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_ae06f868418ac45ea94a6d8ecf98caaa0}\label{classcamodocal_1_1OCAMCamera_ae06f868418ac45ea94a6d8ecf98caaa0}} 
+\hyperlink{classcamodocal_1_1OCAMCamera_ae06f868418ac45ea94a6d8ecf98caaa0}{O\+C\+A\+M\+Camera} (const \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters}{Parameters} \&params)
+\begin{DoxyCompactList}\small\item\em Constructor from the projection model parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a149e69010e4f53c978e5e9f4b1ef120d}\label{classcamodocal_1_1OCAMCamera_a149e69010e4f53c978e5e9f4b1ef120d}} 
+\hyperlink{classcamodocal_1_1Camera_a663bb19b7b1f38f6d1b7eeb0890183ff}{Camera\+::\+Model\+Type} \hyperlink{classcamodocal_1_1OCAMCamera_a149e69010e4f53c978e5e9f4b1ef120d}{model\+Type} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function model\+Type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_aff01e3fda8f1572771cc5ebd02dca383}\label{classcamodocal_1_1OCAMCamera_aff01e3fda8f1572771cc5ebd02dca383}} 
+const std\+::string \& \hyperlink{classcamodocal_1_1OCAMCamera_aff01e3fda8f1572771cc5ebd02dca383}{camera\+Name} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of funtion camera\+Name \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_ae1fc6c03b577465a270bd986f3408acd}\label{classcamodocal_1_1OCAMCamera_ae1fc6c03b577465a270bd986f3408acd}} 
+int \hyperlink{classcamodocal_1_1OCAMCamera_ae1fc6c03b577465a270bd986f3408acd}{image\+Width} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Width \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a3e04e01571fa9f466cdfc0ebea3c5713}\label{classcamodocal_1_1OCAMCamera_a3e04e01571fa9f466cdfc0ebea3c5713}} 
+int \hyperlink{classcamodocal_1_1OCAMCamera_a3e04e01571fa9f466cdfc0ebea3c5713}{image\+Height} (void) const
+\begin{DoxyCompactList}\small\item\em virtual type of function image\+Height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a4bfd88fd1871f77d56f5528455315b2d}\label{classcamodocal_1_1OCAMCamera_a4bfd88fd1871f77d56f5528455315b2d}} 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a4bfd88fd1871f77d56f5528455315b2d}{estimate\+Intrinsics} (const cv\+::\+Size \&board\+Size, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point3f $>$ $>$ \&object\+Points, const std\+::vector$<$ std\+::vector$<$ cv\+::\+Point2f $>$ $>$ \&image\+Points)
+\begin{DoxyCompactList}\small\item\em virtual function of camera intrinsics \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a48112e1787548fc61c7545fc83ea2c81}{lift\+Sphere} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to the unit sphere. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1OCAMCamera_afb73e19397c8be1fb498004d0e926a53}{lift\+Projective} (const Eigen\+::\+Vector2d \&p, Eigen\+::\+Vector3d \&P) const
+\begin{DoxyCompactList}\small\item\em Lifts a point from the image plane to its projective ray. \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a06125c8a4cdf39e0a9353b291802b0ed}{space\+To\+Plane} (const Eigen\+::\+Vector3d \&P, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) \end{DoxyCompactList}\item 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a804d705efdb76aa606f8cf4feddb2d7a}{undist\+To\+Plane} (const Eigen\+::\+Vector2d \&p\+\_\+u, Eigen\+::\+Vector2d \&p) const
+\begin{DoxyCompactList}\small\item\em Projects an undistorted 2D point p\+\_\+u to the image plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a9aa50e125c37adb6f113e187ad03935e}\label{classcamodocal_1_1OCAMCamera_a9aa50e125c37adb6f113e187ad03935e}} 
+void {\bfseries init\+Undistort\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, double f\+Scale=1.\+0) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a0f18c5bc38cdba61df38a225110ea80a}\label{classcamodocal_1_1OCAMCamera_a0f18c5bc38cdba61df38a225110ea80a}} 
+cv\+::\+Mat {\bfseries init\+Undistort\+Rectify\+Map} (cv\+::\+Mat \&map1, cv\+::\+Mat \&map2, float fx=-\/1.\+0f, float fy=-\/1.\+0f, cv\+::\+Size image\+Size=cv\+::\+Size(0, 0), float cx=-\/1.\+0f, float cy=-\/1.\+0f, cv\+::\+Mat rmat=cv\+::\+Mat\+::eye(3, 3, C\+V\+\_\+32\+F)) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_ababf27122ba206613ed37f1b2ee35c4c}\label{classcamodocal_1_1OCAMCamera_ababf27122ba206613ed37f1b2ee35c4c}} 
+int \hyperlink{classcamodocal_1_1OCAMCamera_ababf27122ba206613ed37f1b2ee35c4c}{parameter\+Count} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of parameter count \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a6e065e637df28d72b5cc68d4e4df8b64}\label{classcamodocal_1_1OCAMCamera_a6e065e637df28d72b5cc68d4e4df8b64}} 
+const \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters}{Parameters} \& {\bfseries get\+Parameters} (void) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a5eddfcd2e89aabeaf2328a0fd95dd3ab}\label{classcamodocal_1_1OCAMCamera_a5eddfcd2e89aabeaf2328a0fd95dd3ab}} 
+void {\bfseries set\+Parameters} (const \hyperlink{classcamodocal_1_1OCAMCamera_1_1Parameters}{Parameters} \&parameters)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_afc3827b25996ec448dc64bd4cbbea546}\label{classcamodocal_1_1OCAMCamera_afc3827b25996ec448dc64bd4cbbea546}} 
+void \hyperlink{classcamodocal_1_1OCAMCamera_afc3827b25996ec448dc64bd4cbbea546}{read\+Parameters} (const std\+::vector$<$ double $>$ \&parameter\+Vec)
+\begin{DoxyCompactList}\small\item\em pure virtual function of reading parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a2770ca0891c175e4e4ad1cdf1079be13}\label{classcamodocal_1_1OCAMCamera_a2770ca0891c175e4e4ad1cdf1079be13}} 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a2770ca0891c175e4e4ad1cdf1079be13}{write\+Parameters} (std\+::vector$<$ double $>$ \&parameter\+Vec) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a97ae4b32f95c2a57d7adb0f72c19b957}\label{classcamodocal_1_1OCAMCamera_a97ae4b32f95c2a57d7adb0f72c19b957}} 
+void \hyperlink{classcamodocal_1_1OCAMCamera_a97ae4b32f95c2a57d7adb0f72c19b957}{write\+Parameters\+To\+Yaml\+File} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em pure virtual function of writing parameters to Y\+A\+ML file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a8faee5f83c2fe617eddb439cd2da4dae}\label{classcamodocal_1_1OCAMCamera_a8faee5f83c2fe617eddb439cd2da4dae}} 
+std\+::string \hyperlink{classcamodocal_1_1OCAMCamera_a8faee5f83c2fe617eddb439cd2da4dae}{parameters\+To\+String} (void) const
+\begin{DoxyCompactList}\small\item\em pure virtual of converting parameters to string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a04db8f70bc4db87024f3f0c3ca1a1190}\label{classcamodocal_1_1OCAMCamera_a04db8f70bc4db87024f3f0c3ca1a1190}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries space\+To\+Plane} (const T $\ast$const params, const T $\ast$const q, const T $\ast$const t, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_adfc168c2c3e6f1859ea662074e9232f2}\label{classcamodocal_1_1OCAMCamera_adfc168c2c3e6f1859ea662074e9232f2}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries space\+To\+Sphere} (const T $\ast$const params, const T $\ast$const q, const T $\ast$const t, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P\+\_\+s)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_abaf64fe1ceeb4b96034d89296fb3a72c}\label{classcamodocal_1_1OCAMCamera_abaf64fe1ceeb4b96034d89296fb3a72c}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Lift\+To\+Sphere} (const T $\ast$const params, const Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p, Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P)
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_af974df35838672ae829e5d885b701011}\label{classcamodocal_1_1OCAMCamera_af974df35838672ae829e5d885b701011}} 
+{\footnotesize template$<$typename T $>$ }\\static void {\bfseries Sphere\+To\+Plane} (const T $\ast$const params, const Eigen\+::\+Matrix$<$ T, 3, 1 $>$ \&P, Eigen\+::\+Matrix$<$ T, 2, 1 $>$ \&p)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Scaramuzza \hyperlink{classcamodocal_1_1Camera}{Camera} (Omnidirectional) \href{https://sites.google.com/site/scarabotix/ocamcalib-toolbox}{\tt https\+://sites.\+google.\+com/site/scarabotix/ocamcalib-\/toolbox} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_afb73e19397c8be1fb498004d0e926a53}\label{classcamodocal_1_1OCAMCamera_afb73e19397c8be1fb498004d0e926a53}} 
+\index{camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}!lift\+Projective@{lift\+Projective}}
+\index{lift\+Projective@{lift\+Projective}!camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Projective()}{liftProjective()}}
+{\footnotesize\ttfamily void camodocal\+::\+O\+C\+A\+M\+Camera\+::lift\+Projective (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to its projective ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the projective ray \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a680e97bfecab33cd833f914ee811d12d}{camodocal\+::\+Camera}.
+
+
+
+Referenced by lift\+Sphere().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1OCAMCamera_afb73e19397c8be1fb498004d0e926a53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a48112e1787548fc61c7545fc83ea2c81}\label{classcamodocal_1_1OCAMCamera_a48112e1787548fc61c7545fc83ea2c81}} 
+\index{camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}!lift\+Sphere@{lift\+Sphere}}
+\index{lift\+Sphere@{lift\+Sphere}!camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}}
+\subsubsection{\texorpdfstring{lift\+Sphere()}{liftSphere()}}
+{\footnotesize\ttfamily void camodocal\+::\+O\+C\+A\+M\+Camera\+::lift\+Sphere (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p,  }\item[{Eigen\+::\+Vector3d \&}]{P }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Lifts a point from the image plane to the unit sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & image coordinates \\
+\hline
+{\em P} & coordinates of the point on the sphere \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_a77b4ea673c694741302efba6f86a0100}{camodocal\+::\+Camera}.
+
+
+
+References lift\+Projective().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1OCAMCamera_a48112e1787548fc61c7545fc83ea2c81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a06125c8a4cdf39e0a9353b291802b0ed}\label{classcamodocal_1_1OCAMCamera_a06125c8a4cdf39e0a9353b291802b0ed}} 
+\index{camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}!space\+To\+Plane@{space\+To\+Plane}}
+\index{space\+To\+Plane@{space\+To\+Plane}!camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}}
+\subsubsection{\texorpdfstring{space\+To\+Plane()}{spaceToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+O\+C\+A\+M\+Camera\+::space\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector3d \&}]{P,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Project a 3D point ({\itshape x},{\itshape y},{\itshape z}) to the image plane in ({\itshape u},{\itshape v}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & 3D point coordinates \\
+\hline
+{\em p} & return value, contains the image point coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera_acf49bd1ef0919e0faf89d060dc497b52}{camodocal\+::\+Camera}.
+
+
+
+Referenced by undist\+To\+Plane().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1OCAMCamera_a06125c8a4cdf39e0a9353b291802b0ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcamodocal_1_1OCAMCamera_a804d705efdb76aa606f8cf4feddb2d7a}\label{classcamodocal_1_1OCAMCamera_a804d705efdb76aa606f8cf4feddb2d7a}} 
+\index{camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}!undist\+To\+Plane@{undist\+To\+Plane}}
+\index{undist\+To\+Plane@{undist\+To\+Plane}!camodocal\+::\+O\+C\+A\+M\+Camera@{camodocal\+::\+O\+C\+A\+M\+Camera}}
+\subsubsection{\texorpdfstring{undist\+To\+Plane()}{undistToPlane()}}
+{\footnotesize\ttfamily void camodocal\+::\+O\+C\+A\+M\+Camera\+::undist\+To\+Plane (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Vector2d \&}]{p\+\_\+u,  }\item[{Eigen\+::\+Vector2d \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Projects an undistorted 2D point p\+\_\+u to the image plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+u} & 2D point coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image point coordinates 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcamodocal_1_1Camera}{camodocal\+::\+Camera}.
+
+
+
+References camodocal\+::\+Camera\+::\+Parameters\+::image\+Height(), camodocal\+::\+Camera\+::\+Parameters\+::image\+Width(), and space\+To\+Plane().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcamodocal_1_1OCAMCamera_a804d705efdb76aa606f8cf4feddb2d7a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Scaramuzza\+Camera.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Scaramuzza\+Camera.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="camodocal::CameraFactory::generateCamera" name="camodocal::CameraFactory::generateCamera">
+<area shape="rect" id="node2" href="$classcamodocal_1_1Camera_1_1Parameters.html#ad5d799e6367c5605907a941b2271e271" title="return name of current camera object " alt="" coords="236,5,411,47"/>
+<area shape="rect" id="node3" href="$classcamodocal_1_1Camera_1_1Parameters.html#a2dcff4a5472ebc79d5d72762681220a3" title="return image height of current camera object " alt="" coords="238,71,409,112"/>
+<area shape="rect" id="node4" href="$classcamodocal_1_1Camera_1_1Parameters.html#a92c11d296cb64c91a0c15528a8a7b813" title="return image width of current camera object " alt="" coords="240,136,407,177"/>
+</map>

@@ -1,0 +1,38 @@
+\hypertarget{classcamodocal_1_1CostFunctionFactory}{}\section{camodocal\+:\+:Cost\+Function\+Factory Class Reference}
+\label{classcamodocal_1_1CostFunctionFactory}\index{camodocal\+::\+Cost\+Function\+Factory@{camodocal\+::\+Cost\+Function\+Factory}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_adda465ef8c4f2fa757fd0675f9429d36}\label{classcamodocal_1_1CostFunctionFactory_adda465ef8c4f2fa757fd0675f9429d36}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p, int flags) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_abcea9742c67b6d31d373a538ec167e2c}\label{classcamodocal_1_1CostFunctionFactory_abcea9742c67b6d31d373a538ec167e2c}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p, const Eigen\+::\+Matrix2d \&sqrt\+Precision\+Mat, int flags) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_a8c8da1112f113d2d0ac6e08b23d5303f}\label{classcamodocal_1_1CostFunctionFactory_a8c8da1112f113d2d0ac6e08b23d5303f}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Vector2d \&observed\+\_\+p, int flags, bool optimize\+\_\+cam\+\_\+odo\+\_\+z=true) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_a2c7a3edbb6f2aba03451c687002ea5c5}\label{classcamodocal_1_1CostFunctionFactory_a2c7a3edbb6f2aba03451c687002ea5c5}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Vector2d \&observed\+\_\+p, const Eigen\+::\+Matrix2d \&sqrt\+Precision\+Mat, int flags, bool optimize\+\_\+cam\+\_\+odo\+\_\+z=true) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_a6fb6f746cc6dfafe614a334c8858e0a8}\label{classcamodocal_1_1CostFunctionFactory_a6fb6f746cc6dfafe614a334c8858e0a8}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Vector3d \&odo\+\_\+pos, const Eigen\+::\+Vector3d \&odo\+\_\+att, const Eigen\+::\+Vector2d \&observed\+\_\+p, int flags, bool optimize\+\_\+cam\+\_\+odo\+\_\+z=true) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_adbbd63cb458cf51847df25591d898705}\label{classcamodocal_1_1CostFunctionFactory_adbbd63cb458cf51847df25591d898705}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera, const Eigen\+::\+Quaterniond \&cam\+\_\+odo\+\_\+q, const Eigen\+::\+Vector3d \&cam\+\_\+odo\+\_\+t, const Eigen\+::\+Vector3d \&odo\+\_\+pos, const Eigen\+::\+Vector3d \&odo\+\_\+att, const Eigen\+::\+Vector2d \&observed\+\_\+p, int flags) const
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_ad9db356b5c933326629dc9b3383d75da}\label{classcamodocal_1_1CostFunctionFactory_ad9db356b5c933326629dc9b3383d75da}} 
+ceres\+::\+Cost\+Function $\ast$ {\bfseries generate\+Cost\+Function} (const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera\+Left, const \hyperlink{Camera_8h_a03fe5d6885a007cb4ad26d11f6198586}{Camera\+Const\+Ptr} \&camera\+Right, const Eigen\+::\+Vector3d \&observed\+\_\+P, const Eigen\+::\+Vector2d \&observed\+\_\+p\+\_\+left, const Eigen\+::\+Vector2d \&observed\+\_\+p\+\_\+right) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcamodocal_1_1CostFunctionFactory_aad2a8835aa630202ffe2ca9f796385f6}\label{classcamodocal_1_1CostFunctionFactory_aad2a8835aa630202ffe2ca9f796385f6}} 
+static boost\+::shared\+\_\+ptr$<$ \hyperlink{classcamodocal_1_1CostFunctionFactory}{Cost\+Function\+Factory} $>$ {\bfseries instance} (void)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+camera\+\_\+model/include/camodocal/camera\+\_\+models/Cost\+Function\+Factory.\+h\item 
+camera\+\_\+model/src/camera\+\_\+models/Cost\+Function\+Factory.\+cc\end{DoxyCompactItemize}
