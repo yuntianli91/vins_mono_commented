@@ -4,7 +4,7 @@
  * @Github: https://github.com/yuntinali91
  * @Date: 2019-09-08 10:38:25
  * @LastEditors: Yuntian Li
- * @LastEditTime: 2019-09-12 09:44:26
+ * @LastEditTime: 2019-09-17 13:39:40
  */
 #pragma once
 
@@ -258,8 +258,8 @@ class IntegrationBase
         return residuals;
     }
 
-    double dt;
-    Eigen::Vector3d acc_0, gyr_0;
+    double dt; ///
+    Eigen::Vector3d acc_0, gyr_0; ///
     Eigen::Vector3d acc_1, gyr_1;
 
     const Eigen::Vector3d linearized_acc, linearized_gyr;
@@ -270,7 +270,7 @@ class IntegrationBase
     Eigen::Matrix<double, 15, 18> step_V;
     Eigen::Matrix<double, 18, 18> noise;
 
-    double sum_dt;
+    double sum_dt; ///
     Eigen::Vector3d delta_p;
     Eigen::Quaterniond delta_q;
     Eigen::Vector3d delta_v;
