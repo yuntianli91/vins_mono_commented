@@ -4,7 +4,7 @@
  * @Github: https://github.com/yuntinali91
  * @Date: 2019-09-08 10:38:25
  * @LastEditors: Yuntian Li
- * @LastEditTime: 2019-09-17 13:39:40
+ * @LastEditTime: 2019-09-17 15:16:35
  */
 #pragma once
 
@@ -179,11 +179,11 @@ class IntegrationBase
     }
 
     /**
-     * @brief 
+     * @brief propagate IMU preintegration from t to t+1
      * 
-     * @param _dt 
-     * @param _acc_1 
-     * @param _gyr_1 
+     * @param _dt : time between t and t+1 
+     * @param _acc_1 : acceleration measurement at t+1
+     * @param _gyr_1 : gyro measurement at t+1
      */
     void propagate(double _dt, const Eigen::Vector3d &_acc_1, const Eigen::Vector3d &_gyr_1)
     {
@@ -216,19 +216,19 @@ class IntegrationBase
     }
 
     /**
-     * @brief 
+     * @brief calculate residuals between IMU preintegrations and optimized increments at [k,k+1]
      * 
-     * @param Pi 
-     * @param Qi 
-     * @param Vi 
-     * @param Bai 
-     * @param Bgi 
-     * @param Pj 
-     * @param Qj 
-     * @param Vj 
-     * @param Baj 
-     * @param Bgj 
-     * @return Eigen::Matrix<double, 15, 1> 
+     * @param Pi : optimized position at k
+     * @param Qi : optimized rotation quaternion q_w^b at k
+     * @param Vi : optimized velocity at k
+     * @param Bai : optimized accelerometer bias at k
+     * @param Bgi : optimized gyro bias at k
+     * @param Pj : optimized position at k+1
+     * @param Qj : optimized rotation quaternion q_w^b at k+1
+     * @param Vj : optimized velocity at k+1
+     * @param Baj : optimized accelerometer bias at k+1
+     * @param Bgj : optimized gyro bias at k+1
+     * @return residual : residual of increment in intervel [k,k+1], Eigen::Matrix<double, 15, 1> 
      */
     Eigen::Matrix<double, 15, 1> evaluate(const Eigen::Vector3d &Pi, const Eigen::Quaterniond &Qi, const Eigen::Vector3d &Vi, const Eigen::Vector3d &Bai, const Eigen::Vector3d &Bgi,
                                           const Eigen::Vector3d &Pj, const Eigen::Quaterniond &Qj, const Eigen::Vector3d &Vj, const Eigen::Vector3d &Baj, const Eigen::Vector3d &Bgj)
@@ -258,26 +258,26 @@ class IntegrationBase
         return residuals;
     }
 
-    double dt; ///
-    Eigen::Vector3d acc_0, gyr_0; ///
-    Eigen::Vector3d acc_1, gyr_1;
+    double dt; /// time intervel of current IMU preintegrations
+    Eigen::Vector3d acc_0, gyr_0; /// IMU measurements at t
+    Eigen::Vector3d acc_1, gyr_1; /// IMU measurements at t+1
 
-    const Eigen::Vector3d linearized_acc, linearized_gyr;
-    Eigen::Vector3d linearized_ba, linearized_bg;
+    const Eigen::Vector3d linearized_acc, linearized_gyr; /// IMU measurements at k
+    Eigen::Vector3d linearized_ba, linearized_bg; /// IMU bias
 
-    Eigen::Matrix<double, 15, 15> jacobian, covariance;
-    Eigen::Matrix<double, 15, 15> step_jacobian;
-    Eigen::Matrix<double, 15, 18> step_V;
-    Eigen::Matrix<double, 18, 18> noise;
+    Eigen::Matrix<double, 15, 15> jacobian, covariance; /// jacobian and covariance of IMU preintegration residuals
+    Eigen::Matrix<double, 15, 15> step_jacobian; /// unused
+    Eigen::Matrix<double, 15, 18> step_V; /// unused
+    Eigen::Matrix<double, 18, 18> noise; /// noise matrix
 
-    double sum_dt; ///
-    Eigen::Vector3d delta_p;
-    Eigen::Quaterniond delta_q;
-    Eigen::Vector3d delta_v;
+    double sum_dt; /// total time of IMU measurements between [k,k+1]
+    Eigen::Vector3d delta_p; /// position increment
+    Eigen::Quaterniond delta_q; /// rotation quaternion increment
+    Eigen::Vector3d delta_v; /// velocity increment
 
-    std::vector<double> dt_buf;
-    std::vector<Eigen::Vector3d> acc_buf;
-    std::vector<Eigen::Vector3d> gyr_buf;
+    std::vector<double> dt_buf; /// buffer of time intervel
+    std::vector<Eigen::Vector3d> acc_buf; /// buffer of accelerations
+    std::vector<Eigen::Vector3d> gyr_buf; /// buffer of angular rates
 
 };
 /*
