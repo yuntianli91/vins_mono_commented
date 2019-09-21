@@ -26,11 +26,11 @@ extern double INIT_DEPTH;
 extern double MIN_PARALLAX;
 extern int ESTIMATE_EXTRINSIC;
 
-extern double ACC_N, ACC_W;
-extern double GYR_N, GYR_W;
+extern double ACC_N, ACC_W; // Accelerometer noise and random walk
+extern double GYR_N, GYR_W; // gyro noise and randon walk
 
-extern std::vector<Eigen::Matrix3d> RIC;
-extern std::vector<Eigen::Vector3d> TIC;
+extern std::vector<Eigen::Matrix3d> RIC; // R_c^b
+extern std::vector<Eigen::Vector3d> TIC; // p_c^b
 extern Eigen::Vector3d G;
 
 extern double BIAS_ACC_THRESHOLD;

@@ -4,7 +4,7 @@
  * @Github: https://github.com/yuntinali91
  * @Date: 2019-09-08 10:37:27
  * @LastEditors: Yuntian Li
- * @LastEditTime: 2019-09-08 10:38:19
+ * @LastEditTime: 2019-09-21 14:55:26
  */
 #include "initial_alignment.h"
 
@@ -12,7 +12,7 @@
  * @brief 
  * 
  * @param all_image_frame : map contains all image frames in sliding window 
- * @param Bgs : gyro bias
+ * @param Bgs : pointer of first gyro bias in sliding window
  */
 void solveGyroscopeBias(map<double, ImageFrame> &all_image_frame, Vector3d* Bgs)
 {
@@ -23,6 +23,7 @@ void solveGyroscopeBias(map<double, ImageFrame> &all_image_frame, Vector3d* Bgs)
     b.setZero();
     map<double, ImageFrame>::iterator frame_i;
     map<double, ImageFrame>::iterator frame_j;
+    // calculate total A^TA and A^Tb    
     for (frame_i = all_image_frame.begin(); next(frame_i) != all_image_frame.end(); frame_i++)
     {
         frame_j = next(frame_i);
@@ -30,19 +31,22 @@ void solveGyroscopeBias(map<double, ImageFrame> &all_image_frame, Vector3d* Bgs)
         tmp_A.setZero();
         VectorXd tmp_b(3);
         tmp_b.setZero();
-        Eigen::Quaterniond q_ij(frame_i->second.R.transpose() * frame_j->second.R);
-        tmp_A = frame_j->second.pre_integration->jacobian.template block<3, 3>(O_R, O_BG);
+        Eigen::Quaterniond q_ij(frame_i->second.R.transpose() * frame_j->second.R); // q_i^j
+        tmp_A = frame_j->second.pre_integration->jacobian.template block<3, 3>(O_R, O_BG); // dR/dbg
         tmp_b = 2 * (frame_j->second.pre_integration->delta_q.inverse() * q_ij).vec();
+        // calculate sum of A and b to obtain an average estimation of dbg
         A += tmp_A.transpose() * tmp_A;
         b += tmp_A.transpose() * tmp_b;
 
     }
+    // solve dbg with Cholesky decomposition
     delta_bg = A.ldlt().solve(b);
+
     ROS_WARN_STREAM("gyroscope bias initial calibration " << delta_bg.transpose());
 
     for (int i = 0; i <= WINDOW_SIZE; i++)
         Bgs[i] += delta_bg;
-
+    // repropagate IMU preintegration with modified gyro bias
     for (frame_i = all_image_frame.begin(); next(frame_i) != all_image_frame.end( ); frame_i++)
     {
         frame_j = next(frame_i);
@@ -51,7 +55,7 @@ void solveGyroscopeBias(map<double, ImageFrame> &all_image_frame, Vector3d* Bgs)
 }
 
 /**
- * @brief 
+ * @brief return two basis in tangent space
  * 
  * @param g0 
  * @return MatrixXd : return 3x2 matrix [b,c] which contains basis of tangent space, 
@@ -72,26 +76,35 @@ MatrixXd TangentBasis(Vector3d &g0)
     return bc;
 }
 
+/**
+ * @brief refine gravity vector in tangent space
+ * 
+ * @param all_image_frame : all image frames in sliding window
+ * @param g : gravity vector obtained from last least square
+ * @param x : refined initialized state vector  
+ */
 void RefineGravity(map<double, ImageFrame> &all_image_frame, Vector3d &g, VectorXd &x)
 {
-    Vector3d g0 = g.normalized() * G.norm();
-    Vector3d lx, ly;
+    Vector3d g0 = g.normalized() * G.norm(); // fix current g with magnitude equal to 9.8
+    Vector3d lx, ly; /// two orthogonal basis in tangent space
     //VectorXd x;
-    int all_frame_count = all_image_frame.size();
-    int n_state = all_frame_count * 3 + 2 + 1;
+    int all_frame_count = all_image_frame.size(); // num of frames in sliding window
+    int n_state = all_frame_count * 3 + 2 + 1; // dim of state vector
 
-    MatrixXd A{n_state, n_state};
+    MatrixXd A{n_state, n_state}; /// matrix A for least square
     A.setZero();
-    VectorXd b{n_state};
+    VectorXd b{n_state}; /// vector b for least square
     b.setZero();
 
     map<double, ImageFrame>::iterator frame_i;
     map<double, ImageFrame>::iterator frame_j;
+    // same as least square without reparameterized
     for(int k = 0; k < 4; k++)
     {
         MatrixXd lxly(3, 2);
         lxly = TangentBasis(g0);
         int i = 0;
+        // construct Phi and b for least square, same as LineAlignment
         for (frame_i = all_image_frame.begin(); next(frame_i) != all_image_frame.end(); frame_i++, i++)
         {
             frame_j = next(frame_i);
@@ -142,10 +155,19 @@ void RefineGravity(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vector
     g = g0;
 }
 
+/**
+ * @brief : initialization of all velocity vector in sliding window, gravity vector and metric scale
+ * 
+ * @param all_image_frame : map container contains all image frame in sliding window 
+ * @param g : gravity vector
+ * @param x : vector contains all states needed to be initialized [v0, v1, v2, ..., vk, g, s]
+ * @return true : initialzed succeed
+ * @return false : initialized failed
+ */
 bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, VectorXd &x)
 {
-    int all_frame_count = all_image_frame.size();
-    int n_state = all_frame_count * 3 + 3 + 1;
+    int all_frame_count = all_image_frame.size(); // num of all frames in sliding window
+    int n_state = all_frame_count * 3 + 3 + 1; // dim of state vector X
 
     MatrixXd A{n_state, n_state};
     A.setZero();
@@ -164,11 +186,11 @@ bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vect
         VectorXd tmp_b(6);
         tmp_b.setZero();
 
-        double dt = frame_j->second.pre_integration->sum_dt;
+        double dt = frame_j->second.pre_integration->sum_dt; //dt between i and j
 
         tmp_A.block<3, 3>(0, 0) = -dt * Matrix3d::Identity();
         tmp_A.block<3, 3>(0, 6) = frame_i->second.R.transpose() * dt * dt / 2 * Matrix3d::Identity();
-        tmp_A.block<3, 1>(0, 9) = frame_i->second.R.transpose() * (frame_j->second.T - frame_i->second.T) / 100.0;     
+        tmp_A.block<3, 1>(0, 9) = frame_i->second.R.transpose() * (frame_j->second.T - frame_i->second.T) / 100.0; // why divide by 100 ?    
         tmp_b.block<3, 1>(0, 0) = frame_j->second.pre_integration->delta_p + frame_i->second.R.transpose() * frame_j->second.R * TIC[0] - TIC[0];
         //cout << "delta_p   " << frame_j->second.pre_integration->delta_p.transpose() << endl;
         tmp_A.block<3, 3>(3, 0) = -Matrix3d::Identity();
@@ -194,13 +216,17 @@ bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vect
         A.block<6, 4>(i * 3, n_state - 4) += r_A.topRightCorner<6, 4>();
         A.block<4, 6>(n_state - 4, i * 3) += r_A.bottomLeftCorner<4, 6>();
     }
+    // times 1000.0 to improve resolution
     A = A * 1000.0;
     b = b * 1000.0;
+    // solve AX = b with Cholesky
     x = A.ldlt().solve(b);
-    double s = x(n_state - 1) / 100.0;
+    // output initialized scale and gravity 
+    double s = x(n_state - 1) / 100.0; // why divide by 100 again ?
     ROS_DEBUG("estimated scale: %f", s);
     g = x.segment<3>(n_state - 4);
     ROS_DEBUG_STREAM(" result g     " << g.norm() << " " << g.transpose());
+    // check result
     if(fabs(g.norm() - G.norm()) > 1.0 || s < 0)
     {
         return false;
@@ -219,8 +245,9 @@ bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vect
 bool VisualIMUAlignment(map<double, ImageFrame> &all_image_frame, Vector3d* Bgs, Vector3d &g, VectorXd &x)
 {
     solveGyroscopeBias(all_image_frame, Bgs); // solve gyro bias
-
-    if(LinearAlignment(all_image_frame, g, x))
+    
+    // align IMU measurement and visual SfM
+    if(LinearAlignment(all_image_frame, g, x)) 
         return true;
     else 
         return false;
