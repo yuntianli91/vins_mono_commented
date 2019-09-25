@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Author: Yuntian Li
+ * @Github: https://github.com/yuntinali91
+ * @Date: 2019-09-17 10:35:46
+ * @LastEditors: Yuntian Li
+ * @LastEditTime: 2019-09-24 09:02:03
+ */
 #include "camodocal/camera_models/PinholeCamera.h"
 #include <cmath>
 #include <cstdio>
@@ -476,6 +484,7 @@ PinholeCamera::liftSphere(const Eigen::Vector2d& p, Eigen::Vector3d& P) const
 
 /**
  * \brief Lifts a point from the image plane to its projective ray
+ * 将像素坐标重投影至归一化成像平面并矫正畸变
  *
  * \param p image coordinates
  * \param P coordinates of the projective ray
@@ -487,7 +496,7 @@ PinholeCamera::liftProjective(const Eigen::Vector2d& p, Eigen::Vector3d& P) cons
     double rho2_d, rho4_d, radDist_d, Dx_d, Dy_d, inv_denom_d;
     //double lambda;
 
-    // Lift points to normalised plane
+    // Lift points to normalized plane (Zc=1)
     mx_d = m_inv_K11 * p(0) + m_inv_K13;
     my_d = m_inv_K22 * p(1) + m_inv_K23;
 

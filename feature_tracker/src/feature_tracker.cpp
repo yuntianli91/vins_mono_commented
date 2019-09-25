@@ -1,6 +1,14 @@
+/*
+ * @Description: 
+ * @Author: Yuntian Li
+ * @Github: https://github.com/yuntinali91
+ * @Date: 2019-09-17 10:35:46
+ * @LastEditors: Yuntian Li
+ * @LastEditTime: 2019-09-25 16:17:19
+ */
 #include "feature_tracker.h"
 
-int FeatureTracker::n_id = 0;
+int FeatureTracker::n_id = 0; // id of current feature trackers
 
 bool inBorder(const cv::Point2f &pt)
 {
@@ -84,6 +92,7 @@ void FeatureTracker::readImage(const cv::Mat &_img, double _cur_time)
     TicToc t_r;
     cur_time = _cur_time;
 
+    // enable EQUALIZE will invoke CLAHE（直方图均衡化） to avoid image too bright or too dark
     if (EQUALIZE)
     {
         cv::Ptr<cv::CLAHE> clahe = cv::createCLAHE(3.0, cv::Size(8, 8));
@@ -104,17 +113,19 @@ void FeatureTracker::readImage(const cv::Mat &_img, double _cur_time)
     }
 
     forw_pts.clear();
-
+    // if extracted features in current image, use Prymaid LK optical flow 
+    // to track features in next frame
     if (cur_pts.size() > 0)
     {
         TicToc t_o;
         vector<uchar> status;
         vector<float> err;
         cv::calcOpticalFlowPyrLK(cur_img, forw_img, cur_pts, forw_pts, status, err, cv::Size(21, 21), 3);
-
+        // remove tracked which are out of image border
         for (int i = 0; i < int(forw_pts.size()); i++)
             if (status[i] && !inBorder(forw_pts[i]))
                 status[i] = 0;
+        // remove
         reduceVector(prev_pts, status);
         reduceVector(cur_pts, status);
         reduceVector(forw_pts, status);
@@ -123,21 +134,25 @@ void FeatureTracker::readImage(const cv::Mat &_img, double _cur_time)
         reduceVector(track_cnt, status);
         ROS_DEBUG("temporal optical flow costs: %fms", t_o.toc());
     }
-
+    // add 1 for all tracked feature points
     for (auto &n : track_cnt)
         n++;
 
     if (PUB_THIS_FRAME)
     {
+        // reject tracked points whici do not satisfy fundamental matrix
         rejectWithF();
         ROS_DEBUG("set mask begins");
         TicToc t_m;
+        // set mask for already tracked points
         setMask();
         ROS_DEBUG("set mask costs %fms", t_m.toc());
 
         ROS_DEBUG("detect feature begins");
         TicToc t_t;
         int n_max_cnt = MAX_CNT - static_cast<int>(forw_pts.size());
+        // if some feature points has lost in forw_img, then exteact some new features
+        // to keep num of tracked corners unchanged
         if (n_max_cnt > 0)
         {
             if(mask.empty())
@@ -146,6 +161,7 @@ void FeatureTracker::readImage(const cv::Mat &_img, double _cur_time)
                 cout << "mask type wrong " << endl;
             if (mask.size() != forw_img.size())
                 cout << "wrong size " << endl;
+            // extract supplementary corners 
             cv::goodFeaturesToTrack(forw_img, n_pts, MAX_CNT - forw_pts.size(), 0.01, MIN_DIST, mask);
         }
         else
@@ -173,6 +189,7 @@ void FeatureTracker::rejectWithF()
         ROS_DEBUG("FM ransac begins");
         TicToc t_f;
         vector<cv::Point2f> un_cur_pts(cur_pts.size()), un_forw_pts(forw_pts.size());
+        // undistorted all tracked points
         for (unsigned int i = 0; i < cur_pts.size(); i++)
         {
             Eigen::Vector3d tmp_p;
@@ -188,8 +205,11 @@ void FeatureTracker::rejectWithF()
         }
 
         vector<uchar> status;
+        // calculate fundamental matrix with undistorted points and obtained status which indicates 
+        // outliers and inliers
         cv::findFundamentalMat(un_cur_pts, un_forw_pts, cv::FM_RANSAC, F_THRESHOLD, 0.99, status);
         int size_a = cur_pts.size();
+        // delete outliers
         reduceVector(prev_pts, status);
         reduceVector(cur_pts, status);
         reduceVector(forw_pts, status);
@@ -279,6 +299,7 @@ void FeatureTracker::undistortedPoints()
             if (ids[i] != -1)
             {
                 std::map<int, cv::Point2f>::iterator it;
+                // find element in map with matched key
                 it = prev_un_pts_map.find(ids[i]);
                 if (it != prev_un_pts_map.end())
                 {

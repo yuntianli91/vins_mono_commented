@@ -412,7 +412,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "vins_estimator");/// initiate estimator node
     ros::NodeHandle n("~");
     ros::console::set_logger_level(ROSCONSOLE_DEFAULT_NAME, ros::console::levels::Info);/// change ros log output level to 'Info'.
-    readParameters(n);
+    readParameters(n); // read parameters from YAML file
     estimator.setParameter();
 #ifdef EIGEN_DONT_PARALLELIZE
     ROS_DEBUG("EIGEN_DONT_PARALLELIZE");

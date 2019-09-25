@@ -4,7 +4,7 @@
  * @Github: https://github.com/yuntinali91
  * @Date: 2019-08-28 08:51:43
  * @LastEditors: Yuntian Li
- * @LastEditTime: 2019-08-28 20:14:03
+ * @LastEditTime: 2019-09-21 15:46:58
  */
 #pragma once
 
@@ -81,22 +81,30 @@ class Estimator
     void double2vector();
     bool failureDetection();
 
-
+    /**
+     * @brief flags for estimator :
+     *      INITIAL : state initialization
+     *      NON_LINEAR : VIO estimation
+     */
     enum SolverFlag
     {
         INITIAL,
         NON_LINEAR
     };
 
+    /**
+     * @brief 
+     * 
+     */
     enum MarginalizationFlag
     {
         MARGIN_OLD = 0,
         MARGIN_SECOND_NEW = 1
     };
 
-    SolverFlag solver_flag;
-    MarginalizationFlag  marginalization_flag;
-    Vector3d g;
+    SolverFlag solver_flag; /// flags for VINS estimator
+    MarginalizationFlag  marginalization_flag; /// flags for marginalization
+    Vector3d g; /// gravity vector
     MatrixXd Ap[2], backup_A;
     VectorXd bp[2], backup_b;
 

@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Author: Yuntian Li
+ * @Github: https://github.com/yuntinali91
+ * @Date: 2019-09-17 10:35:46
+ * @LastEditors: Yuntian Li
+ * @LastEditTime: 2019-09-23 16:46:29
+ */
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
 #include <sensor_msgs/image_encodings.h>
@@ -19,10 +27,10 @@ ros::Publisher pub_img,pub_match;
 ros::Publisher pub_restart;
 
 FeatureTracker trackerData[NUM_OF_CAM];
-double first_image_time;
-int pub_count = 1;
-bool first_image_flag = true;
-double last_image_time = 0;
+double first_image_time; /// time-stamp of first image
+int pub_count = 1; /// counter of published frames
+bool first_image_flag = true; /// whether current frame is the first frame
+double last_image_time = 0; /// time-stamp of latest frame
 bool init_pub = 0;
 
 void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
@@ -34,7 +42,7 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
         last_image_time = img_msg->header.stamp.toSec();
         return;
     }
-    // detect unstable camera stream
+    // detect unstable camera stream (intervel bigger than 1s or current time_stamp are less than last time_stamp)
     if (img_msg->header.stamp.toSec() - last_image_time > 1.0 || img_msg->header.stamp.toSec() < last_image_time)
     {
         ROS_WARN("image discontinue! reset the feature tracker!");
@@ -79,6 +87,7 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
 
     cv::Mat show_img = ptr->image;
     TicToc t_r;
+    
     for (int i = 0; i < NUM_OF_CAM; i++)
     {
         ROS_DEBUG("processing camera %d", i);
@@ -94,7 +103,7 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
             else
                 trackerData[i].cur_img = ptr->image.rowRange(ROW * i, ROW * (i + 1));
         }
-
+// if there is no need to show undistortion points, then do not compile following function
 #if SHOW_UNDISTORTION
         trackerData[i].showUndistortion("undistrotion_" + std::to_string(i));
 #endif
@@ -206,9 +215,9 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "feature_tracker");
-    ros::NodeHandle n("~");
+    ros::NodeHandle n("~"); // use '~' for private namespace 
     ros::console::set_logger_level(ROSCONSOLE_DEFAULT_NAME, ros::console::levels::Info);
-    readParameters(n);
+    readParameters(n); // read parameters from YAML file with path from ROS param server
 
     for (int i = 0; i < NUM_OF_CAM; i++)
         trackerData[i].readIntrinsicParameter(CAM_NAMES[i]);

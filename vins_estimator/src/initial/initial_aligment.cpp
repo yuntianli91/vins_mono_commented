@@ -4,7 +4,7 @@
  * @Github: https://github.com/yuntinali91
  * @Date: 2019-09-08 10:37:27
  * @LastEditors: Yuntian Li
- * @LastEditTime: 2019-09-21 14:55:26
+ * @LastEditTime: 2019-09-21 19:38:42
  */
 #include "initial_alignment.h"
 
@@ -190,7 +190,7 @@ bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vect
 
         tmp_A.block<3, 3>(0, 0) = -dt * Matrix3d::Identity();
         tmp_A.block<3, 3>(0, 6) = frame_i->second.R.transpose() * dt * dt / 2 * Matrix3d::Identity();
-        tmp_A.block<3, 1>(0, 9) = frame_i->second.R.transpose() * (frame_j->second.T - frame_i->second.T) / 100.0; // why divide by 100 ?    
+        tmp_A.block<3, 1>(0, 9) = frame_i->second.R.transpose() * (frame_j->second.T - frame_i->second.T) / 100.0; // divide by 100 to make all elements in A with same order    
         tmp_b.block<3, 1>(0, 0) = frame_j->second.pre_integration->delta_p + frame_i->second.R.transpose() * frame_j->second.R * TIC[0] - TIC[0];
         //cout << "delta_p   " << frame_j->second.pre_integration->delta_p.transpose() << endl;
         tmp_A.block<3, 3>(3, 0) = -Matrix3d::Identity();
@@ -222,7 +222,7 @@ bool LinearAlignment(map<double, ImageFrame> &all_image_frame, Vector3d &g, Vect
     // solve AX = b with Cholesky
     x = A.ldlt().solve(b);
     // output initialized scale and gravity 
-    double s = x(n_state - 1) / 100.0; // why divide by 100 again ?
+    double s = x(n_state - 1) / 100.0; // recover scale to original order
     ROS_DEBUG("estimated scale: %f", s);
     g = x.segment<3>(n_state - 4);
     ROS_DEBUG_STREAM(" result g     " << g.norm() << " " << g.transpose());

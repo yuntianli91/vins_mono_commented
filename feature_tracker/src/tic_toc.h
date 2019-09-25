@@ -1,10 +1,18 @@
+/*
+ * @Description: 
+ * @Author: Yuntian Li
+ * @Github: https://github.com/yuntinali91
+ * @Date: 2019-09-17 10:35:46
+ * @LastEditors: Yuntian Li
+ * @LastEditTime: 2019-09-17 10:35:46
+ */
 #pragma once
 
 #include <ctime>
 #include <cstdlib>
 #include <chrono>
 /**
- * @brief 类TicToc中函数：tic()获得计时起点；toc()获得运行时间，单位毫秒。
+ * @brief 计时器类TicToc，函数：tic()获得计时起点；toc()获得运行时间，单位毫秒。
  * chrono是一个C++标准时间库，为模板库，包括三个概念：duration、time_point、clock。
  * 
  */
